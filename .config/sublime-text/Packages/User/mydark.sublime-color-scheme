@@ -1,0 +1,242 @@
+{
+	"name": "Dark Gray",
+	"author": "frithrah",
+
+	"variables":
+	{
+		// Colors
+		"black":       "#000000",
+		"white":       "#ffffff",
+		"gray100":     "#f5f5f5",
+		"gray200":     "#e0e0e0",
+		"gray300":     "#bdbdbd",
+		"gray400":     "#9e9e9e",
+		"gray500":     "#757575",
+		"gray600":     "#616161",
+		"gray700":     "#424242",
+		"gray800":     "#212121",
+		"gray900":     "#0d0d0d",
+
+		// Styles
+		"bg":            "var(black)",
+		"fg":            "var(white)",
+
+		"dimmed_fg":     "var(gray400)",
+		"soft_bg":       "var(gray900)",
+		"soft_fg":       "var(gray300)",
+		"hard_bg":       "var(gray800)",
+		"hard_fg":       "var(gray200)",
+		"accent":        "var(gray600)",
+
+		"select_bg":     "var(gray700)",
+		"select_fg":     "var(fg)",
+		"highlight_bg":  "var(gray600)",
+		"highlight_fg":  "var(bg)",
+		"highlight_alt": "var(gray500)",
+
+		"comment":       "var(gray500)",
+		"constant":      "var(gray200)",
+		"constant_alt":  "var(gray300)",
+		"alert":         "var(gray600)",
+
+		"added":         "var(gray700)",
+		"modified":      "var(gray500)",
+		"deleted":       "var(gray600)",
+
+		"warning":       "var(gray200)",
+		"error":         "var(alert)"
+	},
+
+	"globals":
+	{
+		"background":                    "var(bg)",
+		"foreground":                    "var(fg)",
+
+		"caret":                         "var(fg)",
+		"block_caret":                   "var(select_bg)",
+
+		"gutter":                        "var(soft_bg)",
+		"gutter_foreground":             "var(soft_fg)",
+		"gutter_foreground_highlight":   "var(hard_fg)",
+		"line_highlight":                "var(hard_bg)",
+
+		"guide":                         "var(hard_bg)",
+		"rulers":                        "var(hard_bg)",
+		"invisibles":                    "var(hard_bg)",
+		"misspelling":                   "var(alert)",
+		"fold_marker":                   "var(alert)",
+		"accent":                        "var(accent)",
+
+		"selection_border_width":        "0",
+		"selection_corner_radius":       "2",
+		"selection":                     "var(select_bg)",
+		"selection_foreground":          "var(select_fg)",
+		"inactive_selection":            "var(hard_bg)",
+		"inactive_selection_foreground": "var(fg)",
+
+		"highlight":                     "var(highlight_bg)",
+		"find_highlight":                "var(highlight_bg)",
+		"find_highlight_foreground":     "var(highlight_fg)",
+
+		"brackets_options":              "underline",
+		"brackets_foreground":           "var(fg)",
+		"bracket_contents_options":      "underline",
+		"bracket_contents_foreground":   "var(fg)",
+		"tags_options":                  "underline",
+		"tags_foreground":               "var(fg)",
+
+		"line_diff_width":               "4",
+		"line_diff_added":               "var(added)",
+		"line_diff_modified":            "var(modified)",
+		"line_diff_deleted":             "var(deleted)"
+	},
+
+	"rules":
+	[
+		// Tools
+		{
+			"scope":      "entity.name.filename.find-in-files",
+			"font_style": ""
+		},
+
+		// Code
+		{
+			"scope":      "comment, punctuation.definition.comment",
+			"foreground": "var(comment)",
+			"font_style": "italic"
+		},
+
+		{
+			"scope":      "string",
+			"foreground": "var(constant)"  // Highlight strings with constant color
+		},
+
+		{
+			"scope":      "constant.numeric, constant.numeric.integer, constant.numeric.float",
+			"foreground": "var(constant_alt)"  // Highlight numbers with constant_alt color
+		},
+
+		{
+			"scope":      "constant.character",
+			"foreground": "var(constant)"  // Highlight characters with constant color
+		},
+
+		{
+			"scope":      "constant.character.escape, constant.other.placeholder",
+			"foreground": "var(constant_alt)"
+		},
+
+		{
+			"scope":      "constant",
+			"foreground": "var(constant)"
+		},
+
+		{
+			"scope":      "invalid",
+			"foreground": "var(alert)"
+		},
+
+		{
+			"scope":      "entity.name.function",
+			"font_style": ""
+		},
+
+		// Diffs
+		{
+			"scope":      "markup.inserted, diff.inserted, diff.inserted.char",
+			"background": "color(var(added) a(0.3))",
+			"foreground": "var(fg)"
+		},
+
+		{
+			"scope":      "markup.changed",
+			"background": "color(var(modified) a(0.3))",
+			"foreground": "var(fg)"
+		},
+
+		{
+			"scope":      "markup.deleted",
+			"background": "color(var(deleted) a(0.3))",
+			"foreground": "var(dimmed_fg)"
+		},
+
+		{
+			"scope":      "diff.deleted",
+			"background": "color(var(deleted) a(0.3))",
+			"foreground": "var(fg)"
+		},
+		{
+			"scope":      "diff.deleted.char",
+			"background": "color(var(deleted) a(0.6))",
+			"foreground": "var(dimmed_fg)"
+		},
+
+		// Markup
+		{
+			"scope":      "entity.name.tag, punctuation.definition.tag",
+			"foreground": "var(dimmed_fg)"
+		},
+
+		{
+			"scope":      "markup.heading",
+			"font_style": ""
+		},
+
+		{
+			"scope":      "markup.italic",
+			"font_style": "italic"
+		},
+
+		{
+			"scope":      "markup.bold",
+			"font_style": ""
+		},
+
+		// Build Output
+		{
+			"scope":      "markup.info",
+			"foreground": "var(fg)"
+		},
+
+		{
+			"scope":      "markup.warning",
+			"foreground": "var(warning)"
+		},
+
+		{
+			"scope":      "markup.error",
+			"foreground": "var(error)"
+		},
+
+		// Syntax-specific
+		{
+			"scope":      "string.quoted.double.json",
+			"foreground": "var(fg)"
+		},
+
+		// NeoVintageous
+		{
+			"scope":      "neovintageous_search_inc",
+			"background": "var(highlight_bg)",
+			"foreground": "var(highlight_fg)"
+		},
+
+		{
+			"scope":      "neovintageous_search_cur",
+			"background": "var(highlight_bg)",
+			"foreground": "var(highlight_fg)"
+		},
+
+		{
+			"scope":      "neovintageous_search_occ",
+			"background": "var(highlight_alt)",
+			"foreground": "var(highlight_fg)"
+		},
+
+		{
+			"scope": "highlightedyank",
+			"background": "var(hard_bg)",
+			"foreground": "var(hard_fg)"
+		}
+	]
+}

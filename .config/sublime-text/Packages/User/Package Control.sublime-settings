@@ -1,0 +1,18 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Dark PRO Color Schemes",
+		"LSP",
+		"LSP-clangd",
+		"LSP-css",
+		"LSP-html",
+		"LSP-lua",
+		"NeoVintageous",
+		"Package Control",
+		"Terminal",
+	],
+}

@@ -1,0 +1,1749 @@
+{
+	"file_history":
+	[
+		"/home/chung/examples/html/baotuong.html",
+		"/home/chung/examples/html/style.css",
+		"/home/chung/project/a.html",
+		"/home/chung/.config/sublime-text/Packages/User/xfce4-gcc-build.sublime-build",
+		"/home/chung/project/BDT_HSG12_TIN/diffsstr.cpp",
+		"/home/chung/project/BDT_HSG12_TIN/swap.cpp",
+		"/home/chung/.config/nvim/init.lua",
+		"/home/chung/project/LEH_HSG12_TIN_01/chotho.cpp",
+		"/home/chung/project/BDT_HSG12_TIN/average.cpp",
+		"/home/chung/.config/sublime-text/Packages/LSP-clangd/LSP-clangd.sublime-settings",
+		"/home/chung/.config/sublime-text/Packages/User/LSP-clangd.sublime-settings",
+		"/home/chung/.config/hypr/hyprland.conf",
+		"/home/chung/Downloads/user.js",
+		"/home/chung/.config/sublime-text/Packages/Default/Preferences.sublime-settings",
+		"/home/chung/.config/sublime-text/Packages/User/Preferences.sublime-settings",
+		"/home/chung/y",
+		"/home/chung/project/untilited.cpp",
+		"/home/chung/.themes/Flat-Remix-GTK-Blue-Darkest/index.theme",
+		"/home/chung/project/untilited.html",
+		"/home/chung/Downloads/FontPatcher/font-patcher",
+		"/home/chung/project/LB_HSG12_TIN_01/city.cpp",
+		"/home/chung/project/LB_HSG12_TIN_01/keyword.cpp",
+		"/home/chung/.config/sublime-text/Packages/LSP/LSP.sublime-settings",
+		"/home/chung/.config/sublime-text/Packages/User/LSP.sublime-settings",
+		"/home/chung/.config/sublime-text/Packages/User/Terminal.sublime-settings",
+		"/home/chung/.config/sublime-text/Packages/Terminal/Terminal.sublime-settings",
+		"/home/chung/project/string/b12_13.cpp",
+		"/home/chung/.config/gtk-4.0/gtk.css",
+		"/home/chung/.config/sublime-text/Packages/Terminal/Default (Linux).sublime-keymap",
+		"/home/chung/.config/sublime-text/Packages/User/Default (Linux).sublime-keymap",
+		"/home/chung/project/string/bai1.cpp",
+		"/home/chung/project/string/bai1234.cpp",
+		"/home/chung/project/string/b.cpp",
+		"/home/chung/project/string/a.cpp",
+		"/home/chung/project/depa/daysodacbiet.cpp",
+		"/home/chung/project/dekiemtraso3/revenue.cpp",
+		"/home/chung/project/dekiemtraso3/taxi.cpp",
+		"/home/chung/project/dekiemtraso3/ntoxoayvong.cpp",
+		"/home/chung/.gtkrc-2.0",
+		"/home/chung/project/bacly12/sum0.cpp",
+		"/home/chung/project/bacly11/summax.cpp",
+		"/home/chung/project/bacly12/last0.cpp",
+		"/home/chung/project/bacly11/number.cpp",
+		"/home/chung/project/bacly12/sum0",
+		"/home/chung/.config/waybar/config",
+		"/home/chung/.config/sublime-text/Packages/User/mydark.sublime-color-scheme",
+		"/home/chung/project/bacly11/nto.cpp",
+		"/home/chung/Documents/notification_policy.xml",
+		"/home/chung/Downloads/moon_global_images_OS1.0.7.0.UNTMIXM_14.0/images/MT6768_GL_Android_scatter.txt",
+		"/home/chung/Downloads/moon_global_images_OS1.0.7.0.UNTMIXM_14.0/flash_gen_md5_list.py",
+		"/home/chung/project/baikiemtra1/scpdep.cpp",
+		"/home/chung/project/baikiemtra1/sodep.cpp",
+		"/home/chung/project/baikiemtra1/matkhau.cpp",
+		"/home/chung/project/baikiemtra1/tongdoan.cpp",
+		"/tmp/xa-SSF9U2/tongdoan.out",
+		"/tmp/xa-SSF9U2/tongdoan.inp",
+		"/home/chung/project/baikiemtra1/tongdoan.",
+		"/tmp/xa-NMVJV2/cp.out",
+		"/tmp/xa-NMVJV2/CP.inp",
+		"/tmp/xa-M08IV2/sodep.inp",
+		"/tmp/xa-M08IV2/sodep.out",
+		"/home/chung/project/11102024/nhiphan.cpp",
+		"/home/chung/.config/sublime-text/Packages/Theme - Default/Default Dark.sublime-theme",
+		"/home/chung/.config/sublime-text/Packages/User/Default Dark.sublime-theme",
+		"/home/chung/.config/sublime-text/Packages/User/Freedom Dark.sublime-color-scheme",
+		"/home/chung/project/11102024/b9.cpp",
+		"/home/chung/project/11102024/b1235.cpp",
+		"/home/chung/Templates/home/chung/project/msl_ghep_nhom.cpp",
+		"/home/chung/untitled.cpp",
+		"/home/chung/project/11102024/b10.cpp",
+		"/home/chung/project/11102024/b7.cpp",
+		"/home/chung/project/11102024/b6.cpp",
+		"/home/chung/project/23102024/bol.cpp",
+		"/home/chung/project/23102024/b8.cpp",
+		"/home/chung/project/280924/b18.cpp",
+		"/home/chung/project/23102024/sole.cpp",
+		"/home/chung/project/23102024/demso.cpp",
+		"/home/chung/project/23102024/kieumol.cpp",
+		"/home/chung/.config/sublime-text/Packages/User/freopen.sublime-snippet",
+		"/home/chung/project/280924/bai5.cpp",
+		"/home/chung/project/280924/17.cpp",
+		"/home/chung/project/280924/snttuongduong.cpp",
+		"/home/chung/project/280924/b9.cpp",
+		"/home/chung/project/280924/b7.cpp",
+		"/home/chung/project/280924/b4.cpp",
+		"/home/chung/project/280924/b1+b2.cpp",
+		"/home/chung/project/stupid.cpp",
+		"/home/chung/project/280924/sochinh.cpp",
+		"/home/chung/project/digits.cpp",
+		"/home/chung/project/280924/leastcommonmultiple.cpp",
+		"/home/chung/project/100924/ucln_bcnn.cpp",
+		"/usr/include/x86_64-linux-gnu/c++/14/bits/stdc++.h",
+		"/home/chung/project/280924/all.cpp",
+		"/home/chung/project/280924/B1.CPP",
+		"/home/chung/project/test.cpp",
+		"/home/chung/.config/sublime-text/Packages/EasyClangComplete/EasyClangComplete.sublime-settings",
+		"/home/chung/.config/sublime-text/Packages/User/EasyClangComplete.sublime-settings",
+		"/home/chung/project/learning_dynamic_programming/all.cpp",
+		"/home/chung/project/sinhxaunhiphan.cpp",
+		"/home/chung/.config/sublime-text/Packages/Theme - Default/Adaptive.sublime-theme",
+		"/home/chung/.config/sublime-text/Packages/User/Adaptive.sublime-theme",
+		"/home/chung/.config/sublime-text/Packages/User/xfce4-clang-build.sublime-build",
+		"/home/chung/.config/sublime-text/Packages/User/ayu-dark.sublime-theme",
+		"/home/chung/.config/sublime-text/Packages/ayu/ayu-dark.sublime-theme",
+		"/home/chung/project/de1/tongso.cpp",
+		"/home/chung/project/de1/sohoanhao.cpp",
+		"/home/chung/project/de1/sothongke.cpp",
+		"/home/chung/project/de1/sochuso.cpp",
+		"/home/chung/.config/sublime-text/Packages/NeoVintageous/Preferences.sublime-settings",
+		"/home/chung/.config/sublime-text/Packages/User/Freedom Light.sublime-color-scheme",
+		"/home/chung/.config/sublime-text/Packages/LSP/language-ids.sublime-settings",
+		"/home/chung/.config/sublime-text/Packages/User/language-ids.sublime-settings",
+		"/home/chung/project/untitled.cpp",
+		"/home/chung/project/untitled.",
+		"/home/chung/project/baibuoi3/b8910.cpp",
+		"/home/chung/project/baibuoi3/sohoanhao.cpp",
+		"/home/chung/project/baibuoi3/binary.cpp",
+		"/home/chung/project/baibuoi3/b8910",
+		"/home/chung/project/100924/tongstnlientiep.cpp",
+		"/home/chung/project/100924/tongNso.cpp",
+		"/home/chung/project/msl_ghep_nhom.cpp",
+		"/home/chung/.themes/Chicago95/gtk-3.24/gtk-paned.css",
+		"/home/chung/.config/gtk-3.0/gtk.css",
+		"/home/chung/Downloads/styl_us-1.5.50/js/toolbox.js",
+		"/home/chung/Downloads/styl_us-1.5.50/manifest.json",
+		"/home/chung/Downloads/a.cpp",
+		"/usr/include/c++/14/iostream",
+		"/usr/include/c++/14/filesystem"
+	],
+	"folder_history":
+	[
+		"/home/chung/project",
+		"/home/chung/project/100924"
+	],
+	"last_version": 4180,
+	"last_window_id": 117,
+	"log_indexing": false,
+	"next_update_check": 1740014198,
+	"settings":
+	{
+		"new_window_full_screen": false,
+		"new_window_height": 768.0,
+		"new_window_maximized": true,
+		"new_window_position":
+		[
+			0.0,
+			29.0
+		],
+		"new_window_settings":
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"bacgr",
+						"background-color"
+					],
+					[
+						"in",
+						"input"
+					],
+					[
+						"ch",
+						"checkbox"
+					],
+					[
+						"t",
+						"type"
+					],
+					[
+						"i",
+						"input"
+					],
+					[
+						"ip",
+						"input"
+					],
+					[
+						"htm",
+						"html\thtml"
+					],
+					[
+						"a",
+						"a"
+					],
+					[
+						"for",
+						"form"
+					],
+					[
+						"fo",
+						"form"
+					],
+					[
+						"ht",
+						"html\thtml"
+					],
+					[
+						"cou",
+						"cout"
+					],
+					[
+						"b",
+						"begin"
+					],
+					[
+						"e",
+						"end"
+					],
+					[
+						"fi",
+						"find"
+					],
+					[
+						"min",
+						"min_element"
+					],
+					[
+						"max",
+						"max_element"
+					],
+					[
+						"tm",
+						"tmp"
+					],
+					[
+						"stri",
+						"string"
+					],
+					[
+						"p",
+						"push_back"
+					],
+					[
+						"isal",
+						"isalpha"
+					],
+					[
+						"so",
+						"sort"
+					],
+					[
+						"di",
+						"digitSum"
+					],
+					[
+						"string_",
+						"string_to_num"
+					],
+					[
+						"num",
+						"num_Word"
+					],
+					[
+						"pre",
+						"prev_permutation"
+					],
+					[
+						"permu",
+						"next_permutation"
+					],
+					[
+						"flo",
+						"floor"
+					],
+					[
+						"pos",
+						"pos_end"
+					],
+					[
+						"en",
+						"endl"
+					],
+					[
+						"temp_pos_",
+						"temp_pos_start"
+					],
+					[
+						"an",
+						"ans_pos"
+					],
+					[
+						"ans",
+						"ans_pos"
+					],
+					[
+						"tem",
+						"temp_sum"
+					],
+					[
+						"INT",
+						"INT8_MIN"
+					],
+					[
+						"std",
+						"stdc++.h>"
+					],
+					[
+						"ma",
+						"max_pos"
+					],
+					[
+						"In",
+						"INT_MIN"
+					],
+					[
+						"lllll",
+						"lllllllll"
+					],
+					[
+						"ll",
+						"llllllll"
+					],
+					[
+						"lon",
+						"LONG_LONG_MAX"
+					],
+					[
+						"IN",
+						"INT8_MAX"
+					],
+					[
+						"upp",
+						"upper_bound"
+					],
+					[
+						"si",
+						"sieve"
+					],
+					[
+						"to",
+						"tolower"
+					],
+					[
+						"els",
+						"else if"
+					],
+					[
+						"is",
+						"isdigit"
+					],
+					[
+						"s",
+						"second"
+					],
+					[
+						"map",
+						"map"
+					],
+					[
+						"strin",
+						"string"
+					],
+					[
+						"em",
+						"empty"
+					],
+					[
+						"sta",
+						"stack"
+					],
+					[
+						"de",
+						"define"
+					],
+					[
+						"def",
+						"define"
+					],
+					[
+						"ios",
+						"ios_base"
+					],
+					[
+						"usi",
+						"using namespace"
+					],
+					[
+						"us",
+						"using namespace"
+					],
+					[
+						"ti",
+						"title"
+					],
+					[
+						"bo",
+						"body"
+					],
+					[
+						"hTM",
+						"html"
+					],
+					[
+						"h",
+						"h6"
+					],
+					[
+						"bi",
+						"bits/"
+					],
+					[
+						"tmp",
+						"tmp3"
+					],
+					[
+						"if",
+						"if"
+					],
+					[
+						"st",
+						"stdin"
+					],
+					[
+						"fre",
+						"freopen"
+					],
+					[
+						"n",
+						"Inc\t#include <…>"
+					],
+					[
+						"cstd",
+						"cstdio>"
+					]
+				]
+			},
+			"build_system_choices":
+			[
+				[
+					[
+						[
+							"Packages/Makefile/Make.sublime-build",
+							""
+						],
+						[
+							"Packages/Makefile/Make.sublime-build",
+							"Clean"
+						]
+					],
+					[
+						"Packages/Makefile/Make.sublime-build",
+						""
+					]
+				],
+				[
+					[
+						[
+							"Packages/PHP/PHP.sublime-build",
+							""
+						],
+						[
+							"Packages/PHP/PHP.sublime-build",
+							"Syntax Check"
+						]
+					],
+					[
+						"Packages/PHP/PHP.sublime-build",
+						""
+					]
+				]
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"in",
+						"Package Control: Install Package"
+					],
+					[
+						"ins",
+						"Package Control: Install Package"
+					],
+					[
+						"col",
+						"UI: Select Color Scheme"
+					],
+					[
+						"lsp:",
+						"LSP: Format Selection"
+					],
+					[
+						"lsp:fo",
+						"LSP: Format File"
+					],
+					[
+						"lsp",
+						"LSP: Toggle Log Panel"
+					],
+					[
+						"cpp",
+						"Snippet: cppMainFile"
+					],
+					[
+						"re",
+						"Package Control: Remove Package"
+					],
+					[
+						"cp",
+						"Snippet: cppMainFile"
+					],
+					[
+						"ter",
+						"Preferences: Terminal Settings"
+					],
+					[
+						"lsp:se",
+						"LSP-clangd: Switch to Source/Header"
+					],
+					[
+						"up",
+						"Package Control: Upgrade Package"
+					],
+					[
+						"pa",
+						"Package Control: Satisfy Packages"
+					],
+					[
+						"pack",
+						"Package Control: List Packages"
+					],
+					[
+						"fre",
+						"Snippet: freopen"
+					],
+					[
+						"the",
+						"UI: Select Color Scheme"
+					],
+					[
+						"c",
+						"Snippet: cppMainFile"
+					],
+					[
+						"view",
+						"View: Toggle Menu"
+					],
+					[
+						"ena",
+						"Package Control: Enable Package"
+					],
+					[
+						"dis",
+						"Package Control: Disable Package"
+					],
+					[
+						"remo",
+						"Package Control: Remove Package"
+					],
+					[
+						"fr",
+						"Snippet: freopen"
+					],
+					[
+						"freop",
+						"Snippet: freopen"
+					],
+					[
+						"ui",
+						"UI: Select Color Scheme"
+					],
+					[
+						"setsyb",
+						"Set Syntax: Objective-C++"
+					],
+					[
+						"my",
+						"Set Syntax: OCamlyacc"
+					],
+					[
+						"i",
+						"Package Control: Install Package"
+					],
+					[
+						"rem",
+						"Package Control: Remove Package"
+					],
+					[
+						"side",
+						"View: Toggle Side Bar"
+					],
+					[
+						"neo",
+						"NeoVintageous: Toggle SUPER keys"
+					],
+					[
+						"th",
+						"UI: Select Theme"
+					],
+					[
+						"theme",
+						"UI: Select Color Scheme"
+					],
+					[
+						"",
+						"Bookmarks: Select All"
+					],
+					[
+						"te",
+						"Terminus Utilities: Generate User Theme"
+					],
+					[
+						"t",
+						"Terminus: Close All"
+					],
+					[
+						"C",
+						"Snippet: CppMainFile"
+					],
+					[
+						"Cpp",
+						"Snippet: CppMainFile"
+					],
+					[
+						"sn",
+						"Snippet: CppMainFile"
+					],
+					[
+						"ma",
+						"Snippet: CppMainFile"
+					],
+					[
+						"sni",
+						"Snippet: CppMainFile"
+					],
+					[
+						"m",
+						"Snippet: main()"
+					],
+					[
+						"insta",
+						"Package Control: Advanced Install Packages"
+					],
+					[
+						"colo",
+						"Colorsublime: Install Theme"
+					],
+					[
+						"Package Control: ",
+						"Package Control: Upgrade Package"
+					]
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 168.0,
+				"history":
+				[
+					"ls",
+					"print(\"1\")",
+					"1+1",
+					"ls",
+					"clear",
+					"reload"
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/home/chung/examples/html/baotuong.html",
+				"/home/chung/examples/html/style.css",
+				"/home/chung/project/a.html",
+				"/home/chung/.config/sublime-text/Packages/User/xfce4-gcc-build.sublime-build",
+				"/home/chung/project/BDT_HSG12_TIN/diffsstr.cpp",
+				"/home/chung/project/BDT_HSG12_TIN/swap.cpp",
+				"/home/chung/.config/nvim/init.lua",
+				"/home/chung/project/LEH_HSG12_TIN_01/chotho.cpp",
+				"/home/chung/project/BDT_HSG12_TIN/average.cpp",
+				"/home/chung/.config/hypr/hyprland.conf",
+				"/home/chung/Downloads/user.js",
+				"/home/chung/y",
+				"/home/chung/project/untilited.cpp",
+				"/home/chung/.themes/Flat-Remix-GTK-Blue-Darkest/index.theme",
+				"/home/chung/project/untilited.html",
+				"/home/chung/Downloads/FontPatcher/font-patcher",
+				"/home/chung/project/LB_HSG12_TIN_01/city.cpp",
+				"/home/chung/.config/sublime-text/Packages/User/LSP-clangd.sublime-settings",
+				"/home/chung/.config/sublime-text/Packages/LSP-clangd/LSP-clangd.sublime-settings",
+				"/home/chung/project/LB_HSG12_TIN_01/keyword.cpp",
+				"/home/chung/.config/gtk-4.0/gtk.css",
+				"/home/chung/project/string/bai1.cpp",
+				"/home/chung/project/string/b12_13.cpp",
+				"/home/chung/project/string/bai1234.cpp",
+				"/home/chung/project/string/b.cpp",
+				"/home/chung/project/string/a.cpp",
+				"/home/chung/project/depa/daysodacbiet.cpp",
+				"/home/chung/project/dekiemtraso3/revenue.cpp",
+				"/home/chung/project/dekiemtraso3/taxi.cpp",
+				"/home/chung/project/dekiemtraso3/ntoxoayvong.cpp",
+				"/home/chung/.gtkrc-2.0",
+				"/home/chung/project/bacly12/sum0.cpp",
+				"/home/chung/project/bacly11/summax.cpp",
+				"/home/chung/project/bacly12/last0.cpp",
+				"/home/chung/project/bacly11/number.cpp",
+				"/home/chung/project/bacly12/sum0",
+				"/home/chung/.config/waybar/config",
+				"/home/chung/.config/sublime-text/Packages/Default/Preferences.sublime-settings",
+				"/home/chung/.config/sublime-text/Packages/User/Preferences.sublime-settings",
+				"/home/chung/project/bacly11/nto.cpp",
+				"/home/chung/Documents/notification_policy.xml",
+				"/home/chung/Downloads/moon_global_images_OS1.0.7.0.UNTMIXM_14.0/images/MT6768_GL_Android_scatter.txt",
+				"/home/chung/Downloads/moon_global_images_OS1.0.7.0.UNTMIXM_14.0/flash_gen_md5_list.py",
+				"/home/chung/project/baikiemtra1/scpdep.cpp",
+				"/home/chung/project/baikiemtra1/sodep.cpp",
+				"/home/chung/project/baikiemtra1/matkhau.cpp",
+				"/home/chung/project/baikiemtra1/tongdoan.cpp",
+				"/tmp/xa-SSF9U2/tongdoan.out",
+				"/tmp/xa-SSF9U2/tongdoan.inp",
+				"/home/chung/project/baikiemtra1/tongdoan.",
+				"/tmp/xa-NMVJV2/cp.out",
+				"/tmp/xa-NMVJV2/CP.inp",
+				"/tmp/xa-M08IV2/sodep.inp",
+				"/tmp/xa-M08IV2/sodep.out",
+				"/home/chung/project/11102024/nhiphan.cpp",
+				"/home/chung/project/11102024/b9.cpp",
+				"/home/chung/project/11102024/b1235.cpp",
+				"/home/chung/Templates/home/chung/project/msl_ghep_nhom.cpp",
+				"/home/chung/untitled.cpp",
+				"/home/chung/project/11102024/b10.cpp",
+				"/home/chung/project/11102024/b7.cpp",
+				"/home/chung/project/11102024/b6.cpp",
+				"/home/chung/project/23102024/bol.cpp",
+				"/home/chung/project/23102024/b8.cpp",
+				"/home/chung/project/280924/b18.cpp",
+				"/home/chung/project/23102024/sole.cpp",
+				"/home/chung/project/23102024/demso.cpp",
+				"/home/chung/project/23102024/kieumol.cpp",
+				"/home/chung/.config/sublime-text/Packages/User/freopen.sublime-snippet",
+				"/home/chung/project/280924/bai5.cpp",
+				"/home/chung/project/280924/17.cpp",
+				"/home/chung/project/280924/snttuongduong.cpp",
+				"/home/chung/project/280924/b9.cpp",
+				"/home/chung/project/280924/b7.cpp",
+				"/home/chung/project/280924/b4.cpp",
+				"/home/chung/project/280924/b1+b2.cpp",
+				"/home/chung/project/stupid.cpp",
+				"/home/chung/project/280924/sochinh.cpp",
+				"/home/chung/project/digits.cpp",
+				"/home/chung/project/280924/leastcommonmultiple.cpp",
+				"/home/chung/project/100924/ucln_bcnn.cpp",
+				"/usr/include/x86_64-linux-gnu/c++/14/bits/stdc++.h",
+				"/home/chung/project/280924/all.cpp",
+				"/home/chung/project/280924/B1.CPP",
+				"/home/chung/project/test.cpp",
+				"/home/chung/.config/sublime-text/Packages/EasyClangComplete/EasyClangComplete.sublime-settings",
+				"/home/chung/.config/sublime-text/Packages/User/EasyClangComplete.sublime-settings",
+				"/home/chung/project/learning_dynamic_programming/all.cpp",
+				"/home/chung/project/sinhxaunhiphan.cpp",
+				"/home/chung/.config/sublime-text/Packages/User/Freedom Dark.sublime-color-scheme",
+				"/home/chung/.config/sublime-text/Packages/User/xfce4-clang-build.sublime-build",
+				"/home/chung/project/de1/tongso.cpp",
+				"/home/chung/project/de1/sohoanhao.cpp",
+				"/home/chung/project/de1/sothongke.cpp",
+				"/home/chung/project/de1/sochuso.cpp",
+				"/home/chung/project/untitled.cpp",
+				"/home/chung/project/untitled.",
+				"/home/chung/project/baibuoi3/b8910.cpp",
+				"/home/chung/project/baibuoi3/sohoanhao.cpp",
+				"/home/chung/project/baibuoi3/binary.cpp",
+				"/home/chung/project/baibuoi3/b8910",
+				"/home/chung/project/100924/tongstnlientiep.cpp",
+				"/home/chung/project/100924/tongNso.cpp",
+				"/home/chung/project/msl_ghep_nhom.cpp",
+				"/home/chung/.themes/Chicago95/gtk-3.24/gtk-paned.css",
+				"/home/chung/.config/gtk-3.0/gtk.css",
+				"/home/chung/Downloads/styl_us-1.5.50/js/toolbox.js",
+				"/home/chung/Downloads/styl_us-1.5.50/manifest.json",
+				"/home/chung/Downloads/a.cpp",
+				"/home/chung/.config/sublime-text/Packages/User/LSP.sublime-settings",
+				"/usr/include/c++/14/iostream",
+				"/usr/include/c++/14/filesystem",
+				"/msl_ghep_nhom.cpp",
+				"/home/chung/.config/sublime-text/Packages/User/mycppmain.sublime-snippet",
+				"/home/chung/.config/sublime-text/Packages/User/MyAdaptiveTheme.sublime-theme",
+				"/home/chung/.config/sublime-text/Packages/User/MyAdaptiveTheme.tmTheme",
+				"/home/chung/.config/sublime-text/Packages/User/mydarkk.sublime-theme",
+				"/home/chung/project/100924/toantu.cpp",
+				"/usr/share/applications/thunar.desktop",
+				"/home/chung/project/100924/ptb2.cpp",
+				"/home/chung/project/100924/2.cpp",
+				"/home/chung/.config/fontconfig/fonts.conf",
+				"/home/chung/project/100924/1.cpp",
+				"/home/chung/project/html/a.html",
+				"/home/chung/.config/sublime-text/Packages/User/brave.sublime-build",
+				"/home/chung/.config/sublime-text/Packages/xfce4-clang-build.sublime-build",
+				"/home/chung/.config/sublime-text/Packages/xfce4-gcc-build.sublime-build",
+				"/home/chung/.config/sublime-text/Packages/User/Context.sublime-menu"
+			],
+			"find":
+			{
+				"height": 31.0
+			},
+			"find_in_files":
+			{
+				"height": 217.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"TAO"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"scrollbar_highlights": true,
+				"show_context": true,
+				"use_buffer2": true,
+				"use_gitignore": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"incremental_find":
+			{
+				"height": 31.0
+			},
+			"input":
+			{
+				"height": 116.0
+			},
+			"menu_visible": true,
+			"output.Command-line":
+			{
+				"height": 138.0
+			},
+			"output.LSP Log Panel":
+			{
+				"height": 180.0
+			},
+			"output.diagnostics":
+			{
+				"height": 150.0
+			},
+			"output.exec":
+			{
+				"height": 172.0
+			},
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"output.mdpopups":
+			{
+				"height": 0.0
+			},
+			"output.mdpopups-dummy":
+			{
+				"height": 0.0
+			},
+			"pinned_build_system": "Packages/User/xfce4-gcc-build.sublime-build",
+			"replace":
+			{
+				"height": 58.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"",
+						"~/project/untilited.cpp"
+					]
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 485.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 368.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"show_minimap": false,
+			"show_open_files": true,
+			"show_tabs": true,
+			"side_bar_visible": false,
+			"side_bar_width": 84.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			}
+		},
+		"new_window_width": 1366.0
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"bacgr",
+						"background-color"
+					],
+					[
+						"in",
+						"input"
+					],
+					[
+						"ch",
+						"checkbox"
+					],
+					[
+						"t",
+						"type"
+					],
+					[
+						"i",
+						"input"
+					],
+					[
+						"ip",
+						"input"
+					],
+					[
+						"htm",
+						"html\thtml"
+					],
+					[
+						"a",
+						"a"
+					],
+					[
+						"for",
+						"form"
+					],
+					[
+						"fo",
+						"form"
+					],
+					[
+						"ht",
+						"html\thtml"
+					],
+					[
+						"cou",
+						"cout"
+					],
+					[
+						"b",
+						"begin"
+					],
+					[
+						"e",
+						"end"
+					],
+					[
+						"fi",
+						"find"
+					],
+					[
+						"min",
+						"min_element"
+					],
+					[
+						"max",
+						"max_element"
+					],
+					[
+						"tm",
+						"tmp"
+					],
+					[
+						"stri",
+						"string"
+					],
+					[
+						"p",
+						"push_back"
+					],
+					[
+						"isal",
+						"isalpha"
+					],
+					[
+						"so",
+						"sort"
+					],
+					[
+						"di",
+						"digitSum"
+					],
+					[
+						"string_",
+						"string_to_num"
+					],
+					[
+						"num",
+						"num_Word"
+					],
+					[
+						"pre",
+						"prev_permutation"
+					],
+					[
+						"permu",
+						"next_permutation"
+					],
+					[
+						"flo",
+						"floor"
+					],
+					[
+						"pos",
+						"pos_end"
+					],
+					[
+						"en",
+						"endl"
+					],
+					[
+						"temp_pos_",
+						"temp_pos_start"
+					],
+					[
+						"an",
+						"ans_pos"
+					],
+					[
+						"ans",
+						"ans_pos"
+					],
+					[
+						"tem",
+						"temp_sum"
+					],
+					[
+						"INT",
+						"INT8_MIN"
+					],
+					[
+						"std",
+						"stdc++.h>"
+					],
+					[
+						"ma",
+						"max_pos"
+					],
+					[
+						"In",
+						"INT_MIN"
+					],
+					[
+						"lllll",
+						"lllllllll"
+					],
+					[
+						"ll",
+						"llllllll"
+					],
+					[
+						"lon",
+						"LONG_LONG_MAX"
+					],
+					[
+						"IN",
+						"INT8_MAX"
+					],
+					[
+						"upp",
+						"upper_bound"
+					],
+					[
+						"si",
+						"sieve"
+					],
+					[
+						"to",
+						"tolower"
+					],
+					[
+						"els",
+						"else if"
+					],
+					[
+						"is",
+						"isdigit"
+					],
+					[
+						"s",
+						"second"
+					],
+					[
+						"map",
+						"map"
+					],
+					[
+						"strin",
+						"string"
+					],
+					[
+						"em",
+						"empty"
+					],
+					[
+						"sta",
+						"stack"
+					],
+					[
+						"de",
+						"define"
+					],
+					[
+						"def",
+						"define"
+					],
+					[
+						"ios",
+						"ios_base"
+					],
+					[
+						"usi",
+						"using namespace"
+					],
+					[
+						"us",
+						"using namespace"
+					],
+					[
+						"ti",
+						"title"
+					],
+					[
+						"bo",
+						"body"
+					],
+					[
+						"hTM",
+						"html"
+					],
+					[
+						"h",
+						"h6"
+					],
+					[
+						"bi",
+						"bits/"
+					],
+					[
+						"tmp",
+						"tmp3"
+					],
+					[
+						"if",
+						"if"
+					],
+					[
+						"st",
+						"stdin"
+					],
+					[
+						"fre",
+						"freopen"
+					],
+					[
+						"n",
+						"Inc\t#include <…>"
+					],
+					[
+						"cstd",
+						"cstdio>"
+					]
+				]
+			},
+			"buffers":
+			[
+			],
+			"build_system": "",
+			"build_system_choices":
+			[
+				[
+					[
+						[
+							"Packages/Makefile/Make.sublime-build",
+							""
+						],
+						[
+							"Packages/Makefile/Make.sublime-build",
+							"Clean"
+						]
+					],
+					[
+						"Packages/Makefile/Make.sublime-build",
+						""
+					]
+				],
+				[
+					[
+						[
+							"Packages/PHP/PHP.sublime-build",
+							""
+						],
+						[
+							"Packages/PHP/PHP.sublime-build",
+							"Syntax Check"
+						]
+					],
+					[
+						"Packages/PHP/PHP.sublime-build",
+						""
+					]
+				]
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"in",
+						"Package Control: Install Package"
+					],
+					[
+						"ins",
+						"Package Control: Install Package"
+					],
+					[
+						"col",
+						"UI: Select Color Scheme"
+					],
+					[
+						"lsp:",
+						"LSP: Format Selection"
+					],
+					[
+						"lsp:fo",
+						"LSP: Format File"
+					],
+					[
+						"lsp",
+						"LSP: Toggle Log Panel"
+					],
+					[
+						"cpp",
+						"Snippet: cppMainFile"
+					],
+					[
+						"re",
+						"Package Control: Remove Package"
+					],
+					[
+						"cp",
+						"Snippet: cppMainFile"
+					],
+					[
+						"ter",
+						"Preferences: Terminal Settings"
+					],
+					[
+						"lsp:se",
+						"LSP-clangd: Switch to Source/Header"
+					],
+					[
+						"up",
+						"Package Control: Upgrade Package"
+					],
+					[
+						"pa",
+						"Package Control: Satisfy Packages"
+					],
+					[
+						"pack",
+						"Package Control: List Packages"
+					],
+					[
+						"fre",
+						"Snippet: freopen"
+					],
+					[
+						"the",
+						"UI: Select Color Scheme"
+					],
+					[
+						"c",
+						"Snippet: cppMainFile"
+					],
+					[
+						"view",
+						"View: Toggle Menu"
+					],
+					[
+						"ena",
+						"Package Control: Enable Package"
+					],
+					[
+						"dis",
+						"Package Control: Disable Package"
+					],
+					[
+						"remo",
+						"Package Control: Remove Package"
+					],
+					[
+						"fr",
+						"Snippet: freopen"
+					],
+					[
+						"freop",
+						"Snippet: freopen"
+					],
+					[
+						"ui",
+						"UI: Select Color Scheme"
+					],
+					[
+						"setsyb",
+						"Set Syntax: Objective-C++"
+					],
+					[
+						"my",
+						"Set Syntax: OCamlyacc"
+					],
+					[
+						"i",
+						"Package Control: Install Package"
+					],
+					[
+						"rem",
+						"Package Control: Remove Package"
+					],
+					[
+						"side",
+						"View: Toggle Side Bar"
+					],
+					[
+						"neo",
+						"NeoVintageous: Toggle SUPER keys"
+					],
+					[
+						"th",
+						"UI: Select Theme"
+					],
+					[
+						"theme",
+						"UI: Select Color Scheme"
+					],
+					[
+						"",
+						"Bookmarks: Select All"
+					],
+					[
+						"te",
+						"Terminus Utilities: Generate User Theme"
+					],
+					[
+						"t",
+						"Terminus: Close All"
+					],
+					[
+						"C",
+						"Snippet: CppMainFile"
+					],
+					[
+						"Cpp",
+						"Snippet: CppMainFile"
+					],
+					[
+						"sn",
+						"Snippet: CppMainFile"
+					],
+					[
+						"ma",
+						"Snippet: CppMainFile"
+					],
+					[
+						"sni",
+						"Snippet: CppMainFile"
+					],
+					[
+						"m",
+						"Snippet: main()"
+					],
+					[
+						"insta",
+						"Package Control: Advanced Install Packages"
+					],
+					[
+						"colo",
+						"Colorsublime: Install Theme"
+					],
+					[
+						"Package Control: ",
+						"Package Control: Upgrade Package"
+					]
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 168.0,
+				"history":
+				[
+					"ls",
+					"print(\"1\")",
+					"1+1",
+					"ls",
+					"clear",
+					"reload"
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/home/chung/examples/html/baotuong.html",
+				"/home/chung/examples/html/style.css",
+				"/home/chung/project/a.html",
+				"/home/chung/.config/sublime-text/Packages/User/xfce4-gcc-build.sublime-build",
+				"/home/chung/project/BDT_HSG12_TIN/diffsstr.cpp",
+				"/home/chung/project/BDT_HSG12_TIN/swap.cpp",
+				"/home/chung/.config/nvim/init.lua",
+				"/home/chung/project/LEH_HSG12_TIN_01/chotho.cpp",
+				"/home/chung/project/BDT_HSG12_TIN/average.cpp",
+				"/home/chung/.config/hypr/hyprland.conf",
+				"/home/chung/Downloads/user.js",
+				"/home/chung/y",
+				"/home/chung/project/untilited.cpp",
+				"/home/chung/.themes/Flat-Remix-GTK-Blue-Darkest/index.theme",
+				"/home/chung/project/untilited.html",
+				"/home/chung/Downloads/FontPatcher/font-patcher",
+				"/home/chung/project/LB_HSG12_TIN_01/city.cpp",
+				"/home/chung/.config/sublime-text/Packages/User/LSP-clangd.sublime-settings",
+				"/home/chung/.config/sublime-text/Packages/LSP-clangd/LSP-clangd.sublime-settings",
+				"/home/chung/project/LB_HSG12_TIN_01/keyword.cpp",
+				"/home/chung/.config/gtk-4.0/gtk.css",
+				"/home/chung/project/string/bai1.cpp",
+				"/home/chung/project/string/b12_13.cpp",
+				"/home/chung/project/string/bai1234.cpp",
+				"/home/chung/project/string/b.cpp",
+				"/home/chung/project/string/a.cpp",
+				"/home/chung/project/depa/daysodacbiet.cpp",
+				"/home/chung/project/dekiemtraso3/revenue.cpp",
+				"/home/chung/project/dekiemtraso3/taxi.cpp",
+				"/home/chung/project/dekiemtraso3/ntoxoayvong.cpp",
+				"/home/chung/.gtkrc-2.0",
+				"/home/chung/project/bacly12/sum0.cpp",
+				"/home/chung/project/bacly11/summax.cpp",
+				"/home/chung/project/bacly12/last0.cpp",
+				"/home/chung/project/bacly11/number.cpp",
+				"/home/chung/project/bacly12/sum0",
+				"/home/chung/.config/waybar/config",
+				"/home/chung/.config/sublime-text/Packages/Default/Preferences.sublime-settings",
+				"/home/chung/.config/sublime-text/Packages/User/Preferences.sublime-settings",
+				"/home/chung/project/bacly11/nto.cpp",
+				"/home/chung/Documents/notification_policy.xml",
+				"/home/chung/Downloads/moon_global_images_OS1.0.7.0.UNTMIXM_14.0/images/MT6768_GL_Android_scatter.txt",
+				"/home/chung/Downloads/moon_global_images_OS1.0.7.0.UNTMIXM_14.0/flash_gen_md5_list.py",
+				"/home/chung/project/baikiemtra1/scpdep.cpp",
+				"/home/chung/project/baikiemtra1/sodep.cpp",
+				"/home/chung/project/baikiemtra1/matkhau.cpp",
+				"/home/chung/project/baikiemtra1/tongdoan.cpp",
+				"/tmp/xa-SSF9U2/tongdoan.out",
+				"/tmp/xa-SSF9U2/tongdoan.inp",
+				"/home/chung/project/baikiemtra1/tongdoan.",
+				"/tmp/xa-NMVJV2/cp.out",
+				"/tmp/xa-NMVJV2/CP.inp",
+				"/tmp/xa-M08IV2/sodep.inp",
+				"/tmp/xa-M08IV2/sodep.out",
+				"/home/chung/project/11102024/nhiphan.cpp",
+				"/home/chung/project/11102024/b9.cpp",
+				"/home/chung/project/11102024/b1235.cpp",
+				"/home/chung/Templates/home/chung/project/msl_ghep_nhom.cpp",
+				"/home/chung/untitled.cpp",
+				"/home/chung/project/11102024/b10.cpp",
+				"/home/chung/project/11102024/b7.cpp",
+				"/home/chung/project/11102024/b6.cpp",
+				"/home/chung/project/23102024/bol.cpp",
+				"/home/chung/project/23102024/b8.cpp",
+				"/home/chung/project/280924/b18.cpp",
+				"/home/chung/project/23102024/sole.cpp",
+				"/home/chung/project/23102024/demso.cpp",
+				"/home/chung/project/23102024/kieumol.cpp",
+				"/home/chung/.config/sublime-text/Packages/User/freopen.sublime-snippet",
+				"/home/chung/project/280924/bai5.cpp",
+				"/home/chung/project/280924/17.cpp",
+				"/home/chung/project/280924/snttuongduong.cpp",
+				"/home/chung/project/280924/b9.cpp",
+				"/home/chung/project/280924/b7.cpp",
+				"/home/chung/project/280924/b4.cpp",
+				"/home/chung/project/280924/b1+b2.cpp",
+				"/home/chung/project/stupid.cpp",
+				"/home/chung/project/280924/sochinh.cpp",
+				"/home/chung/project/digits.cpp",
+				"/home/chung/project/280924/leastcommonmultiple.cpp",
+				"/home/chung/project/100924/ucln_bcnn.cpp",
+				"/usr/include/x86_64-linux-gnu/c++/14/bits/stdc++.h",
+				"/home/chung/project/280924/all.cpp",
+				"/home/chung/project/280924/B1.CPP",
+				"/home/chung/project/test.cpp",
+				"/home/chung/.config/sublime-text/Packages/EasyClangComplete/EasyClangComplete.sublime-settings",
+				"/home/chung/.config/sublime-text/Packages/User/EasyClangComplete.sublime-settings",
+				"/home/chung/project/learning_dynamic_programming/all.cpp",
+				"/home/chung/project/sinhxaunhiphan.cpp",
+				"/home/chung/.config/sublime-text/Packages/User/Freedom Dark.sublime-color-scheme",
+				"/home/chung/.config/sublime-text/Packages/User/xfce4-clang-build.sublime-build",
+				"/home/chung/project/de1/tongso.cpp",
+				"/home/chung/project/de1/sohoanhao.cpp",
+				"/home/chung/project/de1/sothongke.cpp",
+				"/home/chung/project/de1/sochuso.cpp",
+				"/home/chung/project/untitled.cpp",
+				"/home/chung/project/untitled.",
+				"/home/chung/project/baibuoi3/b8910.cpp",
+				"/home/chung/project/baibuoi3/sohoanhao.cpp",
+				"/home/chung/project/baibuoi3/binary.cpp",
+				"/home/chung/project/baibuoi3/b8910",
+				"/home/chung/project/100924/tongstnlientiep.cpp",
+				"/home/chung/project/100924/tongNso.cpp",
+				"/home/chung/project/msl_ghep_nhom.cpp",
+				"/home/chung/.themes/Chicago95/gtk-3.24/gtk-paned.css",
+				"/home/chung/.config/gtk-3.0/gtk.css",
+				"/home/chung/Downloads/styl_us-1.5.50/js/toolbox.js",
+				"/home/chung/Downloads/styl_us-1.5.50/manifest.json",
+				"/home/chung/Downloads/a.cpp",
+				"/home/chung/.config/sublime-text/Packages/User/LSP.sublime-settings",
+				"/usr/include/c++/14/iostream",
+				"/usr/include/c++/14/filesystem",
+				"/msl_ghep_nhom.cpp",
+				"/home/chung/.config/sublime-text/Packages/User/mycppmain.sublime-snippet",
+				"/home/chung/.config/sublime-text/Packages/User/MyAdaptiveTheme.sublime-theme",
+				"/home/chung/.config/sublime-text/Packages/User/MyAdaptiveTheme.tmTheme",
+				"/home/chung/.config/sublime-text/Packages/User/mydarkk.sublime-theme",
+				"/home/chung/project/100924/toantu.cpp",
+				"/usr/share/applications/thunar.desktop",
+				"/home/chung/project/100924/ptb2.cpp",
+				"/home/chung/project/100924/2.cpp",
+				"/home/chung/.config/fontconfig/fonts.conf",
+				"/home/chung/project/100924/1.cpp",
+				"/home/chung/project/html/a.html",
+				"/home/chung/.config/sublime-text/Packages/User/brave.sublime-build",
+				"/home/chung/.config/sublime-text/Packages/xfce4-clang-build.sublime-build",
+				"/home/chung/.config/sublime-text/Packages/xfce4-gcc-build.sublime-build",
+				"/home/chung/.config/sublime-text/Packages/User/Context.sublime-menu"
+			],
+			"find":
+			{
+				"height": 31.0
+			},
+			"find_in_files":
+			{
+				"height": 217.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"TAO"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"scrollbar_highlights": true,
+				"show_context": true,
+				"use_buffer2": true,
+				"use_gitignore": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"groups":
+			[
+				{
+					"sheets":
+					[
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 31.0
+			},
+			"input":
+			{
+				"height": 116.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"output.Command-line":
+			{
+				"height": 138.0
+			},
+			"output.LSP Log Panel":
+			{
+				"height": 180.0
+			},
+			"output.diagnostics":
+			{
+				"height": 150.0
+			},
+			"output.exec":
+			{
+				"height": 172.0
+			},
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"output.mdpopups":
+			{
+				"height": 0.0
+			},
+			"output.mdpopups-dummy":
+			{
+				"height": 0.0
+			},
+			"pinned_build_system": "Packages/User/xfce4-gcc-build.sublime-build",
+			"position": "0,1,0,0,0,0,0,1354,726,1366,768,0",
+			"project": "",
+			"replace":
+			{
+				"height": 58.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"",
+						"~/project/untilited.cpp"
+					]
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 485.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 368.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"selected_group": 0,
+			"settings":
+			{
+				"lsp_show_code_lens": true,
+				"lsp_show_hover_popups": true,
+				"lsp_show_inlay_hints": false
+			},
+			"show_minimap": false,
+			"show_open_files": true,
+			"show_tabs": true,
+			"side_bar_visible": false,
+			"side_bar_width": 84.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			},
+			"window_id": 111,
+			"workspace_name": ""
+		}
+	],
+	"workspaces":
+	{
+		"recent_workspaces":
+		[
+		]
+	}
+}

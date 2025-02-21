@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[
+freopen("$1.inp", "r", stdin);
+freopen("$1.out", "w", stdout);
+]]></content>
+</snippet>
