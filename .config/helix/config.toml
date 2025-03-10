@@ -1,5 +1,29 @@
+theme = "base16_transparent"
+
 [editor]
 line-number = "relative"
+bufferline = "multiple"
+end-of-line-diagnostics = "hint"
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.lsp]
+auto-signature-help = false
+display-messages = true
+
+[editor.statusline]
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+separator = "│"
 
 [keys.normal]
-C-s = ":fmt"
+A-s = ":fmt"
+"A-," = "goto_previous_buffer"
+"A-." = "goto_next_buffer"
+"A-w" = ":buffer-close"
+"A-/" = "repeat_last_motion"
+"-" = "file_picker_in_current_buffer_directory"
