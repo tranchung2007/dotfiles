@@ -8,27 +8,27 @@
 ################
 ### MONITORS ###
 ################
-monitor = , preferred, auto, 1
+monitor=,preferred,auto,auto
 
 ###################
 ### MY PROGRAMS ###
 ###################
 
-# Set programs that i use
-$terminal = kitty -1
+# Set programs that you use
+$terminal = kitty
 $fileManager = thunar
 $menu = wofi --show drun
 $hyprshade = hyprshade on vibrance 
 $launcher = ~/.config/rofi/launchers/type-3/launcher.sh
-$wallpaper = swaybg -m fill -i ~/.config/wallpaper/white-and-black-penguin.jpeg
+$wallpaper = swaybg -m fill -i .config/wallpaper/Linux-user-Room1.jpg
 $mouse = gsettings set  org.gnome.desktop.interface cursor-theme 'Adwaita'
-$dbus = dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
-
 #################
 ### AUTOSTART ###
 #################
 
-exec-once = $hyprshade & waybar & swaync & $wallpaper & $mouse & $dbus
+# Autostart necessary processes (like notifications daemons, status bars, etc.)
+# Or execute your favorite apps at launch like this:
+exec-once = $hyprshade & waybar & swaync & $wallpaper & $mouse
 
 #############################
 ### ENVIRONMENT VARIABLES ###
@@ -43,17 +43,18 @@ env = QT_AUTO_SCREEN_SCALE_FACTOR,1
 env = QT_QPA_PLATFORM,wayland;xcb
 env = QT_WAYLAND_DISABLE_WINDOWDECORATION,1
 env = QT_QPA_PLATFORMTHEME,qt6ct
-env = LIBVA_DRIVER_NAME,i915 #my gpu driver
+env = LIBVA_DRIVER_NAME,i965 #my gpu driver
 env = QT_QPA_PLATFORM,wayland;xcb
 env = SDL_VIDEODRIVER,wayland
 env = CLUTTER_BACKEND,wayland
+env = WLR_DRM_NO_ATOMIC,1
 env = HYPRLAND_NO_RT,1
 env = HYPRLAND_NO_SD_VARS,1
 env = HYPRLAND_NO_SD_NOTIFY,1
-# env = AQ_NO_MODIFIERS,2
-# env = AQ_MGPU_NO_EXPLICIT,1
+env = AQ_NO_MODIFIERS,2
+env = AQ_MGPU_NO_EXPLICIT,1
 env = GDK_BACKEND,wayland,x11,*
-env = SDL_VIDEODRIVER,wayland
+env = SDL_VIDEODRIVER,wayland 
 env = CLUTTER_BACKEND,wayland
 
 #####################
@@ -61,52 +62,56 @@ env = CLUTTER_BACKEND,wayland
 #####################
 
 general {
-    gaps_in = 0
-    gaps_out = 1
+    gaps_in = 4
+    gaps_out = 5.5
     border_size = 1
-	col.inactive_border = rgba(282a36aa) 
-    col.active_border = rgba(bd93f9ee) rgba(bd93f9b0) rgba(282a36b0) rgba(bd93f9ee) 45deg
+    #col.active_border = rgba(33ccffee) rgba(00ff99ee) 45deg
+    #col.inactive_border = rgba(595959aa)
+	col.inactive_border = rgba(6a9589b0) 
+    col.active_border = rgba(dcd7baee) rgba(957fb8b0) rgba(957fb8b0) rgba(dcd7baee) 45deg
+    # Set to true enable resizing windows by clicking and dragging on borders and gaps
     resize_on_border = true
-    # allow_tearing = true
+    allow_tearing = false
+
     layout = dwindle
 }
 
 decoration {
     rounding = 0
+    # Change transparency of focused and unfocused windows
     active_opacity = 1.0
     inactive_opacity = 1.0
     shadow {
-		enabled=false
+	enabled=false
     }
     blur {
         enabled = false
     }
 }
 animations { 
-	enabled = no
-	first_launch_animation = false
-	$interval=5
-	$curve=easeOut
-	# bezier=NAME,X0,Y0,X1ou,Y1
-	bezier = default, 0, 1, 0, 1
-	bezier = wind, 0.05, 0.7, 0.1, 1
-	bezier = winIn, 0.1, 1, 0.1, 1
-	bezier = winOut, 0.3, 1, 0, 1
-	bezier = linear, 1, 1, 1, 1
-	bezier = easeOut, 0.16, 1, 0.3, 1
-	# animation=NAME,ONOFF,SPEED,CURVE,STYLE
-	animation = windows, 1, 5, wind, slide
-	animation = windowsIn, 1, $interval, $curve, slide
-	animation = windowsOut, 1, $interval, $curve, slide
-	animation = windowsMove, 1, $interval, $curve, slide
-	animation = border, 0, 1, linear
-	animation = borderangle, 0, 180, linear, loop #used by rainbow borders and rotating colors
-	animation = fade, 1, 10, default
-	animation = workspaces, 1,5, $curve, slide
+  enabled = no
+  $interval=5
+  $curve=easeOut
+  # bezier=NAME,X0,Y0,X1ou,Y1
+  bezier = default, 0, 1, 0, 1
+  bezier = wind, 0.05, 0.7, 0.1, 1
+  bezier = winIn, 0.1, 1, 0.1, 1
+  bezier = winOut, 0.3, 1, 0, 1
+  bezier = linear, 1, 1, 1, 1
+  bezier = easeOut, 0.16, 1, 0.3, 1
+  # animation=NAME,ONOFF,SPEED,CURVE,STYLE
+  animation = windows, 1, 5, wind, slide
+  animation = windowsIn, 1, $interval, $curve, slide
+  animation = windowsOut, 1, $interval, $curve, slide
+  animation = windowsMove, 1, $interval, $curve, slide
+  animation = border, 0, 1, linear
+  animation = borderangle, 0, 180, linear, loop #used by rainbow borders and rotating colors
+  animation = fade, 1, 10, default
+  animation = workspaces, 1,5, $curve, slide
 
-	animation = layers, 1, 5, $curve, slide
-	animation = layersIn, 1, 5, default, slide
-	animation = layersOut, 1, 5, default, slide
+  animation = layers, 1, 5, $curve, slide
+  animation = layersIn, 1, 5, default, slide
+  animation = layersOut, 1, 5, default, slide
 }
 
 dwindle {
@@ -123,9 +128,7 @@ misc {
     force_default_wallpaper = 0 # Set to 0 or 1 to disable the anime mascot wallpapers
     disable_hyprland_logo = true # If true disables the random hyprland logo / anime girl background. :(
     disable_splash_rendering = true
-	render_ahead_safezone = 0
     render_unfocused_fps = 10
-	vfr = true
 }
 
 #############
@@ -141,12 +144,8 @@ input {
     
     follow_mouse = 1
     repeat_rate= 70
-    repeat_delay = 300
-    sensitivity = 0.65 # -1.0 - 1.0, 0 means no modification.
-	special_fallthrough = true
-	
-	accel_profile = custom
-	scroll_points = 2 2
+    repeat_delay= 300
+    sensitivity = 0.6 # -1.0 - 1.0, 0 means no modification.
 
     touchpad {
         natural_scroll = false
@@ -171,12 +170,11 @@ $mainMod = SUPER # Sets "Windows" key as main modifier
 
 bind = $mainMod, Q, exec, $terminal
 bind = $mainMod, C, killactive,
-bind = $mainMod SHIFT, C, exec, hyprctl kill # kill unresponding windows
+bind = $mainMod SHIFT, C, exec, hyprctl kill # kill unrespondingwindows
 bind = $mainMod SHIFT, code:119, exit,
 bind = $mainMod, E, exec, $fileManager
 bind = $mainMod, V, togglefloating,
 bind = $mainMod, R, exec, $launcher
-bind = $mainMod SHIFT, R, exec, rofi -show run
 bind = $mainMod, P, pseudo, # dwindle
 bind = $mainMod, J, togglesplit, # dwindle
 bind = $mainMod, M, exec, ~/.config/rofi/powermenu/type-2/powermenu.sh
@@ -219,13 +217,8 @@ bind = $mainMod SHIFT, up, movewindow, u
 bind = $mainMod SHIFT, down, movewindow,d
 
 # Example special workspace (scratchpad)
-# bind = $mainMod, S, togglespecialworkspace, magic
-# bind = $mainMod SHIFT, S, movetoworkspace, special:magic
 bind = $mainMod, S, togglespecialworkspace, magic
-bind = $mainMod, S, movetoworkspace, +0
-bind = $mainMod, S, togglespecialworkspace, magic
-bind = $mainMod, S, movetoworkspace, special:magic
-bind = $mainMod, S, togglespecialworkspace, magic
+bind = $mainMod SHIFT, S, movetoworkspace, special:magic
 
 # Move through workspaces using keyboard
 bind = $mainMod, code:59, workspace, e-1
@@ -262,48 +255,46 @@ bindl = , XF86AudioPause, exec, playerctl play-pause
 bindl = , XF86AudioPlay, exec, playerctl play-pause
 bindl = , XF86AudioPrev, exec, playerctl previous
 
-# Screenshot 
-bind = $mainMod, code:107, exec, grimblast save
-bind = $mainMod SHIFT, code:107, exec, grimblast save active
-bind = $mainMod ALT, code:107, exec, grimblast save area
-
 ##############################
 ### WINDOWS AND WORKSPACES ###
 ##############################
 
 windowrule = float, ^(xfce4-terminal)$
+windowrulev2 = suppressevent maximize, class:.*
 windowrulev2 = nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0
 windowrule = noblur,.*
-windowrulev2 = suppressevent maximize, class:.*
-windowrulev2 = suppressevent fullscreen, class:.*
-# windowrule = opacity 0.89 override 0.89 override, .* # Applies transparency to EVERY WINDOW
 
+# windowrule = opacity 0.89 override 0.89 override, .* # Applies transparency to EVERY WINDOW
+#windowrule = float, ^(blueberry.py)$
+#windowrule = float, ^(steam)$
+#windowrule = float, ^(guifetch)$ # FlafyDev/guifetch
+#windowrulev2 = tile, class:(dev.warp.Warp)
+#
 windowrulev2 = float, title:^([Pp]icture[-\s]?[Ii]n[-\s]?[Pp]icture)(.*)$
-windowrulev2 = center, title:^(Open File)(.*)$
-windowrulev2 = center, title:^(Select a File)(.*)$
-windowrulev2 = center, title:^(Choose wallpaper)(.*)$
-windowrulev2 = center, title:^(Open Folder)(.*)$
-windowrulev2 = center, title:^(Save As)(.*)$
-windowrulev2 = center, title:^(Library)(.*)$
-windowrulev2 = center, title:^(File Upload)(.*)$
-windowrulev2 = center, title:^(.*Devices)(.*)$
-windowrulev2 = float, title:^(.*Devices)(.*)$
-windowrulev2 = float, title:^(Open File)(.*)$
-windowrulev2 = float, title:^(Select a File)(.*)$
-windowrulev2 = float, title:^(Choose wallpaper)(.*)$
-windowrulev2 = float, title:^(Open Folder)(.*)$
-windowrulev2 = float, title:^(Save As)(.*)$
-windowrulev2 = float, title:^(Library)(.*)$
-windowrulev2 = float, title:^(File Upload)(.*)$
-windowrulev2 = float, title:^(Volume Control)(.*)$
-windowrulev2 = float, title:^(.*- xarchiver*.)(.*)$
-windowrulev2 = float, title:^(.*imv -*.)(.*)$
-windowrulev2 = float, title:^(Choose a font)(.*)$
-windowrulev2 = float, title:^(All Files)(.*)$
-windowrulev2 = immediate, title:^(.*)$
+windowrule = center, title:^(Open File)(.*)$
+windowrule = center, title:^(Select a File)(.*)$
+windowrule = center, title:^(Choose wallpaper)(.*)$
+windowrule = center, title:^(Open Folder)(.*)$
+windowrule = center, title:^(Save As)(.*)$
+windowrule = center, title:^(Library)(.*)$
+windowrule = center, title:^(File Upload)(.*)$
+windowrule = center, title:^(.*Devices)(.*)$
+windowrule = float, title:^(.*Devices)(.*)$
+windowrule = float, title:^(Open File)(.*)$
+windowrule = float, title:^(Select a File)(.*)$
+windowrule = float, title:^(Choose wallpaper)(.*)$
+windowrule = float, title:^(Open Folder)(.*)$
+windowrule = float, title:^(Save As)(.*)$
+windowrule = float, title:^(Library)(.*)$
+windowrule = float, title:^(File Upload)(.*)$
+windowrule = float, title:^(Volume Control)(.*)$
+windowrule = float, title:^(.*- xarchiver*.)(.*)$
+windowrule = float, title:^(.*imv -*.)(.*)$
+windowrule = float, title:^(Choose a font)(.*)$
+windowrule = float, title:^(All Files)(.*)$
 
 cursor {
-	sync_gsettings_theme = false
+	sync_gsettings_theme= false
 }
 
 opengl {
@@ -311,7 +302,5 @@ opengl {
 }
 
 render {
-	# direct_scanout = true
-	# allow_early_buffer_release = true
-	# expand_undersized_textures = true
+	direct_scanout=false
 }
