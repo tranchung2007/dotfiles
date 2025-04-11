@@ -1,2 +1,0 @@
-[language-server]
-clangd = { command = "clangd" }

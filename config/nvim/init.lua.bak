@@ -1,0 +1,104 @@
+-- options
+vim.g.mapleader = " "
+vim.g.localmapleader = " "
+vim.g.loaded_netrw = 0
+vim.g.loaded_netrwPlugin = 0
+vim.opt.number = true
+vim.opt.relativenumber = true
+vim.opt.expandtab = true
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.softtabstop = 4
+vim.opt.cindent = true
+vim.opt.hlsearch = false
+vim.opt.incsearch = true
+vim.opt.undofile = true
+vim.opt.completeopt = { "menuone", "noselect" }
+vim.opt.scrolloff = 8
+vim.cmd("set clipboard+=unnamedplus")
+vim.diagnostic.config({ virtual_text = { current_line = true }})
+-- vim.cmd('set keymap=vietnamese-telex_utf-8') --CHXHCNVN
+
+-- keymaps
+vim.keymap.set("n", "<leader>r", ":split | terminal ", { noremap = true })
+
+-- plugins
+local vim = vim
+local Plug = vim.fn['plug#']
+vim.call('plug#begin')
+    Plug('nvim-treesitter/nvim-treesitter', { ['do'] = ':TSUpdate' })
+    Plug('windwp/nvim-autopairs', { ['on'] = 'InsertEnter' })
+    Plug('kdheepak/monochrome.nvim')
+    Plug('Saghen/blink.cmp', { ['dir'] = '~/.local/share/nvim/plugged/blink.cmp/', ['do'] = 'cargo build +nightly --release' })
+    Plug('neovim/nvim-lspconfig')
+    Plug('stevearc/oil.nvim')
+vim.call('plug#end')
+
+require("nvim-treesitter.configs").setup {}
+require("nvim-autopairs").setup({})
+require("blink.cmp").setup({
+    completion = {
+        menu = {
+            draw = {
+                columns = {
+                    { "label", "label_description", gap = 1 },
+                },
+            },
+        },
+    },
+    keymap = { preset = "enter",
+      -- ['<Tab>'] = { 'select_next', 'fallback' },
+      -- ['<S-Tab>'] = { 'select_prev', 'fallback' },
+      -- ['<C-space>'] = { 'show', 'fallback' },
+      -- ['<Return>'] = { 'select_and_accept' },
+    }
+})
+local capabilities = {
+    textDocument = {
+            foldingRange = {
+            dynamicRegistration = false,
+            lineFoldingOnly = true
+        }
+    }
+}
+capabilities = require('blink.cmp').get_lsp_capabilities(capabilities)
+require("lspconfig").clangd.setup {
+    capabilities = capabilities,
+    cmd = {
+        "clangd",
+        "--header-insertion=never"
+    },
+}
+require("lspconfig").lua_ls.setup {
+    capabilities = capabilities,
+}
+require("oil").setup({
+    vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" }),
+    default_file_explorer = true,
+    columns = {
+        "permissions", "size", "mtime",
+    },
+    keymaps = {
+        ["g?"] = { "actions.show_help", mode = "n" },
+        ["<CR>"] = "actions.select",
+        ["<C-s>"] = { "actions.select", opts = { vertical = true } },
+        ["<C-h>"] = { "actions.select", opts = { horizontal = true } },
+        ["<C-t>"] = { "actions.select", opts = { tab = true } },
+        ["<C-p>"] = "actions.preview",
+        ["<C-c>"] = { "actions.close", mode = "n" },
+        ["<C-l>"] = "actions.refresh",
+        ["-"] = { "actions.parent", mode = "n" },
+        ["_"] = { "actions.open_cwd", mode = "n" },
+        ["`"] = { "actions.cd", mode = "n" },
+        ["~"] = { "actions.cd", opts = { scope = "tab" }, mode = "n" },
+        ["gs"] = { "actions.change_sort", mode = "n" },
+        ["gx"] = "actions.open_external",
+        ["g."] = { "actions.toggle_hidden", mode = "n" },
+        ["g\\"] = { "actions.toggle_trash", mode = "n" },
+        ["."] = { "actions.open_cmdline" },
+        ["gt"] = { "actions.open_terminal" },
+    },
+})
+vim.g.monochrome_style = "amplified"
+vim.cmd.colorscheme('monochrome')
+-- custom command 
