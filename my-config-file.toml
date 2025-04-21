@@ -1,0 +1,25 @@
+device_name = "       USB KEYBOARD"
+
+[[remap]] 
+input = ["KEY_RIGHTCTRL"]
+output = ["KEY_RIGHT"]
+
+[[remap]] 
+input = ["KEY_COMPOSE"]
+output = ["KEY_DOWN"]
+
+[[remap]] 
+input = ["KEY_RIGHTSHIFT"]
+output = ["KEY_UP"]
+
+[[remap]] 
+input = ["KEY_RIGHTMETA"]
+output = ["KEY_LEFT"]
+
+[[remap]]
+input = ["KEY_LEFTCTRL"]
+output = ["KEY_CAPSLOCK"]
+
+[[remap]]
+input = ["KEY_CAPSLOCK"]
+output = ["KEY_LEFTCTRL"]
