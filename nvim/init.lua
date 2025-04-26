@@ -9,15 +9,16 @@ vim.opt.expandtab = true
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.softtabstop = 4
-vim.opt.cindent = true
-vim.opt.hlsearch = false
+vim.opt.autoindent = true
 vim.opt.incsearch = true
 vim.opt.undofile = true
 vim.opt.completeopt = { "menuone", "noselect" }
-vim.opt.scrolloff = 8
 vim.opt.guicursor = ""
 vim.opt.splitbelow = true
 vim.opt.splitright = true
+-- vim.opt.autochdir = true
+vim.opt.smartcase = true
+vim.opt.cinoptions = "l1"
 vim.cmd("set clipboard+=unnamedplus")
 vim.diagnostic.config({ virtual_text = { current_line = true } })
 -- vim.cmd('set keymap=vietnamese-telex_utf-8') --CHXHCNVN
@@ -56,48 +57,62 @@ require("lazy").setup({
             event = "InsertEnter",
         },
         {
-            "hrsh7th/nvim-cmp",
-            dependencies = {
-                "hrsh7th/cmp-path",
-                "hrsh7th/cmp-buffer",
-                "hrsh7th/cmp-cmdline",
-                "hrsh7th/cmp-nvim-lsp",
-            },
+            "saghen/blink.cmp",
+            version = '*',
+        },
+        {
+            "catgoose/nvim-colorizer.lua",
+            event = "BufReadPre",
         },
     },
 })
 
+require("colorizer").setup({})
 require("nvim-treesitter.configs").setup({})
 require("nvim-autopairs").setup({})
-local cmp = require("cmp")
-require("cmp").setup({
-	sources = cmp.config.sources({
-		{ name = "nvim_lsp" },
-		{ name = "path" },
-	}, {
-		{ name = "buffer" },
-	}),
-	mapping = cmp.mapping.preset.insert({
-		["<Tab>"] = cmp.mapping.select_next_item(),
-		["<S-Tab>"] = cmp.mapping.select_prev_item(),
-		["<Enter>"] = cmp.mapping.confirm({ select = true }),
-		["<C-j>"] = cmp.mapping.abort(),
-	}),
-	performance = {
-		max_view_entries = 15,
-	},
-})
-cmp.setup.cmdline(":", {
-    mapping = cmp.mapping.preset.cmdline(),
-    sources = cmp.config.sources({
-        { name = "path" },
-    }, {
-        { name = "cmdline" },
-    }),
-    matching = { disallow_symbol_nonprefix_matching = false },
+
+require("blink.cmp").setup({
+    sources = {
+        default = { 'lsp', 'path', 'snippets', 'buffer', 'cmdline' },
+    },
+    completion = {
+        list = {
+            max_items = 30,
+            selection = {
+                preselect = false,
+                auto_insert = false,
+            },
+        },
+        menu = {
+            draw = {
+                columns = { { 'label', 'label_description', gap = 2 }, { 'kind' } },
+            },
+        },
+    },
+    keymap = {
+        preset = 'none',
+        ['<S-Tab>'] = { 'select_prev', 'fallback' },
+        ['<Tab>'] = { 'select_next', 'fallback' },
+        ['<CR>'] = { 'accept', 'fallback' },
+        ['<C-e>'] = { 'hide', 'show' },
+    },
+    cmdline = {
+        keymap = {
+            preset = 'cmdline',
+            ['<CR>'] = { 'accept', 'fallback' },
+        },
+    },
 })
 
-local capabilities = require("cmp_nvim_lsp").default_capabilities()
+local capabilities = {
+  textDocument = {
+    foldingRange = {
+      dynamicRegistration = false,
+      lineFoldingOnly = true
+    }
+  }
+}
+capabilities = require('blink.cmp').get_lsp_capabilities(capabilities)
 require("lspconfig").clangd.setup({
 	capabilities = capabilities,
 	cmd = {
@@ -114,8 +129,8 @@ require("oil").setup({
 	default_file_explorer = true,
 	columns = {
 		"permissions",
+        "birthtime",
 		"size",
-		"mtime",
 	},
 	keymaps = {
 		["g?"] = { "actions.show_help", mode = "n" },
@@ -135,12 +150,10 @@ require("oil").setup({
 		["g."] = { "actions.toggle_hidden", mode = "n" },
 		["g\\"] = { "actions.toggle_trash", mode = "n" },
 		["."] = { "actions.open_cmdline" },
-		["gt"] = { "actions.open_terminal" },
+		["gl"] = { "actions.open_terminal" },
         ["gm"] = { "actions.send_to_qflist" }
 	},
 })
 
 vim.g.monochrome_style = "amplified"
 vim.cmd.colorscheme("monochrome")
-
--- custom command
