@@ -1,0 +1,93 @@
+// -*- mode: jsonc -*-
+{
+    "layer": "top", // Waybar at top layer
+    "position": "top", // Waybar position (top|bottom|left|right)
+    "height": 30, // Waybar height (to be removed for auto height)
+    // "width": 1280, // Waybar width
+    "spacing": 6, // Gaps between modules (4px)
+    // Choose the order of the modules
+    "modules-left": [
+	// "custom/power",
+	"hyprland/workspaces"
+	// "hyprland/scratchpad"
+    ],
+    "modules-center": [
+        "hyprland/window",
+    ],
+    "modules-right": [
+        "pulseaudio",
+        "network",
+        "cpu",
+        "memory",
+        "temperature",
+        "backlight",
+        "battery",
+        "clock",
+        "tray"
+    ],
+    "hyprland/window":{
+        "max-length": 30,	
+        "format": " [{}",
+    },
+    "hyprland/workspaces":{
+        "show-special": true,
+    },
+    "tray": {
+        "icon-size": 15,
+        "spacing": 15,
+    },
+    "clock": {
+	"format": "TIME:{:%H:%M} |",
+        "format-alt": "DATE:{:%d/%m/%Y} |"
+    },
+    "cpu": {
+        "format": "CPU:{usage}% |",
+        "tooltip": false
+    },
+    "memory": {
+        "format": "RAM:{}% |"
+    },
+    "temperature": {
+        "critical-threshold": 80,
+        "format": "TEMP:{temperatureC}°C |",
+    },
+    "backlight": {
+        "scroll-step": 3,
+        "format": "BRIGHT:{percent}% |",
+    },
+    "battery": {
+        "format": "BAT:{capacity}% |",
+    },
+    "battery#bat2": {
+        "bat": "BAT2"
+    },
+    "network": {
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "format-wifi": "WIFI:{essid}({signalStrength}%) |",
+        "format-ethernet": "ETH:{ipaddr}/{cidr} |",
+        "tooltip-format": "{ifname} via {gwaddr} |",
+        "format-linked": "LINK:{ifname} (No IP) |",
+        "format-disconnected": "Disconnected!! |",
+        "format-alt": "{ifname}: {ipaddr}/{cidr} |",
+        "on-click": "~/.config/rofi/rofi-wifi-menu.sh"
+    },
+    "pulseaudio": {
+        "scroll-step": 3,
+        "format": "] | {volume}% {icon} {format_source}",
+        "format-bluetooth": "] | {volume}% {icon} {format_source}",
+        "format-bluetooth-muted": "] |  {icon} {format_source}",
+        "format-muted": "] |  {format_source}",
+        "format-source": "{volume}%  |",
+        "format-source-muted": " |",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol"
+    },
+}
