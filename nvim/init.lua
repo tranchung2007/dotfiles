@@ -15,9 +15,9 @@ vim.o.scrolloff = 4
 vim.o.guicursor = ""
 vim.o.cinoptions = "l1"
 vim.o.undofile = true
-vim.opt.completeopt = { "noselect", "noinsert" }
+vim.opt.completeopt = { "noselect", "noinsert", "menu" }
 vim.cmd("set clipboard+=unnamedplus")
-vim.diagnostic.config({ virtual_text = { current_line = true } })
+vim.diagnostic.config({ virtual_text = { current_line = true }})
 
 vim.keymap.set("n", "<leader>r", ":sp | term ", { noremap = true })
 vim.keymap.set("n", "<leader>ff", ":sp | term rg --vimgrep --files | rg ", { noremap = true })
@@ -30,6 +30,9 @@ local Plug = vim.fn['plug#']
 vim.call('plug#begin')
     Plug('miikanissi/modus-themes.nvim')
     Plug('stevearc/oil.nvim')
+    Plug('nvim-treesitter/nvim-treesitter')
+    -- Plug('X3eRo0/dired.nvim')
+    -- Plug("MunifTanjim/nui.nvim")
 vim.call('plug#end')
 
 vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
@@ -41,5 +44,7 @@ require("oil").setup({
         "size",
     },
 })
+-- require("dired").setup({})
+require("nvim-treesitter").setup({})
 
 vim.cmd.colorscheme('modus_vivendi')
