@@ -1,25 +1,32 @@
- # -*- conf -*-
-#
-# modus-vivendi
-# See: https://protesilaos.com/emacs/modus-themes
-#
+#Modus Themes for Foot
+
+[cursor]
+color=ffffff 7030af
 
 [colors]
-background=000000
 foreground=ffffff
+background=000000
+selection-foreground=ffffff
+selection-background=7030af
+urls=c6daff
+
 regular0=000000
-regular1=ff8059
+regular1=ff5f59
 regular2=44bc44
 regular3=d0bc00
 regular4=2fafff
 regular5=feacd0
 regular6=00d3d0
-regular7=bfbfbf
-bright0=595959
-bright1=ef8b50
-bright2=70b900
-bright3=c0c530
-bright4=79a8ff
-bright5=b6a0ff
-bright6=6ae4b9
-bright7=ffffff
+regular7=ffffff
+
+bright0=1e1e1e
+bright1=ff5f5f
+bright2=44df44
+bright3=efef00
+bright4=338fff
+bright5=ff66ff
+bright6=00eff0
+bright7=989898
+
+16=fec43f
+17=ff9580

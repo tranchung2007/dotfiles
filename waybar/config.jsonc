@@ -12,7 +12,7 @@
 	// "hyprland/scratchpad"
     ],
     "modules-center": [
-        "hyprland/window",
+        "hyprland/window"
     ],
     "modules-right": [
         "pulseaudio",
@@ -27,17 +27,17 @@
     ],
     "hyprland/window":{
         "max-length": 30,	
-        "format": " [{}",
+        "format": " [{}"
     },
     "hyprland/workspaces":{
-        "show-special": true,
+        "show-special": true
     },
     "tray": {
         "icon-size": 15,
-        "spacing": 15,
+        "spacing": 15
     },
     "clock": {
-	"format": "TIME:{:%H:%M} |",
+        "format": "TIME:{:%H:%M} |",
         "format-alt": "DATE:{:%d/%m/%Y} |"
     },
     "cpu": {
@@ -48,15 +48,14 @@
         "format": "RAM:{}% |"
     },
     "temperature": {
-        "critical-threshold": 80,
-        "format": "TEMP:{temperatureC}°C |",
+        "format": "TEMP:{temperatureC}°C |"
     },
     "backlight": {
         "scroll-step": 3,
-        "format": "BRIGHT:{percent}% |",
+        "format": "BRIGHT:{percent}% |"
     },
     "battery": {
-        "format": "BAT:{capacity}% |",
+        "format": "BAT:{capacity}% |"
     },
     "battery#bat2": {
         "bat": "BAT2"
@@ -68,26 +67,25 @@
         "tooltip-format": "{ifname} via {gwaddr} |",
         "format-linked": "LINK:{ifname} (No IP) |",
         "format-disconnected": "Disconnected!! |",
-        "format-alt": "{ifname}: {ipaddr}/{cidr} |",
-        "on-click": "~/.config/rofi/rofi-wifi-menu.sh"
+        "format-alt": "{ifname}: {ipaddr}/{cidr} |"
     },
     "pulseaudio": {
         "scroll-step": 3,
-        "format": "] | {volume}% {icon} {format_source}",
-        "format-bluetooth": "] | {volume}% {icon} {format_source}",
-        "format-bluetooth-muted": "] |  {icon} {format_source}",
-        "format-muted": "] |  {format_source}",
-        "format-source": "{volume}%  |",
-        "format-source-muted": " |",
+        "format": "] | {volume}%{icon} {format_source}",
+        "format-bluetooth": "] | {volume}%{icon} {format_source}",
+        "format-bluetooth-muted": "] | [BM] {icon} {format_source}",
+        "format-muted": "] | [MU] {format_source} ",
+        "format-source": "{volume}%[MI] |",
+        "format-source-muted": "[MU] |",
         "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": ["", "", ""]
+            "headphone": "[HP]",
+            "hands-free": "[HF]",
+            "headset": "[HS]",
+            "phone": "[P]",
+            "portable": "[POR]",
+            "car": "[CAR]",
+            "default": ["[SP]", "[SP]", "[SP]"]
         },
         "on-click": "pavucontrol"
-    },
+    }
 }

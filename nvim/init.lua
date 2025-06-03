@@ -31,8 +31,6 @@ vim.call('plug#begin')
     Plug('miikanissi/modus-themes.nvim')
     Plug('stevearc/oil.nvim')
     Plug('nvim-treesitter/nvim-treesitter')
-    -- Plug('X3eRo0/dired.nvim')
-    -- Plug("MunifTanjim/nui.nvim")
 vim.call('plug#end')
 
 vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
