@@ -42,7 +42,6 @@ require("oil").setup({
         "size",
     },
 })
--- require("dired").setup({})
 require("nvim-treesitter").setup({})
 
 vim.cmd.colorscheme('modus_vivendi')
