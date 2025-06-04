@@ -30,6 +30,7 @@ local Plug = vim.fn['plug#']
 vim.call('plug#begin')
     Plug('miikanissi/modus-themes.nvim')
     Plug('stevearc/oil.nvim')
+    Plug('dense-analysis/ale')
     Plug('nvim-treesitter/nvim-treesitter')
 vim.call('plug#end')
 
@@ -42,7 +43,7 @@ require("oil").setup({
         "size",
     },
 })
-require("nvim-treesitter").setup({})
+-- require("nvim-treesitter").setup({})
 
 -- vim.lsp.config['clangd'] = {
 --     cmd = { 'clangd', '--header-insertion=never' },
@@ -51,3 +52,8 @@ require("nvim-treesitter").setup({})
 -- vim.lsp.enable('clangd')
 
 vim.cmd.colorscheme('modus_vivendi')
+
+vim.g.loaded_python3_provider = 0
+vim.g.loaded_ruby_provider = 0
+vim.g.loaded_perl_provider = 0
+vim.g.loaded_node_provider = 0
