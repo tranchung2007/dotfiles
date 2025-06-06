@@ -7,9 +7,9 @@
     "spacing": 5, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
-	// "custom/power",
-	"hyprland/workspaces"
-	// "hyprland/scratchpad"
+        // "custom/power",
+        "hyprland/workspaces"
+        // "hyprland/scratchpad"
     ],
     "modules-center": [
         "hyprland/window",
