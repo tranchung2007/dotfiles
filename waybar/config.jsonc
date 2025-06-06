@@ -26,7 +26,7 @@
         "tray"
     ],
     "hyprland/window":{
-        "max-length": 30,	
+        "max-length": 30,   
         "format": " [{}",
     },
     "hyprland/workspaces":{
@@ -37,7 +37,7 @@
         "spacing": 15,
     },
     "clock": {
-	"format": "TIME:{:%H:%M} |",
+    "format": "TIME:{:%H:%M} |",
         "format-alt": "DATE:{:%d/%m/%Y} |"
     },
     "cpu": {
