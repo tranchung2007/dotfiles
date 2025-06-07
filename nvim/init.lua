@@ -24,6 +24,7 @@ vim.keymap.set("n", "<leader>ff", ":sp | term rg --vimgrep --files | rg ", { nor
 vim.keymap.set("n", "<leader>fw", ":sp | term rg --vimgrep ", { noremap = true })
 vim.keymap.set("n", "<leader>c", "<cmd>bd!<CR>", { silent = true, noremap = true })
 vim.keymap.set("n", "<leader>b", "<cmd>cgetb | bd! | cope<CR>", { silent = true, noremap = true })
+vim.keymap.set("n", "<leader><Tab>", ":b<space><C-z>", { noremap = true })
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
@@ -50,16 +51,16 @@ require("lazy").setup({
             },
             lazy = false,
         },
-        {
-            "dense-analysis/ale",
-            config = function()
-                vim.g.ale_completion_enabled = 1
-                vim.cmd("set omnifunc=ale#completion#OmniFunc")
-                vim.g.ale_fixers = {
-                    ["*"] = { "remove_trailing_lines", "trim_whitespace" },
-                }
-            end,
-        },
+        -- {
+        --     "dense-analysis/ale",
+        --     config = function()
+        --         vim.g.ale_completion_enabled = 1
+        --         vim.cmd("set omnifunc=ale#completion#OmniFunc")
+        --         vim.g.ale_fixers = {
+        --             ["*"] = { "remove_trailing_lines", "trim_whitespace" },
+        --         }
+        --     end,
+        -- },
         {
             "nvim-treesitter/nvim-treesitter",
             lazy = false,
