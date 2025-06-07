@@ -26,12 +26,13 @@ vim.keymap.set("n", "<leader>c", "<cmd>bd!<CR>", { silent = true, noremap = true
 vim.keymap.set("n", "<leader>b", "<cmd>cgetb | bd! | cope<CR>", { silent = true, noremap = true })
 vim.keymap.set("n", "<leader><Tab>", ":b<space><C-z>", { noremap = true })
 
-local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
-if not (vim.uv or vim.loop).fs_stat(lazypath) then
-    local lazyrepo = "https://github.com/folke/lazy.nvim.git"
-    local out = vim.fn.system({ "git", "clone", "--filter=blob:none", "--branch=stable", lazyrepo, lazypath })
-end
-vim.opt.rtp:prepend(lazypath)
+local vim = vim
+local Plug = vim.fn['plug#']
+vim.call('plug#begin')
+    Plug('miikanissi/modus-themes.nvim')
+    Plug('stevearc/oil.nvim')
+    Plug('nvim-treesitter/nvim-treesitter')
+vim.call('plug#end')
 
 require("lazy").setup({
     spec = {
@@ -85,5 +86,6 @@ require("lazy").setup({
         },
     },
 })
+require("nvim-treesitter").setup({})
 
 vim.cmd.colorscheme("modus_vivendi")

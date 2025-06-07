@@ -1,2 +1,2 @@
-Personal dotfiles
+PERSONAL DOTFILES
 =======
