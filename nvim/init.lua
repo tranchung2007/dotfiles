@@ -21,7 +21,7 @@ vim.diagnostic.config({ virtual_text = { current_line = true } })
 
 vim.keymap.set("n", "<leader>r", ":sp | term ", { noremap = true })
 vim.keymap.set("n", "<leader>ff", ":sp | term rg --vimgrep --files | rg ", { noremap = true })
-vim.keymap.set("n", "<leader>fw", ":sp | term rg --vimgrep ", { noremap = true })
+vim.keymap.set("n", "<leader>fw", ":sp | term rg --vimgrep -SFM 200 ", { noremap = true })
 vim.keymap.set("n", "<leader>c", "<cmd>bd!<CR>", { silent = true, noremap = true })
 vim.keymap.set("n", "<leader>b", "<cmd>cgetb | bd! | cope<CR>", { silent = true, noremap = true })
 vim.keymap.set("n", "<leader><Tab>", ":b<space><C-z>", { noremap = true })
@@ -48,6 +48,9 @@ require("lazy").setup({
                     "birthtime",
                     "size",
                 },
+                confirmation = {
+                    border = "none",
+                },
                 watch_for_changes = true,
             },
             lazy = false,
@@ -69,9 +72,6 @@ require("lazy").setup({
             config = function()
                 require("nvim-treesitter.configs").setup({
                     auto_install = true,
-                    highlight = {
-                        enable = true,
-                    },
                     incremental_selection = {
                         enable = true,
                         keymaps = {
