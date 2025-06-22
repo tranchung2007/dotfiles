@@ -19,12 +19,12 @@ vim.opt.completeopt = { "noselect", "noinsert", "menu" }
 vim.cmd("set clipboard+=unnamedplus")
 vim.diagnostic.config({ virtual_text = { current_line = true } })
 
-vim.keymap.set("n", "<leader>r", ":sp | term ", { noremap = true })
-vim.keymap.set("n", "<leader>ff", ":sp | term rg --vimgrep --files | rg ", { noremap = true })
-vim.keymap.set("n", "<leader>fw", ":sp | term rg --vimgrep -SFM 200 ", { noremap = true })
-vim.keymap.set("n", "<leader>c", "<cmd>bd!<CR>", { silent = true, noremap = true })
-vim.keymap.set("n", "<leader>b", "<cmd>cgetb | bd! | cope<CR>", { silent = true, noremap = true })
-vim.keymap.set("n", "<leader><Tab>", ":b<space><C-z>", { noremap = true })
+vim.keymap.set("n", "<A-r>", ":sp | term ", { noremap = true })
+vim.keymap.set("n", "<C-x><C-d>", ":sp | term rg --vimgrep --files | rg ", { noremap = true })
+vim.keymap.set("n", "<C-x><C-f>", ":sp | term rg --vimgrep -SFM 200 ", { noremap = true })
+vim.keymap.set("n", "<A-c>", "<cmd>bd!<CR>", { silent = true, noremap = true })
+vim.keymap.set("n", "<A-k>", "<cmd>cgetb | bd! | cope<CR>", { silent = true, noremap = true })
+vim.keymap.set("n", "<A-Tab>", ":buffer<space><C-z>", { noremap = true })
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
@@ -55,16 +55,6 @@ require("lazy").setup({
             },
             lazy = false,
         },
-        -- {
-        --     "dense-analysis/ale",
-        --     config = function()
-        --         vim.g.ale_completion_enabled = 1
-        --         vim.cmd("set omnifunc=ale#completion#OmniFunc")
-        --         vim.g.ale_fixers = {
-        --             ["*"] = { "remove_trailing_lines", "trim_whitespace" },
-        --         }
-        --     end,
-        -- },
         {
             "nvim-treesitter/nvim-treesitter",
             lazy = false,
@@ -72,6 +62,9 @@ require("lazy").setup({
             config = function()
                 require("nvim-treesitter.configs").setup({
                     auto_install = true,
+                    highlight = true,
+                    indent = true,
+                    autotag = true,
                     incremental_selection = {
                         enable = true,
                         keymaps = {
@@ -82,6 +75,12 @@ require("lazy").setup({
                         },
                     },
                 })
+            end,
+        },
+        {
+            "yorickpeterse/nvim-pqf",
+            config = function()
+                require('pqf').setup({})
             end,
         },
     },
