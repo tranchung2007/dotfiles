@@ -42,11 +42,11 @@ vim.keymap.set("n", "<A-Tab>", ":buffer<space><C-z>", { noremap = true })
 
 -- Stolen from https://tui.ninja/neovim/tips/moving_lines
 -- Move single-line in normal mode
-vim.keymap.set("n", "<A-n>", ":move .+1<CR>==")
-vim.keymap.set("n", "<A-p>", ":move .-2<CR>==")
+vim.keymap.set("n", "<A-n>", ":move .+1<CR>==", { silent = true })
+vim.keymap.set("n", "<A-p>", ":move .-2<CR>==", { silent = true })
 -- Move multi-line in visual mode
-vim.keymap.set("v", "<A-n>", ":move '>+1<CR>gv=gv")
-vim.keymap.set("v", "<A-p>", ":move '<-2<CR>gv=gv")
+vim.keymap.set("v", "<A-n>", ":move '>+1<CR>gv=gv", { silent = true })
+vim.keymap.set("v", "<A-p>", ":move '<-2<CR>gv=gv", { silent = true })
 
 -- Urgirlfriend plugin manager (because she is lazy)
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
@@ -121,6 +121,43 @@ require("lazy").setup({
             'johnfrankmorgan/whitespace.nvim',
             config = function()
                 require('whitespace-nvim').setup({})
+            end
+        },
+        {
+            'hrsh7th/nvim-cmp',
+            dependencies = {
+                'hrsh7th/cmp-buffer',
+                'hrsh7th/cmp-path',
+                'hrsh7th/cmp-cmdline',
+            },
+            config = function()
+                local cmp = require'cmp'
+                cmp.setup({
+                    performance = {
+                        max_view_entries = 5,
+                    },
+                    mapping = cmp.mapping.preset.insert(),
+                    sources = cmp.config.sources({
+                        { name = 'path' },
+                    }, {
+                        { name = 'buffer' },
+                    })
+                })
+                cmp.setup.cmdline(':', {
+                    mapping = cmp.mapping.preset.cmdline(),
+                    sources = cmp.config.sources({
+                        { name = 'path' }
+                    }, {
+                        { name = 'cmdline' }
+                    }),
+                    matching = { disallow_symbol_nonprefix_matching = false }
+                })
+                cmp.setup.cmdline({ '/', '?' }, {
+                    mapping = cmp.mapping.preset.cmdline(),
+                    sources = {
+                        { name = 'buffer' }
+                    }
+                })
             end
         },
     },
