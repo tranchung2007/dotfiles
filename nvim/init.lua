@@ -16,15 +16,30 @@ vim.opt.scrolloff = 4
 vim.opt.guicursor = ""
 vim.opt.cinoptions = "l1"
 vim.opt.undofile = true
+vim.opt.title = true
 vim.opt.completeopt = { "noselect", "noinsert", "menu" }
 vim.cmd("set clipboard+=unnamedplus")
 vim.diagnostic.config({ virtual_text = { current_line = true } })
+-- disable some default providers
+vim.g.loaded_node_provider = 0
+vim.g.loaded_python3_provider = 0
+vim.g.loaded_perl_provider = 0
+vim.g.loaded_ruby_provider = 0
+
+-- Stolen from https://github.com/brainfucksec/neovim-lua/blob/main/nvim/lua/core/autocmds.lua
+-- Don't auto commenting new lines
+local augroup = vim.api.nvim_create_augroup
+local autocmd = vim.api.nvim_create_autocmd
+autocmd('BufEnter', {
+    pattern = '',
+    command = 'set fo-=c fo-=r fo-=o'
+})
 
 -- Stolen from https://www.manjotbal.ca/blog/neovim-whitespace.html
-vim.o.list = true
-vim.o.listchars = 'tab:» ,lead:·,trail:·'
+vim.opt.list = true
+vim.opt.listchars = 'tab:» ,lead:·,trail:·'
 vim.api.nvim_set_hl(0, 'TrailingWhitespace', { bg='LightRed' })
-vim.api.nvim_create_autocmd('BufEnter', {
+autocmd('BufEnter', {
     pattern = '*',
     command = [[
         syntax clear TrailingWhitespace |
@@ -111,17 +126,11 @@ require("lazy").setup({
                         info = { text = 'I', hl = 'DiagnosticSignInfo' },
                         hint = { text = 'H', hl = 'DiagnosticSignHint' },
                     },
-                    show_multiple_lines = true,
+                    show_multiple_lines = false,
                     max_filename_length = 20,
-                    filename_truncate_prefix = '[...]',
+                    filename_truncate_prefix = '[..]',
                 })
             end,
-        },
-        {
-            'johnfrankmorgan/whitespace.nvim',
-            config = function()
-                require('whitespace-nvim').setup({})
-            end
         },
         {
             'hrsh7th/nvim-cmp',
@@ -134,9 +143,11 @@ require("lazy").setup({
                 local cmp = require'cmp'
                 cmp.setup({
                     performance = {
-                        max_view_entries = 5,
+                        max_view_entries = 7,
                     },
-                    mapping = cmp.mapping.preset.insert(),
+                    mapping = cmp.mapping.preset.insert({
+                        ['<CR>'] = cmp.mapping.confirm({ select = true }),
+                    }),
                     sources = cmp.config.sources({
                         { name = 'path' },
                     }, {
