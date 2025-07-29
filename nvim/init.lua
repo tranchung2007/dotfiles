@@ -171,6 +171,17 @@ require("lazy").setup({
                 })
             end
         },
+        {
+            "idanarye/nvim-blunder",
+            config = function()
+                require('blunder').setup({
+                    -- Default settings
+                    formats = {},
+                    -- fallback_format = {},
+                    commands_prefix = 'B',
+                })
+            end
+        }
     },
 })
 
