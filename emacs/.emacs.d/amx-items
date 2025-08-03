@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
- customize-variable
- customize
- duplicate-line
- package-recompile-all
+ package-vc-checkout
+ vc-refresh-state
+ vc-push
+ list-packages
  package-upgrade
- recover-this-file
- editorconfig-mode
+ vc-dir
+ crm-complete
 )
 
 ;; ----- amx-data -----
@@ -19,13 +19,25 @@
  (editorconfig-mode . 2)
  (which-key-mode . 1)
  (whitespace-mode . 2)
- (list-packages . 1)
- (package-upgrade . 3)
+ (list-packages . 2)
+ (package-upgrade . 4)
  (eshell . 1)
  (theme-choose-variant . 1)
  (load-theme . 1)
  (customize-variable . 6)
  (recover-this-file . 1)
- (package-recompile-all . 1)
+ (package-recompile-all . 2)
  (duplicate-line . 2)
+ (package-autoremove . 2)
+ (cmake-mode . 1)
+ (dired . 1)
+ (crm-custom-mode . 2)
+ (describe-key . 1)
+ (describe-face . 1)
+ (icomplete-mode . 1)
+ (crm-complete . 1)
+ (vc-dir . 1)
+ (vc-push . 1)
+ (vc-refresh-state . 1)
+ (package-vc-checkout . 1)
 )
