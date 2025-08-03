@@ -1,0 +1,60 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/" . "chung/")
+ ("/home/chung/Software/Balatro.v1.0.1o/" . "squashfs-root/")
+ ("/home/chung/Software/" . "Balatro.v1.0.1o/")
+ ("/home/chung/Downloads/" . "dotfiles/")
+ ("/home/chung/" . ".emacs.rc/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/chung/"
+ "/home/chung/.emacs.rc/"
+ "/home/chung/.emacs.d/"
+ "/home/chung/Downloads/dotfiles/"
+ "/home/chung/Software/Balatro.v1.0.1o/squashfs-root/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ ".emacs.custom.el"
+ "misc-rc.el"
+ ".emacs"
+ "autocommit-rc.el"
+ "AppRun"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/chung/" (26766 60079 31779 114000) ".emacs.custom.el" ".zcompdump.zwc" ".zcompdump.dat" ".zcompdump" ".emacs.rc/" ".emacs.d/" ".emacs" ".zhistory" ".zshrc" ".viminfo" ".zimrc" ".vimrc" ".zcompcache/" ".zprofile" ".gitconfig" "Software/" ".zim/" ".wine/" ".git-credentials" ".ssh/" ".vim/" "Documents/" ".fonts/" ".android/" ".npm/" "Templates/" ".cargo/" "opt/" "probe/" ".gtkrc-2.0" ".local/" ".config/" "Videos/" "Pictures/" "Music/" "Public/" "Downloads/" "Desktop/" ".cache/" ".mozilla/" "../" "./")
+
+ ("/home/chung/.emacs.rc/" (26766 59890 224847 657000) "simpc-mode.elc" "simpc-mode.el" "rc.elc" "rc.el" "org-mode-rc.el" "misc-rc.elc" "misc-rc.el" "autocommit-rc.el" "../" "./")
+
+ ("/home/" (26761 24704 0 0) "chung/" "../" "./")
+
+ ("/home/chung/.emacs.d/" (26766 59794 948611 729000) "tutorial/" "tree-sitter/" "transient/" "ido.last~" "ido.last" "eshell/" "elpa/" "eln-cache/" "auto-save-list/" "amx-items" "../" "./")
+
+ ("/home/chung/Software/Balatro.v1.0.1o/squashfs-root/" (26765 56445 188321 498000) "#license.txt#" "AppRun" "Balatro.exe" "share/" "love.svg" "love.desktop" "license.txt" "lib/" "bin/" ".DirIcon" "../" "./")
+
+ ("/home/chung/Software/Balatro.v1.0.1o/" (26690 20685 539363 308000) "squashfs-root/" "love-11.5-x86_64.AppImage" "../" "./")
+
+ ("/home/chung/Software/" (26737 1727 514658 31000) "localsend/" "edit-1.2.0-x86_64-linux-gnu/" "neoray-linux/" "Mypaint/" "gf2" "Balatro.v1.0.1o/" "musializer" "../" "./")
+
+ ("/home/chung/Music/" (26693 41688 241283 494000) "1382827_Slash--Inferno.mp3" "nu11 wip works 2016-2022 (ogg)/" "../" "./")
+
+ ("/home/chung/.emacs.d/eshell/" (26765 55132 940031 305000) "history" "../" "./")
+
+ ("/home/chung/.emacs.d/auto-save-list/" (26765 54739 459927 381000) ".saves-1216-fedora~" ".saves-1197-fedora~" ".saves-1208-fedora~" ".saves-1227-fedora~" "../" "./")
+
+ ("/home/chung/Downloads/dotfiles/" (26762 48670 13587 460000) "DotFiles.psm1" ".emacs" ".vimrc" "settings.ini" "mpv.conf" "i3/" "gf2_config.ini" "deploy.sh" "deploy.ps1" "bin/" "README.md" "MANIFEST.linux" "MANIFEST" ".urxvt/" ".tmux.conf" ".sqliterc" ".screenlayout/" ".rexim/" ".npmrc" ".nexrc" ".markut" ".jmacsrc" ".i3status.conf" ".gitignore" ".gitconfig" ".ghci" ".gdbinit" ".emacs.snippets/" ".emacs.rc/" ".emacs.local/" ".emacs.custom.el" ".apvlvrc" ".Xresources" ".SciTEUser.properties" ".git/" "../" "./")
+
+ ("/home/chung/Downloads/" (26765 24849 779165 42000) "hyprutils-0.7.1.zip" "myimage/" "Screenshot_2025-06-30-06-37-09-573_vn.com.techcombank.bb.app.jpg" "7cho.iso" "day.jpg" "sRGB2014.icc" "softmaker-freeoffice-2024-1224.x86_64.rpm" "archlinux-x86_64.iso" "berry-mini-1.41.zip" "ventoy-1.1.05-linux.tar.gz" "Balatro.v1.0.1o.rar" "msttcore-fonts-installer-2.6-1.noarch.rpm" "zig-linux-x86_64-0.14.0.tar.xz" "tinyfiledialogs-current.zip" "Orchis.tar.xz" "nu11 wip works 2016-2022 (ogg).7z" "neovide-linux-x86_64.tar.gz" "ly-1.0.3.zip" "lua-5.1.5.tar.gz" "Graphite-Dark.tar.xz" "gitui-linux-x86_64.tar.gz" "firefox-esr-128.11.0esr-1.fc41.x86_64.rpm" "fedora-nbfc-linux-0.3.16-1.x86_64.rpm" "dnvim2-code.zip" "Cryptid.0.5.5b.zip" "ccache-4.11.3.tar.gz" "dotfiles/" "../" "./")
+
+ ("/home/chung/Desktop/" (26763 30138 729827 660000) "swappy-20250622_214828.png" "swappy-20250622_214815.png" "swappy-20250621_204028.png" "swappy-20250618_212901.png" "swappy-20250611_225028.png" "mypaint.desktop" "fx-580VN X Emulator.desktop" "fx-580VN X Emulator.lnk" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

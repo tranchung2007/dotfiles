@@ -1,0 +1,31 @@
+
+;; ----- amx-history -----
+(
+ customize-variable
+ customize
+ duplicate-line
+ package-recompile-all
+ package-upgrade
+ recover-this-file
+ editorconfig-mode
+)
+
+;; ----- amx-data -----
+(
+ (customize . 3)
+ (customize-group . 1)
+ (compile . 5)
+ (amx . 1)
+ (editorconfig-mode . 2)
+ (which-key-mode . 1)
+ (whitespace-mode . 2)
+ (list-packages . 1)
+ (package-upgrade . 3)
+ (eshell . 1)
+ (theme-choose-variant . 1)
+ (load-theme . 1)
+ (customize-variable . 6)
+ (recover-this-file . 1)
+ (package-recompile-all . 1)
+ (duplicate-line . 2)
+)
