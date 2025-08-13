@@ -8,8 +8,8 @@
     // Choose the order of the modules
     "modules-left": [
         // "custom/power",
-        "hyprland/workspaces"
-        // "hyprland/scratchpad"
+        "hyprland/workspaces",
+        "hyprland/scratchpad"
     ],
     "modules-center": [
         "hyprland/window"
@@ -21,7 +21,7 @@
         "memory",
         "temperature",
         "backlight",
-        "battery",
+        // "battery",
         "clock",
         "tray"
     ],
@@ -38,7 +38,8 @@
     },
     "clock": {
         "format": "TIME:{:%H:%M} |",
-        "format-alt": "DATE:{:%d/%m/%Y} |"
+        "format-alt": "DATE:{:%d/%m/%Y} |",
+        "tooltip": false
     },
     "cpu": {
         "format": "CPU:{usage}% |",
@@ -79,12 +80,12 @@
         "format-source-muted": "[MU] |",
         "format-icons": {
             "headphone": "[HP]",
-            "hands-free": "[HF]",
-            "headset": "[HS]",
-            "phone": "[P]",
-            "portable": "[POR]",
-            "car": "[CAR]",
-            "default": ["[SP]", "[SP]", "[SP]"]
+            // "hands-free": "[HF]",
+            // "headset": "[HS]",
+            // "phone": "[P]",
+            // "portable": "[POR]",
+            // "car": "[CAR]",
+            "default": ["[SP]"]
         },
         "on-click": "pavucontrol"
     }

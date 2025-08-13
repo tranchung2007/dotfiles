@@ -4,7 +4,7 @@
 (scroll-bar-mode 0)
 (column-number-mode 1)
 (show-paren-mode 1)
-;;(fido-mode 1)
+;; (fido-mode 1)
 
 ;;; relative line
 (global-display-line-numbers-mode 1)
@@ -26,37 +26,39 @@
 (add-to-list 'default-frame-alist `(font . ,(rc/get-default-font)))
 (rc/require-theme 'gruber-darker)
 
-;;; c-mode
-(load "~/.emacs.rc/simpc-mode.el")
-(require 'simpc-mode)
-(add-to-list 'auto-mode-alist '("\\.[hc]\\(pp\\)?\\'" . simpc-mode))
-(add-to-list 'auto-mode-alist '("\\.[b]\\'" . simpc-mode))
-(setq-default c-basic-offset 4
-              c-default-style '((java-mode . "java")
-                                (awk-mode . "awk")
-                                (other . "bsd")))
+;; ;; c-mode
+;; (load "~/.emacs.rc/simpc-mode.el")
+;; (require 'simpc-mode)
+;; (add-to-list 'auto-mode-alist '("\\.[hc]\\(pp\\)?\\'" . simpc-mode))
+;; (add-to-list 'auto-mode-alist '("\\.[b]\\'" . simpc-mode))
 
-;;; External linter
-(defun astyle-buffer (&optional justify)
-  (interactive)
-  (let ((saved-line-number (line-number-at-pos)))
-    (shell-command-on-region
-     (point-min)
-     (point-max)
-     "astyle --style=kr"
-     nil
-     t)
-    (goto-line saved-line-number)))
+;; ;;; External linter
+;; (defun astyle-buffer (&optional justify)
+;;   (interactive)
+;;   (let ((saved-line-number (line-number-at-pos)))
+;;     (shell-command-on-region
+;;      (point-min)
+;;      (point-max)
+;;      "astyle --style=kr"
+;;      nil
+;;      t)
+;;     (goto-line saved-line-number)))
 
-(add-hook 'simpc-mode-hook
-          (lambda ()
-            (interactive)
-            (setq-local fill-paragraph-function 'astyle-buffer)))
+;; (add-hook 'simpc-mode-hook
+;;           (lambda ()
+;;             (interactive)
+;;             (setq-local fill-paragraph-function 'astyle-buffer)))
+
+(setq major-mode-remap-alist
+      '(( c-mode . c-ts-mode)
+        '( c++-mode . c++-ts-mode)
+        '( css-mode . css-ts-mode)
+        ))
 
 ;;; dired
 (require 'dired-x)
 (setq dired-omit-files
-      (concat dired-omit-files "\\|^\\..+$"))
+(concat dired-omit-files "\\|^\\..+$"))
 (setq-default dired-dwim-target t)
 (setq dired-listing-switches "-Dalh")
 (setq dired-mouse-drag-files t)
@@ -65,14 +67,12 @@
 (rc/require 'amx 'ido-completing-read+ 'crm-custom)
 (ido-mode 1)
 (ido-everywhere 1)
-(require 'ido-completing-read+)
 (ido-ubiquitous-mode 1)
-(require 'crm-custom)
 (crm-custom-mode 1)
-(setq magit-completing-read-function 'magit-ido-completing-read)
+;; (setq magit-completing-read-function 'magit-ido-completing-read)
 (amx-mode 1)
 
-;;; Company
+;;; Completion
 (rc/require 'company)
 (global-company-mode)
 (add-hook 'tuareg-mode-hook
@@ -88,13 +88,14 @@
 ;;; Whitespace mode
 (defun rc/set-up-whitespace-handling ()
   (interactive)
-  ;;(whitespace-mode 1)
-  (add-to-list 'write-file-functions 'delete-trailing-whitespace))
+;;(whitespace-mode 1)
+(add-to-list 'write-file-functions 'delete-trailing-whitespace))
 
 (add-hook 'c++-mode-hook 'rc/set-up-whitespace-handling)
 (add-hook 'c-mode-hook 'rc/set-up-whitespace-handling)
 (add-hook 'simpc-mode-hook 'rc/set-up-whitespace-handling)
 (add-hook 'emacs-lisp-mode-hook 'rc/set-up-whitespace-handling)
+(add-hook 'lua-mode-hook 'rc/set-up-whitespace-handling)
 
 ;;; electric-pair-mode
 (defun rc/set-up-electric-pair ()
@@ -103,6 +104,36 @@
 
 (add-hook 'emacs-lisp-mode-hook 'rc/set-up-electric-pair)
 (add-hook 'lisp-mode-hook 'rc/set-up-electric-pair)
+
+;;; Plug that dont require config
+(rc/require
+ 'lua-mode
+ 'cmake-mode
+ 'markdown-mode
+ )
+
+;;; word-wrap
+(defun rc/enable-word-wrap ()
+  (interactive)
+  (toggle-word-wrap 1))
+
+(add-hook 'markdown-mode-hook 'rc/enable-word-wrap)
+
+;;; multiple cursors
+(rc/require 'multiple-cursors)
+(global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
+(global-set-key (kbd "C->") 'mc/mark-next-like-this)
+(global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
+(global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
+(global-set-key (kbd "C-\"")'mc/skip-to-next-like-this)
+(global-set-key (kbd "C-:") 'mc/skip-to-previous-like-this)
+
+;;; yasnippet
+(rc/require 'yasnippet)
+(require 'yasnippet)
+(setq yas/triggers-in-field nil)
+(setq yas-snippet-dirs '("~/.emacs.d/snippets"))
+(yas-global-mode 1)
 
 ;;; Compile
 (require 'compile)

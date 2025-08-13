@@ -93,21 +93,21 @@ This command does the inverse of `fill-paragraph'."
 
 (global-set-key (kbd "C-c M-q") 'rc/unfill-paragraph)
 
-(defun rc/load-path-here ()
-  (interactive)
-  (add-to-list 'load-path default-directory))
+;; (defun rc/load-path-here ()
+;;   (interactive)
+;;   (add-to-list 'load-path default-directory))
 
-(defconst rc/frame-transparency 85)
+;; (defconst rc/frame-transparency 85)
 
-(defun rc/toggle-transparency ()
-  (interactive)
-  (let ((frame-alpha (frame-parameter nil 'alpha)))
-    (if (or (not frame-alpha)
-            (= (cadr frame-alpha) 100))
-        (set-frame-parameter nil 'alpha
-                             `(,rc/frame-transparency
-                               ,rc/frame-transparency))
-      (set-frame-parameter nil 'alpha '(100 100)))))
+;; (defun rc/toggle-transparency ()
+;;   (interactive)
+;;   (let ((frame-alpha (frame-parameter nil 'alpha)))
+;;     (if (or (not frame-alpha)
+;;             (= (cadr frame-alpha) 100))
+;;         (set-frame-parameter nil 'alpha
+;;                              `(,rc/frame-transparency
+;;                                ,rc/frame-transparency))
+;;       (set-frame-parameter nil 'alpha '(100 100)))))
 
 ;; (defun rc/duplicate-line ()
 ;;   "Duplicate current line"

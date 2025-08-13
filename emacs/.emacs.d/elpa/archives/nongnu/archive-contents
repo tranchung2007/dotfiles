@@ -914,6 +914,17 @@
 		  (:authors
 		   ("Akib Azmain Turja" . "akib@disroot.org"))
 		  (:commit . "99ea813346f3edef7220d8f4faeed2ec69af6060"))])
+ (flymake-pyrefly .
+		  [(0 1 6)
+		   ((emacs
+		     (26 1)))
+		   "A Pyrefly Flymake backend" tar
+		   ((:url . "https://github.com/inpefess/flymake-pyrefly")
+		    (:keywords "tools" "languages")
+		    (:maintainer "Boris Shminke" . "boris@shminke.com")
+		    (:authors
+		     ("Boris Shminke" . "boris@shminke.com"))
+		    (:commit . "f04dcbe5eaa42ae5062e621bb0df2d06b6ec6fcb"))])
  (focus .
 	[(1 0 1)
 	 ((emacs
@@ -958,7 +969,7 @@
 		("Akib Azmain Turja" . "akib@disroot.org"))
 	       (:commit . "ce2ea016a67b200862788e81f0ff1f8f7e4e0454"))])
  (geiser .
-	 [(0 31 1)
+	 [(0 32)
 	  ((emacs
 	    (27 1))
 	   (project
@@ -969,7 +980,7 @@
 	   (:maintainer "Jose Antonio Ortega Ruiz" . "(jao@gnu.org)")
 	   (:authors
 	    ("Jose Antonio Ortega Ruiz" . "(jao@gnu.org)"))
-	   (:commit . "c034c129cfa7442881f13ae146c87785b367cff5"))])
+	   (:commit . "9e76f336b91151315642de9bcbed0ffe83b69db7"))])
  (geiser-chez .
 	      [(0 18)
 	       ((emacs
@@ -2831,14 +2842,14 @@
 	       ("Le Wang" . "l26wang@gmail.com"))
 	      (:commit . "9ee5a7657a22e836618813c2e2b64a548d27d2ff"))])
  (xah-fly-keys .
-	       [(28 1 20250801123856)
+	       [(28 3 20250807101931)
 		((emacs
 		  (28 3)))
 		"ergonomic modal keybinding minor mode." tar
 		((:url . "http://xahlee.info/emacs/misc/xah-fly-keys.html")
 		 (:keywords "convenience" "vi" "vim" "ergoemacs" "keybinding")
 		 (:maintainer "Xah Lee" . "xah@xahlee.org")
-		 (:commit . "38cd9445aff6fdcb672a31c7c5d1405009470058"))])
+		 (:commit . "2683d6c404364956ca2e2ca5c4199b07862896dd"))])
  (xkcd .
        [(1 1)
 	((json
