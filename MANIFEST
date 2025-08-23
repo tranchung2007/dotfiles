@@ -1,0 +1,11 @@
+.emacs|symlink|
+.emacs.rc|symlink|
+.emacs.snippets|symlink|
+.emacs.local|symlink|
+.emacs.custom.el|symlink|
+foot|symlink|.config
+fuzzel|symlink|.config
+hypr|symlink|.config
+nvim|symlink|.config
+wallpaper|symlink|.config
+waybar|symlink|.config

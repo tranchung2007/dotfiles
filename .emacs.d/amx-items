@@ -1,0 +1,86 @@
+
+;; ----- amx-history -----
+(
+ compile
+ which-key-mode
+ magit
+ recover-this-file
+ zig-run
+ zig-mode
+ package-install
+ astyle-buffer
+ join-line
+ query-replace
+ customize
+ package-delete
+ recover-session
+ rc/toggle-transparency
+ emms
+ astyle-region
+ delete-selection-mode
+ man
+ mpc
+ recover-file
+ customize-group
+ c-electric-brace
+ company-yasnippet
+ eval-print-last-sexp
+ package-recompile-all
+ dired-vm
+ helm-M-x
+ ido-mode
+ mpc-mode
+ org-mode
+)
+
+;; ----- amx-data -----
+(
+ (compile . 209)
+ (electric-pair-mode . 1)
+ (customize-group . 2)
+ (rc/kill-autoloads-buffers . 1)
+ (package-install . 3)
+ (package-list-packages . 1)
+ (bash-ts-mode . 1)
+ (package-delete . 4)
+ (eval-print-last-sexp . 2)
+ (org-mode . 1)
+ (icomplete-mode . 1)
+ (ido-mode . 1)
+ (package-recompile . 1)
+ (package-recompile-all . 2)
+ (join-line . 7)
+ (astyle-region . 3)
+ (fill-paragraph . 1)
+ (astyle-buffer . 8)
+ (electric-indent-mode . 1)
+ (delete-selection-mode . 3)
+ (customize . 4)
+ (suspend-frame . 1)
+ (man . 2)
+ (recover-session . 4)
+ (customize-themes . 1)
+ (recover-file . 2)
+ (conf-mode . 1)
+ (simpc-mode . 1)
+ (dired-async-mode . 1)
+ (dired-vm . 1)
+ (fido-mode . 1)
+ (yas-expand . 1)
+ (company-yasnippet . 2)
+ (package-autoremove . 1)
+ (query-replace . 6)
+ (recover-this-file . 4)
+ (auto-revert-mode . 1)
+ (helm-M-x . 1)
+ (which-key-mode . 5)
+ (rc/toggle-transparency . 4)
+ (c-electric-brace . 2)
+ (grep-find . 1)
+ (mpc . 2)
+ (mpc-mode . 1)
+ (emms . 3)
+ (zig-mode . 1)
+ (zig-run . 1)
+ (magit . 2)
+)
