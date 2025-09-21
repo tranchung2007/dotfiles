@@ -2,85 +2,96 @@
 ;; ----- amx-history -----
 (
  compile
- which-key-mode
- magit
- recover-this-file
- zig-run
- zig-mode
+ emacs-lisp-native-compile
+ native-comp-limple-mode
+ native-compile-prune-cache
+ package-delete
+ package-recompile-all
  package-install
  astyle-buffer
- join-line
- query-replace
- customize
- package-delete
- recover-session
- rc/toggle-transparency
- emms
- astyle-region
- delete-selection-mode
+ amx
+ auto-revert-mode
  man
- mpc
- recover-file
- customize-group
- c-electric-brace
- company-yasnippet
- eval-print-last-sexp
- package-recompile-all
- dired-vm
- helm-M-x
- ido-mode
- mpc-mode
- org-mode
+ grep-find
+ load-library
+ recover-this-file
+ electric-indent-mode
+ basm-mode
+ simpc-mode
+ align-regexp
+ describe-key
+ diff
+ align
+ dired
+ ag-dired
+ conf-mode
+ customize
+ recompile
+ indent-region
+ makefile-mode
+ recover-session
+ electric-pair-mode
 )
 
 ;; ----- amx-data -----
 (
- (compile . 209)
- (electric-pair-mode . 1)
- (customize-group . 2)
- (rc/kill-autoloads-buffers . 1)
- (package-install . 3)
- (package-list-packages . 1)
- (bash-ts-mode . 1)
- (package-delete . 4)
- (eval-print-last-sexp . 2)
+ (grep-find . 4)
+ (package-recompile-all . 4)
+ (org-capture . 1)
+ (package-install . 2)
  (org-mode . 1)
- (icomplete-mode . 1)
- (ido-mode . 1)
- (package-recompile . 1)
- (package-recompile-all . 2)
- (join-line . 7)
- (astyle-region . 3)
- (fill-paragraph . 1)
- (astyle-buffer . 8)
- (electric-indent-mode . 1)
- (delete-selection-mode . 3)
- (customize . 4)
- (suspend-frame . 1)
- (man . 2)
- (recover-session . 4)
- (customize-themes . 1)
- (recover-file . 2)
- (conf-mode . 1)
- (simpc-mode . 1)
- (dired-async-mode . 1)
- (dired-vm . 1)
- (fido-mode . 1)
- (yas-expand . 1)
- (company-yasnippet . 2)
- (package-autoremove . 1)
- (query-replace . 6)
+ (compile . 597)
+ (indent-region . 2)
+ (auto-revert-mode . 5)
+ (dired-do-open . 1)
+ (rcirc . 1)
+ (xml-mode . 1)
+ (simpc-mode . 3)
+ (duplicate-line . 1)
+ (customize . 2)
+ (describe-key . 3)
+ (describe-face . 1)
+ (c3-mode . 1)
+ (man . 4)
+ (basm-mode . 3)
+ (describe-function . 1)
  (recover-this-file . 4)
- (auto-revert-mode . 1)
- (helm-M-x . 1)
- (which-key-mode . 5)
- (rc/toggle-transparency . 4)
- (c-electric-brace . 2)
- (grep-find . 1)
- (mpc . 2)
- (mpc-mode . 1)
- (emms . 3)
- (zig-mode . 1)
- (zig-run . 1)
- (magit . 2)
+ (debug . 1)
+ (gdb . 1)
+ (overwrite-mode . 1)
+ (cmake-mode . 1)
+ (makefile-mode . 2)
+ (makefile-gmake-mode . 1)
+ (conf-mode . 2)
+ (dired . 2)
+ (customize-variable . 1)
+ (fido-vertical-mode . 2)
+ (ido-display-file . 1)
+ (ido-dired . 1)
+ (ido-make-directory . 1)
+ (eshell . 1)
+ (whitespace-mode . 1)
+ (astyle-buffer . 37)
+ (electric-pair-mode . 2)
+ (electric-indent-mode . 4)
+ (amx . 6)
+ (etags-regen-mode . 1)
+ (align . 2)
+ (align-regexp . 3)
+ (align-current . 1)
+ (multiple-cursors-mode . 1)
+ (recover-session . 2)
+ (which-key-mode . 1)
+ (load-library . 4)
+ (ag . 1)
+ (ag-dired . 2)
+ (recompile . 2)
+ (compile-angel-on-save-mode . 1)
+ (emacs-lisp-native-compile . 8)
+ (native-compile-prune-cache . 3)
+ (native-comp-limple-mode . 2)
+ (emacs-lisp-native-compile-and-load . 2)
+ (diff . 2)
+ (diff-mode . 1)
+ (package-delete . 1)
 )

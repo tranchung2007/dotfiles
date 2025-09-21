@@ -1,11 +1,10 @@
+;;; -*- lexical-binding: t -*-
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(amx-auto-update-interval 10)
  '(amx-history-length 30)
- '(auto-revert-verbose nil)
  '(compile-command "")
  '(confirm-kill-emacs 'y-or-n-p)
  '(custom-enabled-themes '(gruber-darker))
@@ -14,7 +13,6 @@
      default))
  '(delete-selection-mode t)
  '(display-line-numbers-type 'relative)
- '(global-auto-revert-non-file-buffers t)
  '(ido-completion-buffer-all-completions t)
  '(ido-cr+-replace-completely t)
  '(org-agenda-dim-blocked-tasks nil)

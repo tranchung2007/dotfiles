@@ -3,17 +3,16 @@
 
 (setq mc/cmds-to-run-for-all
       '(
-        amx
-        dired-mark
-        elisp-byte-compile-file
+        completion-at-point
         kill-region
-        mark-sexp
-        undo-redo
         ))
 
 (setq mc/cmds-to-run-once
       '(
+        amx
         compile
-        paredit-RET
-        toggle-input-method
+        dired-do-rename
+        mark-sexp
+        multiple-cursors-mode
+        paredit-semicolon
         ))

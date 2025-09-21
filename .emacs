@@ -1,3 +1,5 @@
+;;; -*- lexical-binding: t -*-
+
 (setq custom-file "~/.emacs.custom.elc")
 (package-initialize)
 
@@ -76,7 +78,7 @@
 
 ;;; Emacs lisp
 (add-hook 'emacs-lisp-mode-hook
-          '(lambda ()
+          #'(lambda ()
              (local-set-key (kbd "C-c C-j")
                             (quote eval-print-last-sexp))))
 (add-to-list 'auto-mode-alist '("Cask" . emacs-lisp-mode))
@@ -137,6 +139,8 @@
 (add-hook 'nim-mode-hook 'rc/set-up-whitespace-handling)
 (add-hook 'yaml-mode-hook 'rc/set-up-whitespace-handling)
 (add-hook 'porth-mode-hook 'rc/set-up-whitespace-handling)
+(add-hook 'zig-mode-hook 'rc/set-up-whitespace-handling)
+(add-hook 'csharp-mode-hook 'rc/set-up-whitespace-handling)
 
 ;;; display-line-numbers-mode
 (when (version<= "26.0.50" emacs-version)
@@ -171,7 +175,6 @@
 (setq dired-listing-switches "-alh")
 (setq dired-mouse-drag-files t)
 (setf dired-kill-when-opening-new-dired-buffer t)
-(global-auto-revert-mode 1)
 
 ;;; helm
 ;; (rc/require 'helm 'helm-git-grep 'helm-ls-git)
@@ -191,7 +194,7 @@
 
 (require 'yasnippet)
 
-(setq yas/triggers-in-field nil)
+(setq yas-triggers-in-field nil)
 (setq yas-snippet-dirs '("~/.emacs.snippets/"))
 
 (yas-global-mode 1)
@@ -252,7 +255,7 @@
 ;;; Proof general
 (rc/require 'proof-general)
 (add-hook 'coq-mode-hook
-          '(lambda ()
+          #'(lambda ()
              (local-set-key (kbd "C-c C-q C-n")
                             (quote proof-assert-until-point-interactive))))
 
@@ -299,12 +302,13 @@
  'php-mode
  'racket-mode
  'qml-mode
- ;; 'ag
+ 'ag
  'elpy
  'typescript-mode
  'rfc-mode
  'sml-mode
  'zig-mode
+ 'cobol-mode
  )
 
 (load "~/.emacs.shadow/shadow-rc.el" t)
@@ -318,12 +322,12 @@
      "astyle --style=kr"
      nil
      t)
-    (goto-line saved-line-number)))
+    (forward-line saved-line-number)))
 
 (add-hook 'simpc-mode-hook
           (lambda ()
             (interactive)
-            (setq-local fill-paragraph-function 'astyle-buffer)))
+            (setq-local fill-paragraph-function #'astyle-buffer)))
 
 (require 'compile)
 
@@ -335,4 +339,7 @@ compilation-error-regexp-alist-alist
              '("\\([a-zA-Z0-9\\.]+\\)(\\([0-9]+\\)\\(,\\([0-9]+\\)\\)?) \\(Warning:\\)?"
                1 2 (4) (5)))
 
+(setq package-native-compile t)
+
+(setq disabled-command-function nil)
 (load-file custom-file)
