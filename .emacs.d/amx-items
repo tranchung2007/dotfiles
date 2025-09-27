@@ -40,7 +40,7 @@
  (org-capture . 1)
  (package-install . 2)
  (org-mode . 1)
- (compile . 597)
+ (compile . 605)
  (indent-region . 2)
  (auto-revert-mode . 5)
  (dired-do-open . 1)
