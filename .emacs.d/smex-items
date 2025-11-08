@@ -1,0 +1,17 @@
+
+;; ----- smex-history -----
+(
+ compile
+ package-recompile-all
+ ag
+ cd
+ 5x5
+ amx
+ arp
+)
+
+;; ----- smex-data -----
+(
+ (package-recompile-all . 3)
+ (compile . 1)
+)

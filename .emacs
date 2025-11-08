@@ -1,5 +1,3 @@
-;;; -*- lexical-binding: t -*-
-
 (setq custom-file "~/.emacs.custom.elc")
 (package-initialize)
 
@@ -15,7 +13,7 @@
 (defun rc/get-default-font ()
   (cond
    ((eq system-type 'windows-nt) "Consolas-13")
-   ((eq system-type 'gnu/linux) "Iosevka-16")))
+   ((eq system-type 'gnu/linux) "Iosevka-17")))
 
 (add-to-list 'default-frame-alist `(font . ,(rc/get-default-font)))
 
@@ -24,6 +22,7 @@
 (scroll-bar-mode 0)
 (column-number-mode 1)
 (show-paren-mode 1)
+(delete-selection-mode t)
 
 (rc/require-theme 'gruber-darker)
 ;; (rc/require-theme 'zenburn)
@@ -33,23 +32,15 @@
   (set-face-attribute 'line-number nil :inherit 'default))
 
 ;;; ido
-(rc/require 'amx 'ido-completing-read+ 'crm-custom)
+(rc/require 'smex 'ido-completing-read+)
 
 (require 'ido-completing-read+)
 
 (ido-mode 1)
 (ido-everywhere 1)
 (ido-ubiquitous-mode 1)
-(setq magit-completing-read-function 'magit-ido-completing-read)
 
-(require 'amx)
-(require 'crm-custom)
-
-(amx-mode 1)
-(crm-custom-mode 1)
-;; (fido-mode)
-
-;; (global-set-key (kbd "M-x") 'smex)
+(global-set-key (kbd "M-x") 'smex)
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 
 ;;; c-mode
@@ -78,7 +69,7 @@
 
 ;;; Emacs lisp
 (add-hook 'emacs-lisp-mode-hook
-          #'(lambda ()
+          '(lambda ()
              (local-set-key (kbd "C-c C-j")
                             (quote eval-print-last-sexp))))
 (add-to-list 'auto-mode-alist '("Cask" . emacs-lisp-mode))
@@ -112,6 +103,8 @@
 (add-to-list 'auto-mode-alist '("\\.[hc]\\(pp\\)?\\'" . simpc-mode))
 (add-to-list 'auto-mode-alist '("\\.[b]\\'" . simpc-mode))
 
+(require 'umka-mode)
+
 (require 'c3-mode)
 
 ;;; Whitespace mode
@@ -139,8 +132,6 @@
 (add-hook 'nim-mode-hook 'rc/set-up-whitespace-handling)
 (add-hook 'yaml-mode-hook 'rc/set-up-whitespace-handling)
 (add-hook 'porth-mode-hook 'rc/set-up-whitespace-handling)
-(add-hook 'zig-mode-hook 'rc/set-up-whitespace-handling)
-(add-hook 'csharp-mode-hook 'rc/set-up-whitespace-handling)
 
 ;;; display-line-numbers-mode
 (when (version<= "26.0.50" emacs-version)
@@ -174,10 +165,8 @@
 (setq-default dired-dwim-target t)
 (setq dired-listing-switches "-alh")
 (setq dired-mouse-drag-files t)
-(setf dired-kill-when-opening-new-dired-buffer t)
 
 ;;; helm
-;; (rc/require 'helm 'helm-git-grep 'helm-ls-git)
 (rc/require 'helm 'helm-ls-git)
 
 (setq helm-ff-transformer-show-only-basename nil)
@@ -194,7 +183,7 @@
 
 (require 'yasnippet)
 
-(setq yas-triggers-in-field nil)
+(setq yas/triggers-in-field nil)
 (setq yas-snippet-dirs '("~/.emacs.snippets/"))
 
 (yas-global-mode 1)
@@ -255,7 +244,7 @@
 ;;; Proof general
 (rc/require 'proof-general)
 (add-hook 'coq-mode-hook
-          #'(lambda ()
+          '(lambda ()
              (local-set-key (kbd "C-c C-q C-n")
                             (quote proof-assert-until-point-interactive))))
 
@@ -307,8 +296,6 @@
  'typescript-mode
  'rfc-mode
  'sml-mode
- 'zig-mode
- 'cobol-mode
  )
 
 (load "~/.emacs.shadow/shadow-rc.el" t)
@@ -322,12 +309,12 @@
      "astyle --style=kr"
      nil
      t)
-    (forward-line saved-line-number)))
+    (goto-line saved-line-number)))
 
 (add-hook 'simpc-mode-hook
           (lambda ()
             (interactive)
-            (setq-local fill-paragraph-function #'astyle-buffer)))
+            (setq-local fill-paragraph-function 'astyle-buffer)))
 
 (require 'compile)
 
@@ -341,5 +328,4 @@ compilation-error-regexp-alist-alist
 
 (setq package-native-compile t)
 
-(setq disabled-command-function nil)
 (load-file custom-file)

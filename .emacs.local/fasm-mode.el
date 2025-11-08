@@ -441,7 +441,7 @@
     ((fasm-label?)
      (let ()
        (back-to-indentation)
-       (delete-char (current-column))))
+       (delete-backward-char (current-column))))
     ;; 下面是根据上一行来缩进
     (t;; else
      (back-to-indentation)
@@ -458,9 +458,9 @@
              ((< curr-indent prev-indent)
               (indent-to prev-indent))
              ((>= curr-indent prev-indent)
-              (delete-char))
+              (delete-backward-char (- curr-indent prev-indent)))
              ((>= curr-indent prev-indent)
-              (delete-char))
+              (delete-backward-char (- curr-indent prev-indent)))
              )))))
 
 ;; Emacs < 24 did not have prog-mode

@@ -1,36 +1,36 @@
 
 ;; ----- amx-history -----
 (
+ byte-recompile-directory
+ byte-recompile-file
+ byte-compile-file
  compile
- emacs-lisp-native-compile
- native-comp-limple-mode
- native-compile-prune-cache
- package-delete
- package-recompile-all
- package-install
+ which-key-mode
+ diff
+ isearch-forward-word
+ markdown-mode
+ magit
+ recover-this-file
  astyle-buffer
+ emacs-lisp-native-compile
  amx
  auto-revert-mode
  man
  grep-find
  load-library
- recover-this-file
  electric-indent-mode
+ package-recompile-all
+ revert-buffer-with-fine-grain
  basm-mode
  simpc-mode
  align-regexp
  describe-key
- diff
+ native-compile-prune-cache
  align
  dired
  ag-dired
  conf-mode
  customize
- recompile
- indent-region
- makefile-mode
- recover-session
- electric-pair-mode
 )
 
 ;; ----- amx-data -----
@@ -40,9 +40,9 @@
  (org-capture . 1)
  (package-install . 2)
  (org-mode . 1)
- (compile . 605)
+ (compile . 687)
  (indent-region . 2)
- (auto-revert-mode . 5)
+ (auto-revert-mode . 6)
  (dired-do-open . 1)
  (rcirc . 1)
  (xml-mode . 1)
@@ -55,7 +55,7 @@
  (man . 4)
  (basm-mode . 3)
  (describe-function . 1)
- (recover-this-file . 4)
+ (recover-this-file . 8)
  (debug . 1)
  (gdb . 1)
  (overwrite-mode . 1)
@@ -71,7 +71,7 @@
  (ido-make-directory . 1)
  (eshell . 1)
  (whitespace-mode . 1)
- (astyle-buffer . 37)
+ (astyle-buffer . 38)
  (electric-pair-mode . 2)
  (electric-indent-mode . 4)
  (amx . 6)
@@ -81,7 +81,7 @@
  (align-current . 1)
  (multiple-cursors-mode . 1)
  (recover-session . 2)
- (which-key-mode . 1)
+ (which-key-mode . 9)
  (load-library . 4)
  (ag . 1)
  (ag-dired . 2)
@@ -91,7 +91,17 @@
  (native-compile-prune-cache . 3)
  (native-comp-limple-mode . 2)
  (emacs-lisp-native-compile-and-load . 2)
- (diff . 2)
+ (diff . 4)
  (diff-mode . 1)
  (package-delete . 1)
+ (revert-buffer-with-fine-grain . 4)
+ (markdown . 1)
+ (markdown-preview . 1)
+ (markdown-mode . 3)
+ (search-forward . 1)
+ (magit . 1)
+ (isearch-forward-word . 1)
+ (byte-compile-file . 1)
+ (byte-recompile-file . 1)
+ (byte-recompile-directory . 2)
 )

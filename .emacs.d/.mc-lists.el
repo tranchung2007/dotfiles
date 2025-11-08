@@ -10,9 +10,11 @@
 (setq mc/cmds-to-run-once
       '(
         amx
+        beginning-of-buffer
         compile
         dired-do-rename
         mark-sexp
         multiple-cursors-mode
         paredit-semicolon
+        wdired--self-insert
         ))

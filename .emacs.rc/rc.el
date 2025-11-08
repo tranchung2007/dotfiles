@@ -1,6 +1,5 @@
 (add-to-list 'package-archives
              '("melpa" . "https://melpa.org/packages/") t)
-
 ;; (add-to-list 'package-archives
 ;;              '("melpa-stable" . "https://stable.melpa.org/packages/") t)
 
@@ -31,5 +30,5 @@
 (rc/require 'dash)
 (require 'dash)
 
-;; (rc/require 'dash-functional)
-;; (require 'dash-functional)
+(rc/require 'dash-functional)
+(require 'dash-functional)
