@@ -1,17 +1,40 @@
 
 ;; ----- smex-history -----
 (
+ package-delete
  compile
- package-recompile-all
- ag
- cd
- 5x5
- amx
- arp
+ man
+ which-key-mode
+ package-install
+ package-list-packages
+ upcase-region
 )
 
 ;; ----- smex-data -----
 (
+ (recover-this-file . 2)
+ (cookie . 1)
+ (compile . 145)
+ (nasm-mode . 7)
+ (reveal-mode . 2)
+ (man . 7)
+ (company-mode . 4)
+ (read-only-mode . 1)
+ (recover-session . 1)
  (package-recompile-all . 3)
- (compile . 1)
+ (package-reinstall . 2)
+ (package-autoremove . 3)
+ (list-packages . 1)
+ (customize . 2)
+ (describe-function . 6)
+ (package-delete . 2)
+ (pwd . 2)
+ (eval-buffer . 2)
+ (load-theme . 3)
+ (enable-theme . 1)
+ (whitespace-mode . 2)
+ (upcase-region . 2)
+ (package-list-packages . 1)
+ (package-install . 2)
+ (which-key-mode . 3)
 )

@@ -13,6 +13,7 @@
         beginning-of-buffer
         compile
         dired-do-rename
+        indent-for-tab-command
         mark-sexp
         multiple-cursors-mode
         paredit-semicolon

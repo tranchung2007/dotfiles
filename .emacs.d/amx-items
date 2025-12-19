@@ -1,36 +1,13 @@
 
 ;; ----- amx-history -----
 (
+ magit
+ compile
+ set-goal-column
+ customize-group
+ customize
  byte-recompile-directory
  byte-recompile-file
- byte-compile-file
- compile
- which-key-mode
- diff
- isearch-forward-word
- markdown-mode
- magit
- recover-this-file
- astyle-buffer
- emacs-lisp-native-compile
- amx
- auto-revert-mode
- man
- grep-find
- load-library
- electric-indent-mode
- package-recompile-all
- revert-buffer-with-fine-grain
- basm-mode
- simpc-mode
- align-regexp
- describe-key
- native-compile-prune-cache
- align
- dired
- ag-dired
- conf-mode
- customize
 )
 
 ;; ----- amx-data -----
@@ -40,7 +17,7 @@
  (org-capture . 1)
  (package-install . 2)
  (org-mode . 1)
- (compile . 687)
+ (compile . 715)
  (indent-region . 2)
  (auto-revert-mode . 6)
  (dired-do-open . 1)
@@ -48,7 +25,7 @@
  (xml-mode . 1)
  (simpc-mode . 3)
  (duplicate-line . 1)
- (customize . 2)
+ (customize . 3)
  (describe-key . 3)
  (describe-face . 1)
  (c3-mode . 1)
@@ -99,9 +76,11 @@
  (markdown-preview . 1)
  (markdown-mode . 3)
  (search-forward . 1)
- (magit . 1)
+ (magit . 3)
  (isearch-forward-word . 1)
  (byte-compile-file . 1)
  (byte-recompile-file . 1)
  (byte-recompile-directory . 2)
+ (customize-group . 2)
+ (set-goal-column . 2)
 )

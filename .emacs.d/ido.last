@@ -2,18 +2,20 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/home/chung/probe/fun_with_compiler/" . "python/")
+ ("/home/chung/probe/freecodecamp/" . "raylib-game/")
  ("/usr/include/c++/" . "15/")
  ("/usr/include/" . "c++/")
  ("/home/chung/Documents/NMKT/" . "NMKT/")
  ("/home/chung/probe/temp/" . "assembly/")
  ("/home/chung/Downloads/" . "foot/")
- ("/home/chung/.emacs.d/elpa/" . "gruber-darker-theme-20231026.2031/")
+ ("/home/chung/.emacs.d/elpa/" . "cobol-mode-1.1/")
  ("/home/chung/.emacs.d/" . "elpa/")
  ("/home/chung/.wine/" . "drive_c/")
  ("/home/chung/opt/coomer/" . "src/")
  ("/home/chung/Pictures/" . "penger/")
  ("/usr/share/doc/" . "raylib-devel/")
- ("/home/chung/.config/" . "hypr/")
+ ("/home/chung/.config/" . "niri/")
  ("/home/chung/opt/hyprland-source/src/" . "config/")
  ("/home/chung/opt/raylib-5.5/" . "examples/")
  ("/home/chung/probe/rust/" . "src/")
@@ -21,30 +23,45 @@
  ("/usr/local/" . "share/")
  ("/usr/" . "include/")
  ("/" . "usr/")
- ("/home/chung/opt/" . "sowon/")
- ("/home/chung/probe/" . "helloworld_c/")
- ("/home/chung/Documents/" . "emacs/")
+ ("/home/chung/opt/" . "Hyprland/")
+ ("/home/chung/probe/" . "fun_with_compiler/")
+ ("/home/chung/Documents/" . "NMKT/")
  ("/home/chung/" . "probe/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
- "/home/chung/probe/helloworld_c/"
  "/home/chung/"
+ "/home/chung/probe/fun_with_compiler/python/"
+ "/home/chung/probe/fasm/"
+ "/home/chung/probe/rust/src/"
+ "/home/chung/probe/rust/"
+ "/home/chung/probe/fun_with_compiler/assembly/"
+ "/home/chung/Documents/NMKT/NMKT/"
+ "/home/chung/opt/"
+ "/home/chung/.config/niri/"
+ "/home/chung/probe/c_problem/"
+ "/usr/include/"
+ "/home/chung/opt/Hyprland/"
+ "/home/chung/probe/nasm/"
+ "/home/chung/opt/pinpog/"
+ "/home/chung/opt/dotfiles/"
  "/home/chung/Downloads/foot/"
- "/home/chung/.config/hypr/"
+ "/home/chung/probe/pandas/"
+ "/home/chung/probe/"
+ "/home/chung/probe/freecodecamp/raylib-game/"
  "/home/chung/probe/raylib/"
+ "/home/chung/probe/helloworld_c/"
+ "/home/chung/.config/hypr/"
  "/home/chung/Documents/emacs/"
  "/home/chung/Software/"
  "/home/chung/Downloads/"
  "/usr/include/c++/15/"
  "/home/chung/probe/temp/cpp/"
  "/home/chung/probe/temp/"
- "/home/chung/Documents/NMKT/NMKT/"
  "/home/chung/Documents/NMKT/lab/"
  "/home/chung/Documents/NMKT/"
  "/home/chung/probe/temp/assembly/"
- "/home/chung/probe/"
  "/home/chung/probe/temp/python/"
  "/home/chung/probe/temp/c/"
  "/home/chung/probe/KTLT/"
@@ -55,73 +72,123 @@
  "/home/chung/probe/jav/"
  "/home/chung/.emacs.d/elpa/gruber-darker-theme-20231026.2031/"
  "/home/chung/.wine/drive_c/"
- "/home/chung/opt/dotfiles/"
  "/home/chung/.config/nvim/"
  "/home/chung/opt/sowon/"
  "/home/chung/opt/coomer/src/"
  "/home/chung/Pictures/penger/"
- "/usr/include/"
  "/home/chung/opt/hyprland-source/"
  "/"
  "/home/chung/probe/oop/"
- "/home/chung/probe/rust/src/"
  "/home/chung/Pictures/"
  "/home/chung/opt/raylib-5.5/examples/"
- "/home/chung/probe/rust/"
- "/home/chung/.emacs.local/"
- "/home/chung/opt/ly/"
- "/home/"
- "/home/chung/Documents/org/"
- "/home/chung/.emacs.rc/"
 )
 
 ;; ----- ido-work-file-list -----
 (
- "main.c"
  ".emacs"
- "aeroroot"
- "hyprland.conf"
- ".emacs.custom.el"
- "printHelloWorld.h"
- "printHelloWorld.c"
- "example_lib.c"
- "gamepad.c"
- "Doc"
+ "contain_dup.py"
+ "example.py"
+ "in.txt"
+ "helloworld.asm"
+ "main.rs"
+ "example.s"
+ "BTL_rewrite.txt"
+ "config.kdl"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/chung/" (26894 53780 552372 283000) ".emacs.elc" ".zcompdump.zwc" ".zcompdump.dat" ".zcompdump" ".viminfo" ".emacs.custom.elc" ".designer/" ".zhistory" ".source-highlight/" ".m17n.d/" ".zoom/" ".steampid" ".steampath" ".steam/" "GOG Games/" ".zshrc" ".Xresources" ".emacs.d/" ".d2launcher/" ".wine/" ".python_history" "Saves/" ".bash_history" ".pki/" ".nuget/" ".templateengine/" ".tmux.conf" ".dotnet/" ".emacs.custom.el" ".emacs.local/" ".emacs.snippets/" ".emacs.rc/" ".emacs" ".gtk-bookmarks" "Downloads/" "probe/" ".zimrc" ".vimrc" ".zcompcache/" ".zprofile" ".gitconfig" "Software/" ".zim/" ".git-credentials" ".ssh/" ".vim/" "Documents/" ".fonts/" ".android/" ".npm/" "Templates/" ".cargo/" "opt/" ".gtkrc-2.0" ".local/" ".config/" "Videos/" "Pictures/" "Music/" "Public/" "Desktop/" ".cache/" ".mozilla/" "../" "./")
+ ("/home/chung/" (26945 25040 117567 878000) ".emacs.custom.elc" ".emacs.elc" ".viminfo" ".zcompdump.zwc" ".zcompdump.dat" ".zcompdump" ".themes/" ".rustup/" ".zshenv" ".profile" ".fonts/" ".zhistory" ".vimrc" ".gdbinit" ".designer/" ".source-highlight/" ".m17n.d/" ".zoom/" ".steampid" ".steampath" ".steam/" "GOG Games/" ".zshrc" ".Xresources" ".emacs.d/" ".d2launcher/" ".wine/" ".python_history" "Saves/" ".bash_history" ".pki/" ".nuget/" ".templateengine/" ".tmux.conf" ".dotnet/" ".emacs.custom.el" ".emacs.local/" ".emacs.snippets/" ".emacs.rc/" ".emacs" ".gtk-bookmarks" "Downloads/" "probe/" ".zimrc" ".zcompcache/" ".zprofile" ".gitconfig" "Software/" ".zim/" ".git-credentials" ".ssh/" ".vim/" "Documents/" ".android/" ".npm/" "Templates/" ".cargo/" "opt/" ".gtkrc-2.0" ".local/" ".config/" "Videos/" "Pictures/" "Music/" "Public/" "Desktop/" ".cache/" ".mozilla/" "../" "./")
 
- ("/home/chung/Downloads/" (26893 19724 281897 307000) "sublime_text/" "sublime_text_build_4200_x64.tar.xz" "download_thanks?target=x64-rpm" "sublimehq-rpm-pub.gpg" "FireShot/" "Screen Shot 2025-11-05 at 08.21.00.png" "Screen Shot 2025-11-05 at 08.15.55.png" "Screen Shot 2025-11-05 at 08.13.03.png" "Screen Shot 2025-11-05 at 08.11.36.png" "234102d30205805-sport2.docx" "Otherworld.Legends.v2.11.0.rar" "IMG_20251028_224812(2).jpg-autosave.kra" "IMG_20251028_224812(2).jpg" "IMG_20251028_224812.jpg~" "IMG_20251028_224812.jpg" "vivaldi-stable-7.6.3797.63-1.x86_64.rpm" "Nordic Ashes Survivors of Ragnarok/" "Screenshot_2025-10-13-15-11-49-704_com.dhcn.MyHAUI.jpg" "wine-10.16-staging-tkg-amd64.tar.xz" "ComicCodeLigaturesNerdFont-Regular.otf" "Video_2025-10-04_19-53-35.mkv" "Bai-4-Phan-cung-va-Phan-mem-May-tinh.pptx" "zoom_x86_64.rpm" "234102d30215957-it-person.docx" "Phần tổng kết.pptx" "2025606435.jpg" "234102d21094605-family.docx" "ZDL_3-1.1_Linux_x64/" "ZDL_3-1.1_Linux_x64.tar.gz" "colormuse/" "CC/" "234102d18220201-idol.docx" "234102d18215812-idol.docx" "foot/" "LibolBookworm.msi" "LocalSend-1.17.0-linux-x86-64.AppImage" "lichhoc.pdf" "IMG_20250630_054516.jpg" "dotfiles/" "myimage/" "Screenshot_2025-06-30-06-37-09-573_vn.com.techcombank.bb.app.jpg" "day.jpg" "sRGB2014.icc" "../" "./")
+ ("/home/chung/opt/dotfiles/" (26945 25044 196567 990000) ".emacs.custom.el" "MANIFEST" ".emacs.snippets/" ".emacs.rc/" ".emacs.local/" ".emacs.d/" ".emacs" "deploy.sh" "README.md" ".gitignore" "foot/" "waybar/" "wallpaper/" "fuzzel/" "hypr/" "nvim/" ".git/" "../" "./")
 
- ("/home/chung/opt/dotfiles/" (26894 53687 691374 355000) ".emacs.custom.el" "MANIFEST" ".emacs.snippets/" ".emacs.rc/" ".emacs.local/" ".emacs.d/" ".emacs" "deploy.sh" "README.md" ".gitignore" "foot/" "waybar/" "wallpaper/" "fuzzel/" "hypr/" "nvim/" ".git/" "../" "./")
+ ("/home/chung/probe/fun_with_compiler/python/" (26945 24140 458543 104000) "qr.py" "some_file.png" "example.py" "../" "./")
 
- ("/home/chung/.config/hypr/" (26894 53668 284374 788000) "hyprland.conf" "vibrance.glsl" "../" "./")
+ ("/home/chung/probe/fasm/" (26945 22400 533495 191000) "foo.txt" "helloworld" "helloworld.asm" "../" "./")
+
+ ("/home/chung/Documents/NMKT/" (26944 9820 250694 353000) "bài 7 ppt.pptx" "kernel_layout.webp" "Bai 6_2_ PP học tập hiệu quả.pdf" "Bai 6_1_ PP học tập hiệu quả.pdf" "bài 5 Hệ Đếm.pdf" "hau_to_cpu_desktop.png" "Hau_to_cpu_laptop.png" "Bài 4 NMKT.pptx" "Bài 5_ Hệ đếm.pdf" "Intel and AMD processors comparison.pdf" "Intel-CPU-Comparsion.pdf" "Intel-Core-Desktop-Boxed-Processors-Comparison-Chart.pdf" "operating-system-concepts-10th.pdf" "vitualmachine/" "lab/" "opering_system.pdf" "NMKT/" "Hướng dẫn Viết Báo cáo BTL_IT6217/" "Hướng dẫn Viết Báo cáo BTL_IT6217.rar" "B4-kichban.md" "Muctieu.xls" "chuongtrinhhoc.xls" "Noi dung B3 AI.docx" "b4.odt" "Bài 4_ Phần cứng và phần mềm.pdf" "NMKT nhóm 2.pptx" "Practical Vim - Drew Neil_1241.pdf" "B2.html" "B2.pptx" ".~lock.B2.pptx#" "B2.odp" "b1.odt" "b1.docx" "2.2_ Ngành học và Khung chương trình_tiếp.pdf" "2.1_ Ngành học và Khung chương trình.pdf" "Phần II. Giáo trình IT6217.pdf" "Phần I. Giáo trình IT6217.pdf" "../" "./")
+
+ ("/home/chung/Downloads/" (26944 9794 955571 64000) "WR840N_V6_20_GPL.tar.gz" "TL-WR840N(VN)_V6.2_250407.zip" "r_rpmsphere-release-40-1.noarch.rpm" "fasm-0_1.73.34-1.fc43.x86_64.rpm" "fasm-1.73.34.tgz" "uad_gui-linux-opengl" "uad_gui-linux-opengl.tar.gz" "uad_gui-linux.tar.gz" "walker" "walker-v2.11.2-x86_64-unknown-linux-gnu.tar.gz" "jove-4.17.5.5/" "jove-4.17.5.5.tgz" "mg-20240709-static-amd64" "IMG_20251105_084310.jpg" "IMG_20251108_153429.jpg" "sublime_text/" "sublime_text_build_4200_x64.tar.xz" "download_thanks?target=x64-rpm" "sublimehq-rpm-pub.gpg" "FireShot/" "Screen Shot 2025-11-05 at 08.21.00.png" "Screen Shot 2025-11-05 at 08.15.55.png" "Screen Shot 2025-11-05 at 08.13.03.png" "Screen Shot 2025-11-05 at 08.11.36.png" "234102d30205805-sport2.docx" "Otherworld.Legends.v2.11.0.rar" "IMG_20251028_224812(2).jpg-autosave.kra" "IMG_20251028_224812(2).jpg" "IMG_20251028_224812.jpg~" "IMG_20251028_224812.jpg" "vivaldi-stable-7.6.3797.63-1.x86_64.rpm" "Nordic Ashes Survivors of Ragnarok/" "Screenshot_2025-10-13-15-11-49-704_com.dhcn.MyHAUI.jpg" "wine-10.16-staging-tkg-amd64.tar.xz" "ComicCodeLigaturesNerdFont-Regular.otf" "Video_2025-10-04_19-53-35.mkv" "Bai-4-Phan-cung-va-Phan-mem-May-tinh.pptx" "zoom_x86_64.rpm" "234102d30215957-it-person.docx" "Phần tổng kết.pptx" "2025606435.jpg" "234102d21094605-family.docx" "ZDL_3-1.1_Linux_x64/" "ZDL_3-1.1_Linux_x64.tar.gz" "colormuse/" "CC/" "234102d18220201-idol.docx" "234102d18215812-idol.docx" "foot/" "LibolBookworm.msi" "LocalSend-1.17.0-linux-x86-64.AppImage" "lichhoc.pdf" "IMG_20250630_054516.jpg" "dotfiles/" "myimage/" "Screenshot_2025-06-30-06-37-09-573_vn.com.techcombank.bb.app.jpg" "day.jpg" "sRGB2014.icc" "../" "./")
+
+ ("/home/chung/.config/hypr/" (26935 32723 122135 258000) "hyprland.conf" "vibrance.glsl" "../" "./")
+
+ ("/home/chung/probe/" (26945 15617 668308 411000) "note.md" "fasm/" "AoD2025/" "c_problem/" "cpp/" "pandas/" "freecodecamp/" "fun_with_compiler/" "KTLT/" "simple_c_structure/" "asp_net/" "jav/" "c-sharp/" "rust/" "raylib/" "sdl3/" "../" "./")
+
+ ("/usr/include/" (26941 26340 353921 27000) "zlib_name_mangling.h" "zlib.h" "zconf.h" "archive_entry.h" "archive.h" "zlib_name_mangling-ng.h" "zlib-ng.h" "zconf-ng.h" "libinput.h" "lualib.h" "luaconf.h" "luaconf-x86_64.h" "lua.hpp" "lua.h" "lauxlib.h" "muParserTokenReader.h" "muParserToken.h" "muParserTest.h" "muParserTemplateMagic.h" "muParserInt.h" "muParserFixes.h" "muParserError.h" "muParserDef.h" "muParserDLL.h" "muParserCallback.h" "muParserBytecode.h" "muParserBase.h" "muParser.h" "aquamarine/" "hyprcursor.hpp" "hyprcursor/" "hyprgraphics/" "hyprlang.hpp" "hyprutils/" "hyprwire/" "gudev-1.0/" "orc-0.4/" "gstreamer-1.0/" "check_stdint.h" "check.h" "libcamhal/" "ipu6epmtl/" "ipu6ep/" "ipu6/" "subunit/" "stun/" "nice/" "gupnp-igd-1.6/" "gupnp-1.6/" "gssdp-1.6/" "libsoup-3.0/" "pnglibconf.h" "pngconf.h" "png.h" "lzma.h" "gbm_backend_abi.h" "gbm.h" "ruby.h" "libgccjit.h" "libgccjit++.h" "numpy/" "libudev.h" "ffitarget.h" "ffitarget-x86_64.h" "ffi.h" "ffi-x86_64.h" "pcre2posix.h" "pcre2.h" "crypt.h" "wordexp.h" "wctype.h" "wchar.h" "wait.h" "values.h" "utmpx.h" "utmp.h" "utime.h" "unistd.h" "ulimit.h" "ucontext.h" "uchar.h" "ttyent.h" "time.h" "threads.h" "thread_db.h" "tgmath.h" "termios.h" "tar.h" "syslog.h" "sysexits.h" "syscall.h" "strings.h" "string.h" "stdlib.h" "stdio_ext.h" "stdio.h" "stdint.h" "stdc-predef.h" "stdbit.h" "stab.h" "spawn.h" "signal.h" "shadow.h" "sgtty.h" "setjmp.h" "semaphore.h" "search.h" "sched.h" "resolv.h" "regexp.h" "regex.h" "re_comp.h" "pwd.h" "pty.h" "pthread.h" "proc_service.h" "printf.h" "poll.h" "paths.h" "obstack.h" "nss.h" "nl_types.h" "netdb.h" "mqueue.h" "monetary.h" "mntent.h" "memory.h" "mcheck.h" "math.h" "malloc.h" "locale.h" "link.h" "limits.h" "libintl.h" "libgen.h" "lastlog.h" "langinfo.h" "inttypes.h" "ifaddrs.h" "ieee754.h" "iconv.h" "gshadow.h" "grp.h" "gnu-versions.h" "glob.h" "getopt.h" "gconv.h" "ftw.h" "fts.h" "fstab.h" "fpu_control.h" "fnmatch.h" "fmtmsg.h" "fenv.h" "features.h" "features-time64.h" "fcntl.h" "execinfo.h" "error.h" "errno.h" "err.h" "envz.h" "endian.h" "elf.h" "dlfcn.h" "dirent.h" "ctype.h" "cpio.h" "complex.h" "byteswap.h" "assert.h" "argz.h" "argp.h" "ar.h" "alloca.h" "aliases.h" "aio.h" "a.out.h" "xf86drmMode.h" "xf86drm.h" "libsync.h" "dwarf.h" "nlist.h" "libelf.h" "gelf.h" "gif_lib.h" "gif_getarg.h" "m17n.h" "m17n-misc.h" "m17n-gui.h" "m17n-flt.h" "m17n-core.h" "m17n-X.h" "sodium.h" "sass2scss.h" "sass.h" "gpm.h" "otf.h" "rlgl.h" "raymath.h" "raylib.h" "gettext-po.h" "autosprintf.h" "caca_types.h" "caca_conio.h" "caca0.h" "caca.h" "caca++.h" "Imlib2_Loader.h" "Imlib2.h" "glycin-2/" "profile.h" "krb5.h" "krad.h" "kdb.h" "gssapi.h" "btparse.h" "python3.14/" "utf8proc.h" "tllist.h" "sqlite3ext.h" "sqlite3.h" "slcurses.h" "slang.h" "popt.h" "mujs.h" "yaml.h" "verto.h" "verto-module.h" "unwind.h" "libunwind.h" "libunwind-x86_64.h" "libunwind-ptrace.h" "libunwind-dynamic.h" "libunwind-coredump.h" "libunwind-common.h" "wordbreak.h" "unibreakdef.h" "unibreakbase.h" "linebreakdef.h" "linebreak.h" "graphemebreak.h" "eastasianwidthdef.h" "libtasn1.h" "samplerate.h" "libpsl.h" "libliftoff.h" "pciaccess.h" "com_err.h" "keyutils.h" "gmpxx.h" "gmp.h" "gmp-x86_64.h" "gmp-mparam.h" "gmp-mparam-x86_64.h" "fftw3q.f03" "fftw3l.f03" "fftw3.h" "fftw3.f03" "fftw3.f" "bzlib.h" "libseat.h" "seccomp.h" "seccomp-syscalls.h" "lzo/" "zck.h" "histedit.h" "elfutils/" "zimg.h" "zimg++.hpp" "jpeglib.h" "jpegint.h" "jmorecfg.h" "jerror.h" "jconfig.h" "idn2.h" "wayland-version.h" "wayland-util.h" "wayland-server.h" "wayland-server-protocol.h" "wayland-server-core.h" "wayland-egl.h" "wayland-egl-core.h" "wayland-egl-backend.h" "wayland-cursor.h" "wayland-client.h" "wayland-client-protocol.h" "wayland-client-core.h" "unctrl.h" "termcap.h" "term_entry.h" "term.h" "panel.h" "ncurses_dll.h" "ncurses.h" "menu.h" "form.h" "etip.h" "eti.h" "cursslk.h" "cursesw.h" "cursesp.h" "cursesm.h" "cursesf.h" "cursesapp.h" "curses.h" "zstd_errors.h" "zstd.h" "zdict.h" "lcms2_plugin.h" "lcms2.h" "FlexLexer.h" "gnumake.h" "glslang/" "perf/" "Fcitx5/" "NVCtrl/" "sensors/" "mono-2.0/" "fcft/" "tree_sitter/" "acl/" "librsvg-2.0/" "gnutls/" "dav1d/" "attr/" "nettle/" "p11-kit-1/" "wlroots-0.19/" "wlroots-0.18/" "KF5/" "gtk-4.0/" "graphene-1.0/" "GLFW/" "mpv/" "ffnvcodec/" "alsa/" "ass/" "va/" "vdpau/" "AL/" "spa-0.2/" "pipewire-0.3/" "uchardet/" "libplacebo/" "libdovi/" "shaderc/" "dvdnav/" "dvdread/" "slang/" "libbluray/" "udfread/" "rubberband/" "jack/" "ffmpeg/" "vapoursynth/" "cdio++/" "cdio/" "sodium/" "vulkan/" "vk_video/" "glm/" "nlohmann/" "json-c/" "yaml-cpp/" "mirtest-internal/" "mirserver-internal/" "mircommon-internal/" "gmock/" "boost/" "gtest/" "mirwayland/" "mirtest/" "mirserver/" "mirrenderer/" "mirplatform/" "miroil/" "mircore/" "mircommon/" "miral/" "libnotify/" "glaze/" "libdisplay-info/" "toml++/" "uuid/" "wayland-protocols/" "re2/" "libdrm/" "absl/" "lua-5.1/" "ruby/" "offload/" "clang-c/" "clang/" "llvm-c/" "llvm/" "llvm-gtest/" "llvm-gmock/" "editline/" "qt5/" "dnf5/" "libdnf5/" "solv/" "modulemd-2.0/" "rpm/" "librepo/" "libdnf5-cli/" "libsmartcols/" "curl/" "krb5/" "kadm5/" "gssrpc/" "gssapi/" "nghttp2/" "libssh/" "et/" "fmt/" "luajit-2.1/" "readline/" "ncursesw/" "ncurses/" "gdb/" "libdbusmenu-gtk3-0.4/" "libdbusmenu-glib-0.4/" "sass/" "pulse/" "gtk-layer-shell/" "gtk-3.0/" "gail-3.0/" "pango-1.0/" "harfbuzz/" "freetype2/" "fontconfig/" "cairo/" "cloudproviders/" "epoxy/" "brotli/" "at-spi2-atk/" "at-spi-2.0/" "gdk-pixbuf-2.0/" "atk-1.0/" "glib-2.0/" "gio-unix-2.0/" "libmount/" "selinux/" "sepol/" "sysprof-6/" "xkbcommon/" "libxml2/" "lzma/" "thai/" "datrie/" "blkid/" "graphite2/" "unicode/" "dbus-1.0/" "systemd/" "fribidi/" "pixman-1/" "libpng16/" "security/" "openssl/" "SDL3/" "SDL2/" "KHR/" "GLES3/" "GLES2/" "GLES/" "EGL/" "glvnd/" "xcb/" "X11/" "GL/" "libevdev-1.0/" "c++/" "glib-1.2/" "sys/" "rpc/" "protocols/" "nfs/" "netrose/" "netrom/" "netpacket/" "netiucv/" "netipx/" "netinet/" "neteconet/" "netax25/" "netatalk/" "netash/" "net/" "gnu/" "finclude/" "bits/" "arpa/" "xen/" "video/" "sound/" "scsi/" "regulator/" "rdma/" "mtd/" "misc/" "linux/" "fwctl/" "drm/" "cxl/" "asm-generic/" "asm/" "kf6/" "KF6/" "qt6/" "../" "./")
+
+ ("/home/chung/opt/" (26942 54593 925684 161000) "easymde/" "tealdeer-linux-x86_64-musl" "Vimix-gtk-themes/" "xemacs-21.5.9/" "xemacs-21.5.9.tar.gz" "nob.h/" "Studocu-Helper/" "wayland-bongocat/" "gf/" "hyprland/" "temple-os-emacs-theme/" "ly/" "fasm/" "porth/" "edit/" "pinpog/" "mg/" "uemacs/" "neowall/" "Hyprland/" "fuzzel/" "emacs/" "luadao/" "sowon/" "wlr-randr/" "gowall/" "Hexecute/" "scenefx/" "mangowc/" "jay/" "wl-gammactl/" "CoreFreq/" "wmo-oc-kmod/" "hypr-zoom/" "hyprland-autoname-workspaces/" "fcitx5-bamboo/" "libvibrant/" "nvim-hypr-anywhere/" "henbot/" "glrnvim/" "swayfx/" "swaystatus/" "emacs-30.2.tar.gz" "yed/" "chocobar/" "deburr/" "dam/" "raylib-5.5/" "raylib-5.5.tar.gz" "c-woomer/" "sbar/" "sfm/" "Adwaita-HyprCursor/" "penger.city/" "hyprutils-0.7.1/" "dwl-v0.7/" "hyprland-source/" "wooz/" "flameshot/" "wl-screenrec/" "wayshot/" "coomer/" "wlboomer/" "wayland-boomer/" "hyprmag/" "woomer/" "keyd/" "runapp/" "mpvpaper/" "codeblocks_25.03/" "Waybar-0.12.0/" "zClipboard/" "neovim-0.11.2/" "miracle-wm/" "rpmbuild/" "ec_sys-kmod/" "acpi_ec/" "serenity/" "wl-clip-persist/" "dotfiles/" "tags/" "cm/" "lua-5.1.5/" "autoclicker/" "ccache-4.11.3/" "musializer/" "Tirakat/" "gBar/" "go/" "uwsm/" "evremap/" "nwg-look-1.0.5/" "../" "./")
+
+ ("/home/chung/Documents/NMKT/NMKT/" (26944 13757 157793 677000) "demuc.txt" "BTL.txt" "README.md" "LICENSE" ".git/" "../" "./")
+
+ ("/home/chung/probe/fun_with_compiler/assembly/" (26935 26477 409274 616000) "a.out" "vd.o" "vd.s" "example" "example.s" "../" "./")
+
+ ("/home/chung/probe/nasm/" (26897 11579 938035 138000) "syscall" "calling_c" "loop" "first" "syscall.o" "syscall.asm" "calling_c.o" "example.c" "calling_c.asm" "first.o" "loop.o" "loop.asm" "first.asm" "nasmdoc.pdf" "Makefile" "../" "./")
+
+ ("/home/chung/probe/rust/src/" (26945 15358 258301 268000) "main.rs" "../" "./")
+
+ ("/home/chung/probe/rust/target/doc/hello_world_rust/" (26939 27514 163100 877000) "all.html" "fn.main.html" "sidebar-items.js" "index.html" "../" "./")
+
+ ("/home/chung/probe/fun_with_compiler/" (26858 28161 837720 918000) "cpp/" "assembly/" "python/" "c/" "../" "./")
+
+ ("/home/chung/Documents/" (26932 14442 169707 16000) "Giaitich/" "Logfile.odt" "TA/" "NMKT/" "b.pdf" "org/" "emacs/" "c-language.pdf" "Practical Vim - Drew Neil_1241.pdf" "../" "./")
+
+ ("/usr/share/emacs/site-lisp/site-start.d/" (26930 62610 42947 82000) "systemtap-init.el" "clang-include-fixer.el" "clang-format.el" "mercurial-site-start.el" "rpmdev-init.el" "autoconf-init.el" "cmake-init.el" "desktop-entry-mode-init.el" "clang-format.el.bak" "ninja-mode.el" "rpmdev-init.el.bak" "mercurial-site-start.el.bak" "../" "./")
+
+ ("/home/chung/opt/ly/" (26930 63744 892868 739000) "zig-out/" ".zig-cache/" "readme.md" "build.zig.zon" "build.zig" "src/" "res/" "license.md" ".gitignore" ".github/" ".git/" "../" "./")
+
+ ("/home/chung/.emacs.local/" (26930 59177 916080 104000) "jai-mode.elc" "umka-mode.elc" "simpc-mode.elc" "porth-mode.elc" "nothings-mode.elc" "noq-mode.elc" "fasm-mode.elc" "c3-mode.elc" "basm-mode.elc" "umka-mode.el" "basm-mode.el" "simpc-mode.el" "porth-mode.el" "nothings-mode.el" "noq-mode.el" "jai-mode.el" "fasm-mode.el" "c3-mode.el" ".gitkeep" "../" "./")
+
+ ("/home/chung/.config/nvim/" (26930 20163 264492 711000) "init.lua" "grep.vim" "../" "./")
+
+ ("/home/chung/.emacs.d/elpa/gruber-darker-theme-20231026.2031/" (26929 25976 714837 468000) "gruber-darker-theme-autoloads.el" "gruber-darker-theme.el" "gruber-darker-theme-pkg.el" "../" "./")
+
+ ("/usr/include/c++/15/" (26930 62166 921964 256000) "version" "vector" "variant" "valarray" "utility" "unordered_set" "unordered_map" "typeinfo" "typeindex" "type_traits" "tuple" "thread" "tgmath.h" "text_encoding" "system_error" "syncstream" "string_view" "string" "streambuf" "stop_token" "stdlib.h" "stdfloat" "stdexcept" "stdckdint.h" "stdbit.h" "stdatomic.h" "stacktrace" "stack" "sstream" "spanstream" "span" "source_location" "shared_mutex" "set" "semaphore" "scoped_allocator" "regex" "ratio" "ranges" "random" "queue" "print" "ostream" "optional" "numeric" "numbers" "new" "mutex" "memory_resource" "memory" "math.h" "map" "locale" "list" "limits" "latch" "iterator" "istream" "iostream" "iosfwd" "ios" "iomanip" "initializer_list" "generator" "future" "functional" "fstream" "forward_list" "format" "flat_set" "flat_map" "filesystem" "fenv.h" "expected" "execution" "exception" "deque" "cxxabi.h" "cwctype" "cwchar" "cuchar" "ctime" "ctgmath" "cstring" "cstdlib" "cstdio" "cstdint" "cstddef" "cstdbool" "cstdarg" "cstdalign" "csignal" "csetjmp" "coroutine" "condition_variable" "concepts" "complex.h" "complex" "compare" "codecvt" "cmath" "clocale" "climits" "ciso646" "cinttypes" "chrono" "charconv" "cfloat" "cfenv" "cerrno" "cctype" "ccomplex" "cassert" "bitset" "bit" "barrier" "atomic" "array" "any" "algorithm" "x86_64-redhat-linux/" "tr2/" "tr1/" "pstl/" "parallel/" "ext/" "experimental/" "decimal/" "debug/" "bits/" "backward/" "../" "./")
+
+ ("/home/chung/.config/niri/" (26931 31732 2972 867000) "config.kdl" "../" "./")
+
+ ("/home/chung/.config/" (26930 56359 781189 328000) "mimeapps.list" "pavucontrol.ini" "uad/" "mango/" "QtProject.conf" "matplotlib/" "sublime-text/" "fontconfig/" "qt5ct/" "kdeglobals" "qt6ct/" "QtProject/" "qimgv/" "kritadisplayrc" "kritarc" "okularrc" "okularpartrc" "geany/" "gowall/" "nvim-minimax/" "BraveSoftware/" "CoreFreq/" "net.imput.helium/" "Mousepad/" "hyprland-autoname-workspaces/" "ktouch2rc" "zoomus.conf" "zoom.conf" "gtk-2.0/" "niri/" "unity3d/" "Vectec Software/" "volumeicon/" "i3/" "lazyvim/" "pcmanfm-qt/" "pcmanfm/" "chromium/" "bongocat.conf" "cm.conf" "bash/" "libfm/" "zathura/" "karboncalligraphyrc" "vlc/" "glrnvim/" "libreoffice/" "btop/" "procps/" "flameshot/" "alacritty/" "mypaint/" "nomacs/" "mininvim/" "gpu-screen-recorder/" "lazygit/" "enchant/" "abiword/" "menus/" "gf2_config.ini" "nvim/" "wallpaper/" "waybar/" "fuzzel/" "hypr/" "foot/" "gh/" "gitui/" "gtk-4.0/" "systemd/" "ibus/" "fcitx/" "fcitx5/" "mpv/" "dunst/" "love/" "helix/" "rofi/" "htop/" "xsettingsd/" "nwg-look/" "go/" "kitty/" "dconf/" "xarchiver/" "gtk-3.0/" "Thunar/" "xfce4/" "abrt/" "pulse/" "lxqt/" "user-dirs.locale" "user-dirs.dirs" "../" "./")
+
+ ("/home/chung/.emacs.d/elpa/cobol-mode-1.1/" (26928 64159 259576 866000) "cobol-mode.elc" "cobol-mode-autoloads.el" "cobol-mode.el" "cobol-mode-pkg.el" "../" "./")
+
+ ("/home/chung/.emacs.d/elpa/" (26914 24636 736885 832000) "nasm-mode-1.1.1.signed" "nasm-mode-1.1.1/" "smex-20151212.2209/" "dash-functional-20250312.1307/" "cobol-mode-1.1.signed" "cobol-mode-1.1/" "ag-20201031.2202/" "zig-mode-0.0.8.signed" "zig-mode-0.0.8/" "reformatter-0.8.signed" "reformatter-0.8/" "paredit-20241103.2046/" "sml-mode-6.12.signed" "sml-mode-6.12/" "rfc-mode-20231013.1353/" "elpy-20250404.2349/" "highlight-indentation-20210221.1418/" "pyvenv-20211014.707/" "qml-mode-20161016.31/" "racket-mode-20250711.1236/" "php-mode-20250602.1308/" "go-mode-20250311.156/" "kotlin-mode-20230123.1859/" "nginx-mode-20240412.402/" "toml-mode-20161107.1800/" "dockerfile-mode-20250315.1426/" "nix-mode-20230421.2036/" "purescript-mode-20250613.944/" "markdown-mode-20250812.423/" "jinja2-mode-20220117.807/" "nim-mode-20240220.1033/" "epc-20140610.534/" "concurrent-20170601.435/" "deferred-20170901.1330/" "ctable-20210128.629/" "commenter-20160219.1627/" "flycheck-nimsuggest-20171027.2208/" "rust-mode-20250705.1444/" "cmake-mode-20250805.1455/" "clojure-mode-20250527.840/" "graphviz-dot-mode-20250715.1358/" "lua-mode-20250310.1150/" "tuareg-20250228.257/" "caml-20250227.1734/" "glsl-mode-20250324.1304/" "yaml-mode-20241003.153/" "d-mode-202408131340.signed" "d-mode-202408131340/" "scala-mode-20241231.839/" "move-text-20231204.1514/" "proof-general-20250623.2108/" "tide-20241019.2101/" "flycheck-20250527.907/" "typescript-mode-20250118.2056/" "company-20250805.1525/" "powershell-20250614.1529/" "yasnippet-20250602.1342/" "helm-ls-git-20250629.1321/" "helm-20250817.920/" "helm-core-20250817.920/" "async-20250325.509/" "wfnames-20240820.906/" "multiple-cursors-20250210.1813/" "magit-20250817.1706/" "magit-section-20250817.1704/" "llama-20250808.1023/" "transient-20250816.1830/" "with-editor-20250801.1152/" "haskell-mode-20250519.1154/" "uxntal-mode-20240327.153/" "crm-custom-20160117.6/" "ido-completing-read+-20240130.30/" "memoize-20200103.2036/" "amx-20230413.1210/" "s-20220902.1511/" "gruber-darker-theme-20231026.2031/" "org-cliplink-20201126.1020/" "dash-20250312.1307/" "archives/" "gnupg/" "../" "./")
+
+ ("/home/chung/probe/c_problem/" (26928 5572 3755 138000) "a.out" "tmp.s" "tmp.c" "138.c" "131.c" "130.c" "128.c" "6.c" "3.c" "2.c" "1.c" "README.md" "../" "./")
+
+ ("/home/chung/.emacs.d/elpa/company-20250805.1525/" (26928 64158 830576 876000) "company.elc" "company-yasnippet.elc" "company-tng.elc" "company-tempo.elc" "company-template.elc" "company-semantic.elc" "company-oddmuse.elc" "company-nxml.elc" "company-keywords.elc" "company-ispell.elc" "company-gtags.elc" "company-files.elc" "company-etags.elc" "company-dabbrev.elc" "company-dabbrev-code.elc" "company-css.elc" "company-cmake.elc" "company-clang.elc" "company-capf.elc" "company-bbdb.elc" "company-abbrev.elc" "company-autoloads.el" "images/" "icons/" "dir" "company.info" "company.el" "company-yasnippet.el" "company-tng.el" "company-tempo.el" "company-template.el" "company-semantic.el" "company-pkg.el" "company-oddmuse.el" "company-nxml.el" "company-keywords.el" "company-ispell.el" "company-gtags.el" "company-files.el" "company-etags.el" "company-dabbrev.el" "company-dabbrev-code.el" "company-css.el" "company-cmake.el" "company-clang.el" "company-capf.el" "company-bbdb.el" "company-abbrev.el" "../" "./")
+
+ ("/home/chung/.emacs.d/elpa/ag-20201031.2202/" (26928 64241 395575 33000) "ag.elc" "ag-autoloads.el" "ag.el" "ag-pkg.el" "../" "./")
+
+ ("/home/chung/opt/pinpog/" (26922 16585 618135 748000) "pinpog" "pinpog.asm" "default.nix" "README.release.md" "README.md" "Makefile" "LICENSE" ".travis.yml" ".snitch.yaml" ".gitignore" ".git/" "../" "./")
+
+ ("/home/chung/opt/Hyprland/src/" (26918 13392 262214 411000) "meson.build" "Compositor.hpp" "Compositor.cpp" "xwayland/" "version.h.in" "signal-safe.hpp" "signal-safe.cpp" "render/" "protocols/" "plugins/" "pch/" "managers/" "main.cpp" "macros.hpp" "layout/" "init/" "includes.hpp" "hyprerror/" "helpers/" "events/" "devices/" "desktop/" "defines.hpp" "debug/" "config/" "SharedDefs.hpp" "../" "./")
+
+ ("/home/chung/opt/Hyprland/" (26918 13392 242214 412000) "meson_options.txt" "meson.build" "flake.nix" "flake.lock" "VERSION" "CMakeLists.txt" "systemd/" "subprojects/" "src/" "scripts/" "protocols/" "nix/" "hyprtester/" "hyprpm/" "hyprland.pc.in" "hyprctl/" "example/" "docs/" "assets/" "SECURITY.md" "README.md" "Makefile" "LICENSE" "CODE_OF_CONDUCT.md" ".gitmodules" ".gitignore" ".github/" ".gitattributes" ".clang-tidy" ".clang-format-ignore" ".clang-format" ".git/" "../" "./")
+
+ ("/home/chung/opt/acpi_ec/" (26686 61949 80677 292000) "uninstall.sh" "src/" "scripts/" "install.sh" "example/" "dkms.conf" "debian/" "_variables.sh" "README.md" "Makefile" "LICENSE" ".gitignore" ".github/" ".git/" "../" "./")
+
+ ("/home/chung/probe/pandas/" (26911 63287 399918 193000) ".~lock.data_ke_toan_1000.xlsx#" "final.py" "test.py" "finance.py" "du_lieu_ke_toan.xlsx" "du_lieu_ke_toan.csv" "data_ke_toan_1000.xlsx" "Sales_Full_Data.csv" "../" "./")
+
+ ("/home/chung/Pictures/" (26904 39066 646935 324000) "Figure_1.png" "20251115_193136.png" "20251107_16h13m09s_grim.png" "my_wallpaper.kra" "my_wallpaper.kra~" "1.png" "2.png" "3.png" "4.png" "5.png" "6.png" "gowall/" "2025-10-08-094659_hyprshot.png" "20251005_080719.png" "Webcam/" "20250926_194153.png" "2025606435.png" "2025606435(1).png" "20250923_070618.png" "20250923_070549.png" "20250923_070454.png" "2025-09-02T20:02:18,744133370+07:00.png" "DSC_0067.jpg" "2025-08-28T06:36:19,558051525+07:00.png" "2025-08-22T16:10:44,220359983+07:00.png" "2025-08-22T16:10:07,292805978+07:00.png" "2025-08-22T16:10:02,710003827+07:00.png" "error.png" "2025-08-19T08:08:18,751188353+07:00.png" "2025-08-19T08:04:01,340910051+07:00.png" "jolyne.png-autosave.kra" "joyne2.png" "joyne2.jpg" "jolyne.png" "jolyne.png~" "2025-08-15T09:09:39,105895134+07:00.png" "2025-08-15T09:08:10,623025237+07:00.png" "welcometopengercity.png" "penger_collection.png" "penger_collection.png~" "penger_collection.kra" "penger_collection.kra~" "2025-07-29T12:08:07,818545431+07:00.png" "2025-07-29T12:07:58,153567178+07:00.png" "penger_collection.jpg" "penger_collection2.jpg" "penger_collection2.kra" "Screenshot 2025-07-28 at 14-55-25 nguyenvongthisinh_035207001452.pdf.png" "startscreen.png" "2025-07-11T21:10:55,779401687+07:00.png" "2025-07-11T21:10:45,963714210+07:00.png" "2025-07-11T21:10:36,200543212+07:00.png" "2025-07-11T21:09:56,311320391+07:00.png" "2025-07-11T21:08:50,928588921+07:00.png" "2025-07-09T19:49:08,583983112+07:00.png" "2025-07-09T19:45:47,034810519+07:00.png" "2025-07-09T19:45:30,707270607+07:00.png" "2025-07-09_19-41.png" "penger/" "2025-06-14T20:20:08,960180408+07:00.png" "swappy-20250607_222816.png" "swappy-20250607_222755.png" "swappy-20250607_222809.png" "swappy-20250607_222830.png" "swappy-20250610_154536.png" "swappy-20250607_222829.png" "swappy-20250607_222747.png" "swappy-20250607_222828.png" "swappy-20250607_222833.png" "swappy-20250607_222832.png" "20250610_22h17m26s_grim.png" "20250610_15h51m01s_grim.png" "../" "./")
+
+ ("/home/chung/probe/freecodecamp/raylib-game/" (26896 18474 542943 46000) "main" "Makefile" "main.c" "../" "./")
+
+ ("/usr/" (26883 22799 124086 771000) "x86_64-w64-mingw32/" "tmp/" "src/" "local/" "libexec/" "games/" "include/" "share/" "sbin/" "lib64/" "bin/" "lib/" "../" "./")
+
+ ("/home/chung/probe/freecodecamp/" (26895 20880 607873 206000) "raylib-game/" "../" "./")
+
+ ("/home/chung/.emacs.rc/" (26889 19623 123919 256000) "rc.elc" "org-mode-rc.elc" "misc-rc.elc" "autocommit-rc.elc" "misc-rc.el" "rc.el" "org-mode-rc.el" "autocommit-rc.el" "../" "./")
+
+ ("/home/chung/.config/foot/" (26894 53898 561369 650000) "foot.ini" "../" "./")
+
+ ("/home/chung/GOG Games/" (26860 50036 224046 765000) "Broforce/" "../" "./")
 
  ("/home/chung/opt/dotfiles/hypr/" (26894 53668 284374 788000) "hyprland.conf" "vibrance.glsl" "../" "./")
 
- ("/home/chung/.config/" (26893 46880 549348 19000) "pavucontrol.ini" "sublime-text/" "mimeapps.list" "fontconfig/" "qt5ct/" "kdeglobals" "qt6ct/" "QtProject/" "qimgv/" "kritadisplayrc" "kritarc" "QtProject.conf" "okularrc" "okularpartrc" "geany/" "gowall/" "nvim-minimax/" "BraveSoftware/" "CoreFreq/" "net.imput.helium/" "Mousepad/" "hyprland-autoname-workspaces/" "ktouch2rc" "zoomus.conf" "zoom.conf" "gtk-2.0/" "niri/" "unity3d/" "Vectec Software/" "volumeicon/" "i3/" "lazyvim/" "pcmanfm-qt/" "pcmanfm/" "chromium/" "bongocat.conf" "cm.conf" "bash/" "libfm/" "zathura/" "karboncalligraphyrc" "vlc/" "glrnvim/" "libreoffice/" "btop/" "procps/" "flameshot/" "alacritty/" "mypaint/" "nomacs/" "mininvim/" "gpu-screen-recorder/" "lazygit/" "enchant/" "abiword/" "menus/" "gf2_config.ini" "nvim/" "wallpaper/" "waybar/" "fuzzel/" "hypr/" "foot/" "gh/" "gitui/" "gtk-4.0/" "systemd/" "ibus/" "fcitx/" "fcitx5/" "mpv/" "dunst/" "love/" "helix/" "rofi/" "htop/" "xsettingsd/" "nwg-look/" "go/" "kitty/" "dconf/" "xarchiver/" "gtk-3.0/" "Thunar/" "xfce4/" "abrt/" "pulse/" "lxqt/" "user-dirs.locale" "user-dirs.dirs" "../" "./")
-
  ("/home/chung/probe/helloworld_c/" (26889 21828 226979 978000) "printHelloWorld.h" "printHelloWorld.c" "main.c" "../" "./")
-
- ("/home/chung/.emacs.local/" (26889 19026 669902 832000) "umka-mode.elc" "simpc-mode.elc" "porth-mode.elc" "nothings-mode.elc" "noq-mode.elc" "jai-mode.elc" "fasm-mode.elc" "c3-mode.elc" "basm-mode.elc" "umka-mode.el" "basm-mode.el" "simpc-mode.el" "porth-mode.el" "nothings-mode.el" "noq-mode.el" "jai-mode.el" "fasm-mode.el" "c3-mode.el" ".gitkeep" "../" "./")
-
- ("/home/chung/opt/" (26888 39495 141625 605000) "neowall/" "Hyprland/" "fuzzel/" "emacs/" "luadao/" "sowon/" "wlr-randr/" "gowall/" "Hexecute/" "scenefx/" "mangowc/" "jay/" "wl-gammactl/" "CoreFreq/" "wmo-oc-kmod/" "hypr-zoom/" "hyprland-autoname-workspaces/" "fcitx5-bamboo/" "libvibrant/" "nvim-hypr-anywhere/" "henbot/" "glrnvim/" "ly/" "swayfx/" "swaystatus/" "emacs-30.2.tar.gz" "wayland-bongocat/" "yed/" "chocobar/" "deburr/" "dam/" "raylib-5.5/" "raylib-5.5.tar.gz" "c-woomer/" "nob.h/" "sbar/" "sfm/" "Adwaita-HyprCursor/" "penger.city/" "hyprutils-0.7.1/" "dwl-v0.7/" "hyprland-source/" "wooz/" "flameshot/" "wl-screenrec/" "wayshot/" "coomer/" "wlboomer/" "wayland-boomer/" "hyprmag/" "woomer/" "keyd/" "fasm/" "runapp/" "mpvpaper/" "codeblocks_25.03/" "Waybar-0.12.0/" "zClipboard/" "neovim-0.11.2/" "miracle-wm/" "gf/" "rpmbuild/" "ec_sys-kmod/" "acpi_ec/" "serenity/" "wl-clip-persist/" "dotfiles/" "tags/" "cm/" "lua-5.1.5/" "autoclicker/" "ccache-4.11.3/" "musializer/" "Tirakat/" "gBar/" "go/" "uwsm/" "evremap/" "nwg-look-1.0.5/" "../" "./")
-
- ("/home/chung/Pictures/" (26885 23126 840771 674000) "my_wallpaper.kra" "my_wallpaper.kra~" "1.png" "2.png" "3.png" "4.png" "5.png" "6.png" "gowall/" "2025-10-08-094659_hyprshot.png" "20251005_080719.png" "Webcam/" "20250926_194153.png" "2025606435.png" "2025606435(1).png" "20250923_070618.png" "20250923_070549.png" "20250923_070454.png" "2025-09-02T20:02:18,744133370+07:00.png" "DSC_0067.jpg" "2025-08-28T06:36:19,558051525+07:00.png" "2025-08-22T16:10:44,220359983+07:00.png" "2025-08-22T16:10:07,292805978+07:00.png" "2025-08-22T16:10:02,710003827+07:00.png" "error.png" "2025-08-19T08:08:18,751188353+07:00.png" "2025-08-19T08:04:01,340910051+07:00.png" "jolyne.png-autosave.kra" "joyne2.png" "joyne2.jpg" "jolyne.png" "jolyne.png~" "2025-08-15T09:09:39,105895134+07:00.png" "2025-08-15T09:08:10,623025237+07:00.png" "welcometopengercity.png" "penger_collection.png" "penger_collection.png~" "penger_collection.kra" "penger_collection.kra~" "2025-07-29T12:08:07,818545431+07:00.png" "2025-07-29T12:07:58,153567178+07:00.png" "penger_collection.jpg" "penger_collection2.jpg" "penger_collection2.kra" "Screenshot 2025-07-28 at 14-55-25 nguyenvongthisinh_035207001452.pdf.png" "startscreen.png" "2025-07-11T21:10:55,779401687+07:00.png" "2025-07-11T21:10:45,963714210+07:00.png" "2025-07-11T21:10:36,200543212+07:00.png" "2025-07-11T21:09:56,311320391+07:00.png" "2025-07-11T21:08:50,928588921+07:00.png" "2025-07-09T19:49:08,583983112+07:00.png" "2025-07-09T19:45:47,034810519+07:00.png" "2025-07-09T19:45:30,707270607+07:00.png" "2025-07-09_19-41.png" "penger/" "2025-06-14T20:20:08,960180408+07:00.png" "swappy-20250607_222816.png" "swappy-20250607_222755.png" "swappy-20250607_222809.png" "swappy-20250607_222830.png" "swappy-20250610_154536.png" "swappy-20250607_222829.png" "swappy-20250607_222747.png" "swappy-20250607_222828.png" "swappy-20250607_222833.png" "swappy-20250607_222832.png" "20250610_22h17m26s_grim.png" "20250610_15h51m01s_grim.png" "../" "./")
-
- ("/usr/include/" (26881 23926 601901 137000) "libgccjit.h" "libgccjit++.h" "gif_lib.h" "gif_getarg.h" "zlib_name_mangling-ng.h" "zlib-ng.h" "zconf-ng.h" "ruby.h" "m17n.h" "m17n-misc.h" "m17n-gui.h" "m17n-flt.h" "m17n-core.h" "m17n-X.h" "lualib.h" "luaconf.h" "luaconf-x86_64.h" "lua.hpp" "lua.h" "lauxlib.h" "sodium.h" "sass2scss.h" "sass.h" "gpm.h" "otf.h" "rlgl.h" "raymath.h" "raylib.h" "gettext-po.h" "autosprintf.h" "caca_types.h" "caca_conio.h" "caca0.h" "caca.h" "caca++.h" "Imlib2_Loader.h" "Imlib2.h" "glycin-2/" "profile.h" "krb5.h" "krad.h" "kdb.h" "gssapi.h" "pcre2posix.h" "pcre2.h" "btparse.h" "libinput.h" "numpy/" "python3.14/" "hyprlang.hpp" "hyprcursor.hpp" "utf8proc.h" "tllist.h" "sqlite3ext.h" "sqlite3.h" "slcurses.h" "slang.h" "popt.h" "mujs.h" "yaml.h" "crypt.h" "wordexp.h" "wctype.h" "wchar.h" "wait.h" "values.h" "utmpx.h" "utmp.h" "utime.h" "unistd.h" "ulimit.h" "ucontext.h" "uchar.h" "ttyent.h" "time.h" "threads.h" "thread_db.h" "tgmath.h" "termios.h" "tar.h" "syslog.h" "sysexits.h" "syscall.h" "strings.h" "string.h" "stdlib.h" "stdio_ext.h" "stdio.h" "stdint.h" "stdc-predef.h" "stdbit.h" "stab.h" "spawn.h" "signal.h" "shadow.h" "sgtty.h" "setjmp.h" "semaphore.h" "search.h" "sched.h" "resolv.h" "regexp.h" "regex.h" "re_comp.h" "pwd.h" "pty.h" "pthread.h" "proc_service.h" "printf.h" "poll.h" "paths.h" "obstack.h" "nss.h" "nl_types.h" "netdb.h" "mqueue.h" "monetary.h" "mntent.h" "memory.h" "mcheck.h" "math.h" "malloc.h" "locale.h" "link.h" "limits.h" "libintl.h" "libgen.h" "lastlog.h" "langinfo.h" "inttypes.h" "ifaddrs.h" "ieee754.h" "iconv.h" "gshadow.h" "grp.h" "gnu-versions.h" "glob.h" "getopt.h" "gconv.h" "ftw.h" "fts.h" "fstab.h" "fpu_control.h" "fnmatch.h" "fmtmsg.h" "fenv.h" "features.h" "features-time64.h" "fcntl.h" "execinfo.h" "error.h" "errno.h" "err.h" "envz.h" "endian.h" "elf.h" "dlfcn.h" "dirent.h" "ctype.h" "cpio.h" "complex.h" "byteswap.h" "assert.h" "argz.h" "argp.h" "ar.h" "alloca.h" "aliases.h" "aio.h" "a.out.h" "verto.h" "verto-module.h" "unwind.h" "libunwind.h" "libunwind-x86_64.h" "libunwind-ptrace.h" "libunwind-dynamic.h" "libunwind-coredump.h" "libunwind-common.h" "wordbreak.h" "unibreakdef.h" "unibreakbase.h" "linebreakdef.h" "linebreak.h" "graphemebreak.h" "eastasianwidthdef.h" "libtasn1.h" "samplerate.h" "libpsl.h" "libliftoff.h" "xf86drmMode.h" "xf86drm.h" "libsync.h" "pciaccess.h" "com_err.h" "keyutils.h" "gmpxx.h" "gmp.h" "gmp-x86_64.h" "gmp-mparam.h" "gmp-mparam-x86_64.h" "fftw3q.f03" "fftw3l.f03" "fftw3.h" "fftw3.f03" "fftw3.f" "bzlib.h" "libseat.h" "libudev.h" "seccomp.h" "seccomp-syscalls.h" "lzo/" "zck.h" "archive_entry.h" "archive.h" "histedit.h" "dwarf.h" "elfutils/" "zimg.h" "zimg++.hpp" "lzma.h" "jpeglib.h" "jpegint.h" "jmorecfg.h" "jerror.h" "jconfig.h" "idn2.h" "wayland-version.h" "wayland-util.h" "wayland-server.h" "wayland-server-protocol.h" "wayland-server-core.h" "wayland-egl.h" "wayland-egl-core.h" "wayland-egl-backend.h" "wayland-cursor.h" "wayland-client.h" "wayland-client-protocol.h" "wayland-client-core.h" "ffitarget.h" "ffitarget-x86_64.h" "ffi.h" "ffi-x86_64.h" "unctrl.h" "termcap.h" "term_entry.h" "term.h" "panel.h" "ncurses_dll.h" "ncurses.h" "menu.h" "form.h" "etip.h" "eti.h" "cursslk.h" "cursesw.h" "cursesp.h" "cursesm.h" "cursesf.h" "cursesapp.h" "curses.h" "pnglibconf.h" "pngconf.h" "png.h" "gbm_backend_abi.h" "gbm.h" "nlist.h" "libelf.h" "gelf.h" "zstd_errors.h" "zstd.h" "zdict.h" "lcms2_plugin.h" "lcms2.h" "zlib_name_mangling.h" "zlib.h" "zconf.h" "FlexLexer.h" "gnumake.h" "glslang/" "perf/" "Fcitx5Qt6/" "Fcitx5Qt5/" "Fcitx5/" "NVCtrl/" "hyprland/" "aquamarine/" "hyprcursor/" "hyprutils/" "hyprgraphics/" "sensors/" "mono-2.0/" "fcft/" "tree_sitter/" "acl/" "librsvg-2.0/" "gnutls/" "dav1d/" "attr/" "nettle/" "p11-kit-1/" "wlroots-0.19/" "wlroots-0.18/" "KF5/" "gtk-4.0/" "graphene-1.0/" "GLFW/" "mpv/" "ffnvcodec/" "alsa/" "ass/" "va/" "vdpau/" "AL/" "spa-0.2/" "pipewire-0.3/" "uchardet/" "libplacebo/" "libdovi/" "shaderc/" "dvdnav/" "dvdread/" "slang/" "libbluray/" "udfread/" "rubberband/" "jack/" "ffmpeg/" "vapoursynth/" "cdio++/" "cdio/" "sodium/" "vulkan/" "vk_video/" "glm/" "nlohmann/" "json-c/" "yaml-cpp/" "mirtest-internal/" "mirserver-internal/" "mircommon-internal/" "gmock/" "boost/" "gtest/" "mirwayland/" "mirtest/" "mirserver/" "mirrenderer/" "mirplatform/" "miroil/" "mircore/" "mircommon/" "miral/" "libnotify/" "glaze/" "libdisplay-info/" "toml++/" "uuid/" "wayland-protocols/" "re2/" "libdrm/" "absl/" "lua-5.1/" "ruby/" "offload/" "clang-c/" "clang/" "llvm-c/" "llvm/" "llvm-gtest/" "llvm-gmock/" "editline/" "qt5/" "dnf5/" "libdnf5/" "solv/" "modulemd-2.0/" "rpm/" "librepo/" "libdnf5-cli/" "libsmartcols/" "curl/" "krb5/" "kadm5/" "gssrpc/" "gssapi/" "nghttp2/" "libssh/" "et/" "fmt/" "luajit-2.1/" "readline/" "ncursesw/" "ncurses/" "gdb/" "libdbusmenu-gtk3-0.4/" "libdbusmenu-glib-0.4/" "sass/" "pulse/" "gtk-layer-shell/" "gtk-3.0/" "gail-3.0/" "pango-1.0/" "harfbuzz/" "freetype2/" "fontconfig/" "cairo/" "cloudproviders/" "epoxy/" "brotli/" "at-spi2-atk/" "at-spi-2.0/" "gdk-pixbuf-2.0/" "atk-1.0/" "glib-2.0/" "gio-unix-2.0/" "libmount/" "selinux/" "sepol/" "sysprof-6/" "xkbcommon/" "libxml2/" "lzma/" "thai/" "datrie/" "blkid/" "graphite2/" "unicode/" "dbus-1.0/" "systemd/" "fribidi/" "pixman-1/" "libpng16/" "security/" "openssl/" "SDL3/" "SDL2/" "KHR/" "GLES3/" "GLES2/" "GLES/" "EGL/" "glvnd/" "xcb/" "X11/" "GL/" "libevdev-1.0/" "c++/" "glib-1.2/" "sys/" "rpc/" "protocols/" "nfs/" "netrose/" "netrom/" "netpacket/" "netiucv/" "netipx/" "netinet/" "neteconet/" "netax25/" "netatalk/" "netash/" "net/" "gnu/" "finclude/" "bits/" "arpa/" "xen/" "video/" "sound/" "scsi/" "regulator/" "rdma/" "mtd/" "misc/" "linux/" "fwctl/" "drm/" "cxl/" "asm-generic/" "asm/" "kf6/" "KF6/" "qt6/" "../" "./")
 
  ("/home/chung/opt/sowon/" (26867 22988 853321 491000) "sowon_rgfw" "sowon" "digits.h" "penger_walk_sheet.h" "png2c" "stb_image.h" "rglLoad.h" "png2c.c" "penger_walk_sheet.png" "main_rgfw.c" "main.c" "docs/" "digits.png" "demo.gif" "common.c" "build_msvc.bat" "RGFW.h" "README.md" "Makefile" "LICENSE" ".gitignore" ".github/" ".git/" "../" "./")
 
- ("/home/chung/Documents/NMKT/" (26884 52016 434550 787000) "Bai 6_2_ PP học tập hiệu quả.pdf" "Bai 6_1_ PP học tập hiệu quả.pdf" "bài 5 Hệ Đếm.pdf" "hau_to_cpu_desktop.png" "Hau_to_cpu_laptop.png" "Bài 4 NMKT.pptx" "Bài 5_ Hệ đếm.pdf" "Intel and AMD processors comparison.pdf" "Intel-CPU-Comparsion.pdf" "Intel-Core-Desktop-Boxed-Processors-Comparison-Chart.pdf" "operating-system-concepts-10th.pdf" "vitualmachine/" "lab/" "opering_system.pdf" "NMKT/" "Hướng dẫn Viết Báo cáo BTL_IT6217/" "Hướng dẫn Viết Báo cáo BTL_IT6217.rar" "B4-kichban.md" "Muctieu.xls" "chuongtrinhhoc.xls" "Noi dung B3 AI.docx" "b4.odt" "Bài 4_ Phần cứng và phần mềm.pdf" "NMKT nhóm 2.pptx" "Practical Vim - Drew Neil_1241.pdf" "B2.html" "B2.pptx" ".~lock.B2.pptx#" "B2.odp" "b1.odt" "b1.docx" "2.2_ Ngành học và Khung chương trình_tiếp.pdf" "2.1_ Ngành học và Khung chương trình.pdf" "Phần II. Giáo trình IT6217.pdf" "Phần I. Giáo trình IT6217.pdf" "../" "./")
-
  ("/home/chung/Documents/NMKT/lab/" (26867 21939 758344 899000) "lab2.txt" "lab1.txt" "lab2.mp4" "lab1.mp4" "Lab 02.pdf" "Lab 01.pdf" "../" "./")
-
- ("/home/chung/Documents/NMKT/NMKT/" (26884 51747 212829 14000) "BTL_rewrite.md" "BTL.md" "README.md" "LICENSE" ".git/" "../" "./")
-
- ("/usr/include/c++/15/" (26881 23839 350232 625000) "version" "vector" "variant" "valarray" "utility" "unordered_set" "unordered_map" "typeinfo" "typeindex" "type_traits" "tuple" "thread" "tgmath.h" "text_encoding" "system_error" "syncstream" "string_view" "string" "streambuf" "stop_token" "stdlib.h" "stdfloat" "stdexcept" "stdckdint.h" "stdbit.h" "stdatomic.h" "stacktrace" "stack" "sstream" "spanstream" "span" "source_location" "shared_mutex" "set" "semaphore" "scoped_allocator" "regex" "ratio" "ranges" "random" "queue" "print" "ostream" "optional" "numeric" "numbers" "new" "mutex" "memory_resource" "memory" "math.h" "map" "locale" "list" "limits" "latch" "iterator" "istream" "iostream" "iosfwd" "ios" "iomanip" "initializer_list" "generator" "future" "functional" "fstream" "forward_list" "format" "flat_set" "flat_map" "filesystem" "fenv.h" "expected" "execution" "exception" "deque" "cxxabi.h" "cwctype" "cwchar" "cuchar" "ctime" "ctgmath" "cstring" "cstdlib" "cstdio" "cstdint" "cstddef" "cstdbool" "cstdarg" "cstdalign" "csignal" "csetjmp" "coroutine" "condition_variable" "concepts" "complex.h" "complex" "compare" "codecvt" "cmath" "clocale" "climits" "ciso646" "cinttypes" "chrono" "charconv" "cfloat" "cfenv" "cerrno" "cctype" "ccomplex" "cassert" "bitset" "bit" "barrier" "atomic" "array" "any" "algorithm" "x86_64-redhat-linux/" "tr2/" "tr1/" "pstl/" "parallel/" "ext/" "experimental/" "decimal/" "debug/" "bits/" "backward/" "../" "./")
 
  ("/home/chung/Software/" (26884 29595 108796 344000) "hyprviz-0.7.1-x86_64/" "hyprviz-0.7.1-x86_64.tar.gz" "libexec/" "bin/" "include/" "lib/" "share/" "emacs/" "CPU-X-5.4.0-x86_64.AppImage" "go/" "go1.25.3.linux-amd64.tar.gz" "gpu-screen-recorder/" "AppDir/" "gpu-screen-recorder-r1181.50fbee2-1-anylinux-x86_64.AppImage" "Emacs-mps-native_comp-gtk3-x86_64.AppImage" "dwl-v0.7/" "dwl-v0.7.tar.gz" "Waybar-0.9.24/" "Waybar-0.9.24.zip" "scrcpy-linux-x86_64-v3.3.1/" "localsend/" "edit-1.2.0-x86_64-linux-gnu/" "Mypaint/" "gf2" "Balatro.v1.0.1o/" "musializer" "../" "./")
 
@@ -130,8 +197,6 @@
  ("/home/chung/Documents/emacs/" (26769 63776 543875 61000) "learningemacs.pdf" "../" "./")
 
  ("/home/chung/opt/emacs/" (26879 33471 629556 838000) "Makefile" "native-lisp/" "info/" "config.status" "config.log" "configure" "autom4te.cache/" "aclocal.m4" "test/" "src/" "oldXMenu/" "nt/" "nextstep/" "msdos/" "modules/" "make-dist" "m4/" "lwlib/" "lisp/" "lib/" "lib-src/" "leim/" "java/" "exec/" "etc/" "doc/" "cross/" "configure.ac" "config.bat" "build-aux/" "autogen.sh" "admin/" "README" "Makefile.in" "INSTALL.REPO" "INSTALL" "GNUmakefile" "ChangeLog.android" "ChangeLog.5" "ChangeLog.4" "ChangeLog.3" "ChangeLog.2" "ChangeLog.1" "COPYING" "CONTRIBUTE" "BUGS" ".mailmap" ".gitlab-ci.yml" ".gitignore" ".gitattributes" ".dir-locals.el" ".clangd" ".clang-format" ".git/" "../" "./")
-
- ("/home/chung/probe/" (26876 51118 539962 662000) "fun_with_compiler/" "KTLT/" "simple_c_structure/" "asp_net/" "jav/" "note.md" "c-sharp/" "rust/" "raylib/" "sdl3/" "helloworld_c/" "../" "./")
 
  ("/home/chung/Software/go/" (26861 9227 0 0) "go.env" "codereview.cfg" "VERSION" "SECURITY.md" "README.md" "PATENTS" "LICENSE" "CONTRIBUTING.md" "test/" "src/" "pkg/" "misc/" "lib/" "doc/" "bin/" "api/" "../" "./")
 
@@ -153,19 +218,13 @@
 
  ("/home/chung/Pictures/penger/" (26833 22916 654986 287000) "smokeger.jpg" "surfger.png" "rockger.gif" "saiyanger.gif" "20250611_06h58m58s_grim.png" "toiletger.gif" "Laptopger.png" "Penger.png" "PengerMagic.gif" "../" "./")
 
- ("/home/chung/.config/foot/" (26839 44059 711450 3000) "foot.ini" "../" "./")
-
  ("/home/chung/probe/KTLT/" (26848 27321 279993 277000) "a.out" "cerr.cpp" "print_file_content.c" "pointer.cpp" "oop.cpp" "../" "./")
 
  ("/home/chung/probe/basic_programing/" (26842 37324 832064 476000) "oop.cs" "print_file_content.c" "pointer.cpp" "oop.cpp" "../" "./")
 
- ("/home/chung/Documents/" (26834 43926 245709 907000) "Logfile.odt" "TA/" "NMKT/" "b.pdf" "org/" "emacs/" "c-language.pdf" "Practical Vim - Drew Neil_1241.pdf" "../" "./")
-
  ("/home/chung/opt/dotfiles/foot/" (26839 27557 134176 507000) ".#foot.ini" "foot.ini" "../" "./")
 
  ("/usr/share/doc/foot/" (26838 40737 31122 539000) "README.md" "CHANGELOG.md" "../" "./")
-
- ("/home/chung/.emacs.d/elpa/gruber-darker-theme-20231026.2031/" (26828 38694 288184 758000) "gruber-darker-theme-autoloads.el" "gruber-darker-theme.el" "gruber-darker-theme-pkg.el" "../" "./")
 
  ("/home/chung/probe/c-sharp/" (26828 40081 882153 797000) "helloworld.exe" "helloworld.cs" "../" "./")
 
@@ -185,17 +244,11 @@
 
  ("/home/chung/opt/dotfiles/.emacs.d/elpa/gruber-darker-theme-20231026.2031/" (26793 30339 128413 24000) "gruber-darker-theme-autoloads.el" "gruber-darker-theme.el" "gruber-darker-theme-pkg.el" "../" "./")
 
- ("/home/chung/.emacs.d/elpa/" (26818 16657 434011 665000) "ag-20201031.2202/" "zig-mode-0.0.8.signed" "zig-mode-0.0.8/" "reformatter-0.8.signed" "reformatter-0.8/" "paredit-20241103.2046/" "sml-mode-6.12.signed" "sml-mode-6.12/" "rfc-mode-20231013.1353/" "elpy-20250404.2349/" "highlight-indentation-20210221.1418/" "pyvenv-20211014.707/" "qml-mode-20161016.31/" "racket-mode-20250711.1236/" "php-mode-20250602.1308/" "go-mode-20250311.156/" "kotlin-mode-20230123.1859/" "nginx-mode-20240412.402/" "toml-mode-20161107.1800/" "dockerfile-mode-20250315.1426/" "nix-mode-20230421.2036/" "purescript-mode-20250613.944/" "markdown-mode-20250812.423/" "jinja2-mode-20220117.807/" "nim-mode-20240220.1033/" "epc-20140610.534/" "concurrent-20170601.435/" "deferred-20170901.1330/" "ctable-20210128.629/" "commenter-20160219.1627/" "flycheck-nimsuggest-20171027.2208/" "rust-mode-20250705.1444/" "cmake-mode-20250805.1455/" "clojure-mode-20250527.840/" "graphviz-dot-mode-20250715.1358/" "lua-mode-20250310.1150/" "tuareg-20250228.257/" "caml-20250227.1734/" "glsl-mode-20250324.1304/" "yaml-mode-20241003.153/" "d-mode-202408131340.signed" "d-mode-202408131340/" "scala-mode-20241231.839/" "move-text-20231204.1514/" "proof-general-20250623.2108/" "tide-20241019.2101/" "flycheck-20250527.907/" "typescript-mode-20250118.2056/" "company-20250805.1525/" "powershell-20250614.1529/" "yasnippet-20250602.1342/" "helm-ls-git-20250629.1321/" "helm-20250817.920/" "helm-core-20250817.920/" "async-20250325.509/" "wfnames-20240820.906/" "multiple-cursors-20250210.1813/" "magit-20250817.1706/" "magit-section-20250817.1704/" "llama-20250808.1023/" "transient-20250816.1830/" "with-editor-20250801.1152/" "haskell-mode-20250519.1154/" "uxntal-mode-20240327.153/" "crm-custom-20160117.6/" "ido-completing-read+-20240130.30/" "memoize-20200103.2036/" "amx-20230413.1210/" "s-20220902.1511/" "gruber-darker-theme-20231026.2031/" "org-cliplink-20201126.1020/" "dash-20250312.1307/" "archives/" "gnupg/" "../" "./")
-
  ("/home/chung/.emacs.d/" (26821 34689 281975 874000) ".mc-lists.el" "tramp" "amx-items" "transient/" "eln-cache/" "elpa/" "ido.last" "auto-save-list/" "../" "./")
 
  ("/home/chung/.wine/drive_c/" (26814 31392 700037 892000) "Program Files (x86)/" "ProgramData/" "Program Files/" "users/" "windows/" "../" "./")
 
  ("/home/chung/.wine/" (26814 31506 246877 498000) "system.reg" "user.reg" "userdef.reg" "winetricks.log" ".update-timestamp" "drive_c/" "dosdevices/" "../" "./")
-
- ("/home/chung/.config/nvim/" (26818 16458 839009 461000) "grep.vim" "init.lua" "../" "./")
-
- ("/home/chung/opt/Hyprland/src/" (26689 26944 612052 660000) "version.h" "xwayland/" "version.h.in" "signal-safe.hpp" "signal-safe.cpp" "render/" "protocols/" "plugins/" "pch/" "meson.build" "managers/" "main.cpp" "macros.hpp" "layout/" "init/" "includes.hpp" "hyprerror/" "helpers/" "events/" "devices/" "desktop/" "defines.hpp" "debug/" "config/" "SharedDefs.hpp" "Compositor.hpp" "Compositor.cpp" "../" "./")
 
  ("/home/chung/opt/coomer/src/" (26814 62687 993957 71000) "main.rs" "../" "./")
 
@@ -221,8 +274,6 @@
 
  ("/afs/" (26761 24704 0 0) "../" "./")
 
- ("/home/chung/probe/rust/src/" (26806 44325 217468 845000) "main.rs" "../" "./")
-
  ("/home/chung/probe/oop/" (26810 13820 931877 218000) "oop" "opp.cpp" "../" "./")
 
  ("/home/chung/probe/rust/target/debug/" (26806 43832 254455 270000) "hello_world_rust" ".gdb_history" "hello_world_rust.d" "rust.d" "rust" "build/" "examples/" ".fingerprint/" "incremental/" "deps/" ".cargo-lock" "../" "./")
@@ -239,15 +290,9 @@
 
  ("/usr/share/" (26798 26371 569697 314000) "gtk-2.0/" "mono-2.0/" ".mono/" "wlr-protocols/" "sfwbar/" "Thunar/" "foomatic/" "kritaplugins/" "krita/" "color-schemes/" "mlt-7/" "kde-settings/" "movit/" "config.site" "autoconf/" "texinfo/" "texi2any/" "m17n/" "vlc/" "mozilla/" "hypr/" "uwsm/" "libnumbertext/" "libexttextcat/" "zxcvbn/" "firebird/" "redland/" "liblangtag/" "javazi-1.8/" "autocorr/" "mythes/" "libreoffice/" "xmvn/" "java-utils/" "maven-poms/" "maven-metadata/" "jvm-common/" "jvm/" "jpbinding/" "javadoc/" "java/" "ivy-xmls/" "eclipse/" "flameshot/" "qlogging-categories5/" "kservicetypes5/" "kservices5/" "kf5/" "btop/" "gamemode/" "nvim/" "fzf/" "magic" "pgsql/" "nomacs/" "wayland-protocols/" "rubygems/" "gems/" "ruby/" "node-22/" "clang/" "opt-viewer/" "buildsys-build-rpmfusion/" "kmodtool/" "koji/" "rpmdevtools/" "spandsp/" "ladspa/" "qt5/" "telepathy/" "abiword-3.0/" "aiksaurus/" "enchant/" "libwmf/" "link-grammar/" "ots/" "wv/" "goffice/" "dosbox-staging/" "mingw/" "filesystem/" "soundfonts/" "wine/" "ynl/" "gtags/" "et/" "texmf/" "texlive/" "fastfetch/" "android-tools/" "pandoc-3.1.11.1/" "fcitx5/" "gtksourceview-3.0/" "gettext-0.23.1/" "gtk-doc/" "icu/" "wayland/" "nbfc/" "bison/" "model/" "cmake/" "cargo/" "hwloc/" "nwg-look/" "gocode/" "git-core/" "perl5/" "pipx/" "luajit-2.1/" "bookmarks/" "GeoIP/" "mpage/" "xfsprogs/" "libcamera/" "mfx/" "passim/" "qemu/" "dnsmasq/" "at/" "empty.sshd/" "ipp-usb/" "foot/" "sssd-kcm/" "installed-tests/" "paps/" "opensc/" "smartmontools/" "localsearch3/" "system-config-language/" "PackageKit/" "blueman/" "ffmpeg/" "sway-systemd/" "ImageMagick-7/" "sddm/" "sway/" "ghostscript/" "gnome-shell/" "xfce4/" "lxqt/" "xwayland/" "system-config-printer/" "gdm/" "gnome-vpn-properties/" "gnome-abrt/" "gtk-4.0/" "gtk-3.0/" "appstream/" "swcatalog/" "gvfs/" "open-vm-tools/" "setroubleshoot/" "qlogging-categories6/" "kservicetypes6/" "kservices6/" "kio/" "kf6/" "wallpapers/" "templates/" "solid/" "kpackage/" "knsrcfiles/" "kconf_update/" "emoticons/" "config.kcfg/" "colord/" "color/" "abrt/" "gstreamer-1.0/" "mdadm/" "libinput/" "xdg-desktop-portal/" "python-wheels/" "systemtap/" "sssd/" "libgphoto2/" "wireplumber/" "usb_modeswitch/" "sane/" "os-prober/" "ModemManager/" "etc/" "selinux/" "fwupd/" "systemd/" "factory/" "pam.d/" "polkit-1/" "gutenprint/" "snmp/" "cracklib/" "authselect/" "gnupg/" "avahi/" "spa-0.2/" "pipewire/" "alsa-card-profile/" "pki/" "emacs/" "defaults/" "liblouisutdml/" "liblouis/" "libwacom/" "poppler/" "publicsuffix/" "rofi/" "makedumpfile/" "iproute2/" "egl/" "libthai/" "hyphen/" "antiword/" "enchant-2-2/" "audit-rules/" "groff/" "source-highlight/" "nano/" "iso-codes/" "tcl9.0/" "tcl9/" "libdrm/" "openal/" "keyutils/" "lua/" "xml/" "sgml/" "grub/" "glvnd/" "file/" "GConf/" "vala/" "gir-1.0/" "thumbnailers/" "pkgconfig/" "mime/" "gettext/" "glib-2.0/" "gawk/" "awk/" "crypto-policies/" "p11-kit/" "dbus-1/" "libgpg-error/" "vulkan/" "alsa/" "gdb/" "gcc-15/" "i18n/" "ppd/" "cups/" "zsh/" "xsessions/" "wayland-sessions/" "themes/" "sounds/" "omf/" "modulefiles/" "misc/" "mime-info/" "info/" "idl/" "help/" "gnome/" "games/" "fish/" "empty/" "dict/" "desktop-directories/" "bash-completion/" "backgrounds/" "augeas/" "applications/" "appdata/" "aclocal/" "dnf5/" "ima/" "firewalld/" "hplip/" "qt6/" "vim/" "osinfo/" "adobe/" "icewm/" "plymouth/" "pixmaps/" "kde4/" "icons/" "fedora-logos/" "anaconda/" "libreport/" "mobile-broadband-provider-info/" "terminfo/" "tabset/" "myspell/" "hunspell/" "zoneinfo/" "man/" "locale/" "X11/" "drirc.d/" "hwdata/" "metainfo/" "doc/" "fonts/" "fontconfig/" "licenses/" "../" "./")
 
- ("/usr/" (26766 56048 481696 386000) "tmp/" "i686-w64-mingw32/" "x86_64-w64-mingw32/" "src/" "local/" "libexec/" "games/" "include/" "share/" "sbin/" "lib64/" "bin/" "lib/" "../" "./")
-
- ("/home/chung/opt/ly/" (26797 29035 24994 846000) "zig-out/" ".zig-cache/" "src/" "res/" "readme.md" "license.md" "build.zig.zon" "build.zig" ".gitignore" ".github/" ".git/" "../" "./")
-
  ("/home/" (26761 24704 0 0) "chung/" "../" "./")
 
  ("/home/chung/Documents/org/" (26796 7843 482845 299000) "khmt.org" "../" "./")
-
- ("/home/chung/.emacs.rc/" (26793 49863 433991 667000) "rc.elc" "org-mode-rc.elc" "misc-rc.elc" "autocommit-rc.elc" "misc-rc.el" "rc.el" "org-mode-rc.el" "autocommit-rc.el" "../" "./")
 )
 
 ;; ----- ido-unc-hosts-cache -----

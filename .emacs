@@ -23,6 +23,7 @@
 (column-number-mode 1)
 (show-paren-mode 1)
 (delete-selection-mode t)
+(setopt use-short-answers t)
 
 (rc/require-theme 'gruber-darker)
 ;; (rc/require-theme 'zenburn)
@@ -32,16 +33,18 @@
   (set-face-attribute 'line-number nil :inherit 'default))
 
 ;;; ido
-(rc/require 'smex 'ido-completing-read+)
+(rc/require 'amx 'ido-completing-read+ 'crm-custom)
 
 (require 'ido-completing-read+)
+(require 'crm-custom)
 
 (ido-mode 1)
 (ido-everywhere 1)
 (ido-ubiquitous-mode 1)
-
-(global-set-key (kbd "M-x") 'smex)
-(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
+(amx-mode 1)
+(crm-custom-mode 1)
+;; (global-set-key (kbd "M-x") 'smex)
+;; (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 
 ;;; c-mode
 (setq-default c-basic-offset 4
@@ -127,6 +130,7 @@
 (add-hook 'python-mode-hook 'rc/set-up-whitespace-handling)
 (add-hook 'erlang-mode-hook 'rc/set-up-whitespace-handling)
 (add-hook 'asm-mode-hook 'rc/set-up-whitespace-handling)
+(add-hook 'nasm-mode-hook 'rc/set-up-whitespace-handling)
 (add-hook 'fasm-mode-hook 'rc/set-up-whitespace-handling)
 (add-hook 'go-mode-hook 'rc/set-up-whitespace-handling)
 (add-hook 'nim-mode-hook 'rc/set-up-whitespace-handling)
@@ -138,7 +142,7 @@
   (global-display-line-numbers-mode))
 
 ;;; magit
-;; magit requres this lib, but it is not installed automatically on
+
 ;; Windows.
 (rc/require 'cl-lib)
 (rc/require 'magit)
@@ -296,6 +300,7 @@
  'typescript-mode
  'rfc-mode
  'sml-mode
+ 'nasm-mode
  )
 
 (load "~/.emacs.shadow/shadow-rc.el" t)
@@ -329,3 +334,6 @@ compilation-error-regexp-alist-alist
 (setq package-native-compile t)
 
 (load-file custom-file)
+(put 'upcase-region 'disabled nil)
+(put 'downcase-region 'disabled nil)
+(put 'set-goal-column 'disabled nil)
