@@ -1,0 +1,94 @@
+THIS IS MY NOTE WHEN READING THIS BOOK
+
+The and operator (&&) evaluates to true, only if both conditions given to it are true. if the first condition is false, then the whole condition must be false.
+The or operator (||) evaluates to true, if either condition given to it is true. It knows that if the first condition is true, the whole condition must be true.
+! is the not operator. It reverses the value of a condition. 
+
+switch statements can replace a sequence of if statements. The switch statement will only check a single value, can’t use a switch statement to check a string of characters or any kind of array.
+
+do while loop is another form of the while loop that checks the loop condition after the loop body is run. That means the loop always executes at least once.
+
+Remember: counter++ means “increase the counter variable by one.”
+Remember: counter-- means “decrease the counter variable by one.”
+
+A break statement will break you straight out of the current loop, skipping whatever follows it in the loop body.
+Breaks can be useful because they’re sometimes the simplest and best way to end a loop. But you might want to avoid using too many, because they can also make the code a little harder to read.
+
+break: get out from here :))
+continue: skip the rest of the loop body and go back to the start of the loop
+If the condition on a loop is the value 1, then the loop will run forever.
+
+In C, the keyword void means it doesn’t matter.
+
+A pointer is just the address of a piece of data in memory.
+
+If you declare a variable inside a function like main(), the computer will store it in a section of memory called the stack.
+If a variable is declared outside any function, it will be stored in the globals section of memory.
+A variable declared inside a function is usually stored in the stack.
+A variable declared outside a function is stored in globals.
+
+Memory structure: STACK-->HEAP-->GLOBAL-->CONSTANTS-->CODE
+
+If you want to find out the memory address of the variable, you can use the & operator. Eg: printf("x is stored at %p\n", &x);
+The address of the variable tells you where to find the variable in memory. That’s why an address is also called a pointer, because it points to the variable in memory.
+
+sizeof can tell you how many bytes of space something takes in memory.
+Factos: sizeof is operator, not function.
+        An operator is compiled to a sequence of instructions by the compiler. A function has to jump to a separate piece of code.
+
+On 32-bit operating systems, a pointer takes 4 bytes of memory and on 64-bit operating systems, a pointer takes 8 bytes.
+On most systems, if p is a pointer and you want to store it in a long variable a, you can type a = (long)p
+
+Fact: int num[] --> int[] and int* num; array is also pointer
+      array[i] = *(array + i)
+Arrays begin with index 0. The index is just the number that’s added to the pointer to find the location of the element.
+
+scanf() accept pointer because it going to update the contents of input so it need address.
+scanf() can limit the data entered by add the size to the format string.
+When scanf() reads a string with the %s, it stops as soon as it hits a space. if you want to enter more than one word, you either have to call it more than once, or use some fancy regular expression trick.
+
+fgets() is an alternative to scanf()
+fgets() can read the whole string include space, vv...
+
+==> If you need to enter structured data with several fields, you’ll want to use scanf(). If you’re entering a single unstructured string, then fgets() is probably the way to go.
+
+strchr() - find location of char in string
+strcmp() - compare two strings
+strstr() - find location of string in string
+strcpy() - copy string to another
+strlen() - return length of string
+strcat() - Concatenate two strings
+
+DO ONE THING AND DO IT WELL - Unix philosophy
+
+printf("Foo"); == fprintf(stdout/stderr, "Foo"); The fprintf() function allows you to choose where you want to send text to.
+">" redirects the Standard Output, "2>" redirects the Standard Error, "<" redirects the Standard Input
+
+"|" (This is the pipe that connects the processes.)
+if write "(./Foo | ./Bar < baz.txt > qux.txt)" it will:
+     - Connect Foo and Bar together, can treat as a single program.
+     - Both of the programs will run at the same time; as output is produced by the first program, it can be consumed by the second program.
+     - The < will send a file’s contents to the first process in the pipeline. The > will capture the Standard Output from the last process in the pipeline.
+     - The parentheses will make sure the data file is read by the Standard Input of the Foo program.
+
+Create a new data stream using the fopen() function
+     FILE *in_file = fopen("input.txt", "r"); This will create a data stream to read from a file.
+     FILE *out_file = fopen("output.txt", "w"); This will create a data stream to write from a file.
+     FILE *append_file = fopen("output.txt", "a"); This will create a data stream to append from a file.
+After that we can use fprintf and fscanf to printf or read contents from file
+     fprintf(out_file, "Your mom is %s and %s\n", foo, bar);
+     fscanf(in_file, "%d", &foo);
+When you’re finished with a data stream, you need to close it.
+     fclose(in_file);
+     fclose(out_file);
+(The truth is that all data streams are automatically closed when the program ends, but it’s still a good idea to always close the data stream yourself)
+
+If the compiler finds a call to a function it hasn’t heard of, it will assume the function returns an int.
+Function declarations tell the compiler what your functions will look like before you define them.
+
+Using extern to share function between source files
+
+gcc tips:
+    gcc -c *.c
+    gcc -o foo *.o
+ This can help reduce the compilation time for the large project with many source files by compile only changed file and re-link the program.
