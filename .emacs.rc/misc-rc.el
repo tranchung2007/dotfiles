@@ -123,7 +123,6 @@ This command does the inverse of `fill-paragraph'."
     (forward-char column)))
 
 (global-set-key (kbd "C-,") 'rc/duplicate-line)
-
 (defun rc/insert-timestamp ()
   (interactive)
   (insert (format-time-string "(%Y-%m-%d %H:%M:%S)")))

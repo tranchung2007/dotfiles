@@ -1,0 +1,49 @@
+
+;; ----- amx-history -----
+(
+ compile
+ forward-sexp
+ treesit-forward-sexp
+ eval-buffer
+ c-ts-mode
+ customize
+ customize-variable
+)
+
+;; ----- amx-data -----
+(
+ (eval-buffer . 18)
+ (move-text-down . 3)
+ (paredit-C-j . 1)
+ (paredit-mode . 1)
+ (compile . 108)
+ (customize . 11)
+ (align-regexp . 4)
+ (edit-server-start . 2)
+ (package-delete . 3)
+ (ff-find-other-file . 1)
+ (completion-at-point . 3)
+ (corfu-mode . 2)
+ (package-recompile . 1)
+ (package-recompile-all . 1)
+ (package-autoremove . 2)
+ (package-install-file . 1)
+ (package-list-packages . 1)
+ (astyle-buffer . 10)
+ (simpc-mode . 5)
+ (amx . 1)
+ (man . 13)
+ (global-auto-revert-mode . 2)
+ (reveal-mode . 2)
+ (auto-revert-mode . 1)
+ (replace-regexp . 2)
+ (multiple-cursors-mode . 1)
+ (recover-this-file . 2)
+ (treesit-install-language-grammar . 3)
+ (c-ts-mode . 10)
+ (customize-variable . 2)
+ (forward-char . 1)
+ (forward-sexp . 2)
+ (find-function . 2)
+ (treesit-forward-sexp . 2)
+)

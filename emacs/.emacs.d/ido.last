@@ -1,0 +1,116 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/usr/share/" . "themes/")
+ ("/home/chung/.config/" . "environment.d/")
+ ("/home/chung/Programing/" . "head_C_first/")
+ ("/usr/include/c++/" . "15/")
+ ("/usr/include/" . "c++/")
+ ("/usr/" . "share/")
+ ("/" . "usr/")
+ ("/home/chung/dotfiles/Programing/" . "KTLT/")
+ ("/home/chung/dotfiles/" . "Programing/")
+ ("/home/chung/" . "Programing/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/chung/Programing/head_C_first/"
+ "/home/chung/.emacs.local/"
+ "/home/chung/"
+ "/usr/include/c++/15/"
+ "/home/chung/opt/"
+ "/usr/share/themes/"
+ "/home/chung/.config/environment.d/"
+ "/home/chung/.config/sway/"
+ "/home/chung/Programing/KTLT/"
+ "/home/chung/Programing/head_C_first/simple_project/"
+ "/home/chung/Downloads/"
+ "/home/chung/Documents/"
+ "/home/chung/dotfiles/Programing/"
+ "/home/chung/Pictures/"
+ "/home/chung/dotfiles/Programing/KTLT/"
+ "/home/chung/dotfiles/Programing/head_C_first/"
+ "/home/chung/dotfiles/"
+ "/home/chung/.config/emacs/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "bitfileld.c"
+ ".emacs"
+ "sort.c"
+ "function_pointer.c"
+ "functional"
+ "dynamic_mem.c"
+ "cursor.conf"
+ "config"
+ "linked_list.c"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/chung/.emacs.local/" (27053 13209 728941 845000) "../" "simpc-mode.el" "./")
+
+ ("/home/chung/" (27084 43332 527167 747000) "Desktop/" ".mozilla/" "Programing/" ".emacs.custom.el" ".zhistory" ".local/" ".zcompcache/" ".cache/" "../" ".android/" "Pictures/" ".bash_logout" ".pki/" ".config/" ".mono/" ".zshenv" "dotfiles/" ".cargo/" ".zcompdump" ".zcompdump.dat" ".bash_profile" "Documents/" ".emacs.d/" "Downloads/" "Public/" ".zshrc" ".zim/" ".wine/" ".gtkrc-2.0" ".windows-serial" ".zcompdump.zwc" "Templates/" ".emacs" "Videos/" ".arduinoIDE/" "opt/" ".bashrc" "Music/" ".bash_history" ".emacs.local/" ".zimrc" "./" ".arduino15/")
+
+ ("/home/chung/Programing/head_C_first/" (27084 29928 511527 739000) "mem_leak_example.c" "simple_project/" "bitfileld.c" "pointers.c" "string.c" "NOTE" "../" "dynamic_mem.c" "in_out.c" "README.md" "linked_list.c" "miniaudio.h" "a.c" "a.out" "struct.c" "cmd_arg.c" "passingstring.c" "scanf.c" "cards.c" "qsort.c" "union.c" "./" "rocks.c" "function_pointer.c")
+
+ ("/usr/share/" (27083 55357 608559 797000) "tcl9.0/" "mobile-broadband-provider-info/" "antiword/" "libtool/" "openal/" "aclocal/" "licenses/" "rofi/" "emoticons/" "jvm/" "gamemode/" "gvfs/" "ivy-xmls/" "kpackage/" "dnf5/" "libreoffice/" "xsessions/" "redland/" "backgrounds/" "flatpak/" "lua/" "wireplumber/" "wayland-sessions/" "gnome-abrt/" "liblouis/" "keyutils/" "qemu/" "bookmarks/" "open-vm-tools/" "themes/" "foomatic/" "wine/" "sddm/" "selinux/" "source-highlight/" "i18n/" "gtk-2.0/" "empty.sshd/" "nvim/" "libgphoto2/" "osinfo/" "liblangtag/" "rootfiles/" "colord/" "vim/" "ModemManager/" "augeas/" "eclipse/" "idl/" "calf/" "mozilla/" "tesseract/" "doc/" "at/" "aclocal-1.18/" "metainfo/" "crypto-policies/" "kservices6/" "info/" "maven-metadata/" "speech-dispatcher/" "ima/" "cracklib/" "xfce4/" "sane/" "firewalld/" "sssd/" "ppd/" "audit-rules/" "sway/" "system-config-language/" "color/" "perl5/" "groff/" "ghostscript/" "publicsuffix/" "config.kcfg/" "localsearch3/" "zoneinfo/" "man/" "wallpapers/" "config.site" "etc/" "pcmanfm/" "wayland/" "tcl9/" "nano/" "emacs/" "GConf/" "appdata/" "libfm/" "filesystem/" "mime/" "misc/" "foot/" "cups/" "appstream/" "knsrcfiles/" "codeblocks/" "gettext/" "avahi/" "dns-root-data/" "vala/" "qt6/" "anaconda/" "modulefiles/" "iproute2/" "vulkan/" "javadoc/" "android-tools/" "node-22/" "fontconfig/" "icewm/" "omf/" "zxcvbn/" "grub/" "systemd/" "fedora-logos/" "libthai/" "git-core/" "hwdata/" "hplip/" "bash-completion/" "blueman/" "ImageMagick-7/" "pkgconfig/" "gcc-15/" "factory/" "kf6/" "gnome-control-center/" "poppler/" "egl/" "locale/" "desktop-directories/" "libcamera/" "sssd-kcm/" "myspell/" "fwupd/" "lxqt/" "gdm/" "gutenprint/" "drirc.d/" "mfx/" "espeak-ng-data/" "fish/" "awk/" "tabset/" "maven-poms/" "gtk-3.0/" "empty/" "snmp/" "xkeyboard-config-2/" "usb_modeswitch/" "dnsmasq/" "polkit-1/" "mdadm/" "qlogging-categories6/" "adobe/" "mythes/" "cmake/" "smartmontools/" "passim/" "sway-systemd/" "xml/" "PackageKit/" "X11/" "glib-2.0/" "kconf_update/" "nwg-look/" "fcitx5-lotus/" "makedumpfile/" "thumbnailers/" "p11-kit/" "enchant-2-2/" "gnupg/" "libwacom/" "icons/" "glycin-loaders/" "ipp-usb/" "swcatalog/" "jpbinding/" "templates/" "xdg-desktop-portal/" "dosbox-staging/" "gettext-0.25.1/" "os-prober/" "defaults/" "zsh/" "python-wheels/" "wayland-protocols/" "gstreamer-1.0/" "soundfonts/" "games/" "kio/" "system-config-printer/" "help/" "opensc/" "automake-1.18/" "libinput/" "gnome/" "glvnd/" "autoconf/" "obs/" "xwayland/" "fcitx5/" "pipewire/" "gdb/" "dict/" "gnome-vpn-properties/" "gtk-engines/" "gir-1.0/" "iso-codes/" "jvm-common/" "fonts/" "pam.d/" "paps/" "abrt/" "sgml/" "gtk-doc/" "kservicetypes6/" "libdrm/" "pixmaps/" "liblouisutdml/" "java/" "autocorr/" "sounds/" "mingw/" "luajit-2.1/" "solid/" "authselect/" "dbus-1/" "GeoIP/" "magic" "cargo/" "terminfo/" "systemtap/" "pki/" "spa-0.2/" "ffmpeg/" "qt6ct/" "mpage/" "model/" "libreport/" "javazi-1.8/" "alsa/" "qt5/" "kde4/" "setroubleshoot/" "alsa-card-profile/" "plymouth/" "gawk/" "llvm-pgo.profdata" "mime-info/" "hyphen/" "gtk-4.0/" "tlp/" "gnome-shell/" "icu/" "tuned-switcher/" "libgpg-error/" "file/" "texlive/" "applications/" "xfsprogs/" "libexttextcat/" "hunspell/" "tree-sitter/" "../" "./")
+
+ ("/usr/share/info/" (27083 3451 525609 957000) "diffutils.info.gz" "edt.info.gz" "wisent.info.gz" "message.info.gz" "htmlfontify.info.gz" "viper.info.gz" "ido.info.gz" "modus-themes.info.gz" "ctf-spec.info.gz" "gnupg.info-3.gz" "flymake.info.gz" "efaq.info.gz" "find.info.gz" "source-highlight.info.gz" "pm-gawk.info.gz" "sed.info.gz" "gnupg.info.gz" "time.info.gz" "libffi.info.gz" "make.info.gz" "ld.info.gz" "tar.info-2.gz" "semantic.info.gz" "ldint.info.gz" "zsh.info-1.gz" "make.info-1.gz" "mairix-el.info.gz" "gccgo.info.gz" "emacs.info.gz" "which.info.gz" "gprof.info.gz" "idlwave.info.gz" "ses.info.gz" "gettext.info.gz" "elisp_type_hierarchy.jpg.gz" "../" "eshell.info.gz" "widget.info.gz" "pinentry.info.gz" "zsh.info-5.gz" "nano.info.gz" "mh-e.info.gz" "pinfo.info.gz" "m4.info.gz" "eudc.info.gz" "source-highlight-lib.info.gz" "todo-mode.info.gz" "gccinstall.info.gz" "dired-x.info.gz" "elisp_type_hierarchy.txt.gz" "binutils.info.gz" "cpio.info.gz" "sc.info.gz" "automake.info-1.gz" "history.info.gz" "erc.info.gz" "gcc.info.gz" "cpp.info.gz" "gawkinet.info.gz" "bash.info.gz" "gperf.info.gz" "sframe-spec.info.gz" "libgomp.info.gz" "gnus.info.gz" "m4.info-1.gz" "ediff.info.gz" "gccint.info.gz" "elisp.info.gz" "smtpmail.info.gz" "woman.info.gz" "info.gz" "libtool.info.gz" "zsh.info.gz" "url.info.gz" "rcirc.info.gz" "use-package.info.gz" "m4.info-2.gz" "eintr.info.gz" "tar.info-3.gz" "ed.info.gz" "vtable.info.gz" "vip.info.gz" "autosprintf.info.gz" "emacs-gnutls.info.gz" "grub2.info.gz" "coreutils.info.gz" "make.info-2.gz" "tramp.info.gz" "parted.info.gz" "mtools.info.gz" "remember.info.gz" "bfd.info.gz" "ert.info.gz" "forms.info.gz" "gnupg.info-2.gz" "automake-history.info.gz" "pcl-cvs.info.gz" "grep.info.gz" "sieve.info.gz" "nxml-mode.info.gz" "sasl.info.gz" "org.info.gz" "dc.info.gz" "nettle.info.gz" "zsh.info-6.gz" "dbus.info.gz" "find-maint.info.gz" "pgg.info.gz" "gawkworkflow.info.gz" "gnupg.info-1.gz" "zsh.info-2.gz" "eieio.info.gz" "annobin.info.gz" "eglot.info.gz" "bc.info.gz" "bovine.info.gz" "ede.info.gz" "newsticker.info.gz" "autoconf.info.gz" "automake.info.gz" "grub2-dev.info.gz" "make.info-3.gz" "transient.info.gz" "cppinternals.info.gz" "vhdl-mode.info.gz" "liblouis.info.gz" "zsh.info-3.gz" "calc.info.gz" "zsh.info-4.gz" "libcdio.info.gz" "automake.info-2.gz" "srecode.info.gz" "ccmode.info.gz" "epa.info.gz" "octave-mode.info.gz" "tar.info-1.gz" "accounting.info.gz" "speedbar.info.gz" "eww.info.gz" "as.info.gz" "ebrowse.info.gz" "gzip.info.gz" "tar.info.gz" "auth.info.gz" "gawk.info.gz" "libtool.info-2.gz" "libtool.info-1.gz" "cl.info.gz" "libquadmath.info.gz" "emacs-mime.info.gz" "reftex.info.gz" "./" "rluserman.info.gz" "autotype.info.gz")
+
+ ("/home/chung/Pictures/" (27081 10698 922748 349000) "2026-02-03T15:52:51,630189541+07:00.png" "2026-03-07T09:33:54,347514460-05:00.png" "2026-01-29T20:46:09,261322960+07:00.png" "IMG_20260320_153856.jpg" "2026-03-29T20:31:51,926851773+07:00.png" "IMG_20260219_145159.jpg" "2026-03-11T08:31:48,159503975+07:00.png" "2026-02-04T21:30:32,410276950+07:00.png" "IMG_20260219_164151.jpg" "2026-03-16T16:02:51,701656362+07:00.png" "2026-03-11T20:48:43,248809844+07:00.png" "2026-01-31T08:00:31,264961760+07:00.png" "IMG_20260219_164154.jpg" "2026-02-20T11:05:53,796614701+07:00.png" "2026-02-20T21:44:22,803205265+07:00.png" "2026-02-04T08:32:06,824106399+07:00.png" "IMG_20260316_071935.jpg" "2026-03-29T20:20:37,492370886+07:00.png" "IMG_20260217_115814.jpg" "IMG_20260219_145203.jpg" "../" "IMG_20260217_115813.jpg" "2026-03-29T20:29:29,611849058+07:00.png" "2026-02-02T19:42:42,557306396+07:00.png" "2026-03-29T20:29:32,962680337+07:00.png" "2026-03-06T18:04:18,900316596+07:00.png" "2026-02-27T21:47:55,019142726+07:00.png" "2026-03-16T15:52:10,120125590+07:00.png" "IMG_20260316_071901.jpg" "2026-01-29T20:47:48,914919815+07:00.png" "2026-02-03T15:50:15,481110835+07:00.png" "2026-03-29T18:10:10,038009395+07:00.png" "2026-03-11T20:42:40,214954971+07:00.png" "2026-02-03T15:54:29,368084456+07:00.png" "IMG_20260217_115806.jpg" "2026-02-02T19:42:39,719728840+07:00.png" "2026-03-16T22:17:31,083652458+07:00.png" "2026-03-29T18:06:14,591582723+07:00.png" "Gemini_Generated_Image_ye3l1lye3l1lye3l.png" "IMG_20260219_164148.jpg" "2026-03-24T20:19:09,829569136+07:00.png" "IMG_20260302_105512.jpg" "2026-03-16T22:02:18,400581761+07:00.png" "IMG_20260217_115809.jpg" "colorful_vibrator_keyboard.jpg" "2026-03-08T18:52:29,000267296+07:00.png" "IMG_20260219_164112.jpg" "2026-01-31T08:12:05,281353442+07:00.png" "2026-02-03T15:52:11,085305398+07:00.png" "2026-03-29T20:31:05,484359143+07:00.png" "IMG_20260320_153855.jpg" "2026-03-11T08:31:08,169941474+07:00.png" "IMG_20260219_164149.jpg" "2026-02-03T22:04:10,503879567+07:00.png" "2026-01-31T21:23:42,318408273+07:00.png" "2026-02-20T11:06:12,178579645+07:00.png" "2026-03-18T19:45:40,190001205+07:00.png" "IMG_20260219_164108.jpg" "2026-03-29T20:29:24,881429247+07:00.png" "IMG_20260202_113912.jpg" "IMG_20260219_145204.jpg" "2026-03-29T17:12:08,902486939+07:00.png" "2026-02-03T15:54:23,149018769+07:00.png" "Screenshots/" "2026-02-28T22:27:29,804110403+07:00.png" "2026-02-15T20:18:32,258243288+07:00.png" "IMG_20260219_164152.jpg" "2026-02-05T19:32:17,431075608+07:00.png" "2026-02-28T22:33:55,348696457+07:00.png" "09.Trần Thành Chung.jpg" "conchodm.jpg" "IMG_20260127_154041.jpg" "2026-02-05T19:32:17,601969254+07:00.png" "2026-02-05T19:32:17,741458688+07:00.png" "2026-03-09T19:55:28,055707124+07:00.png" "2026-02-03T20:28:18,704675687+07:00.png" "IMG_20260118_075300.jpg" "IMG_20260304_204815.jpg" "2026-03-29T17:47:08,839953975+07:00.png" "IMG_20260219_164117.jpg" "2026-01-29T20:47:09,296108346+07:00.png" "2026-01-28T09:21:42,143201891+07:00.png" "2026-01-29T20:44:56,768253456+07:00.png" "IMG_20260219_164114.jpg" "2026-03-11T20:43:42,313499755+07:00.png" "IMG_20260219_164147.jpg" "IMG_20260219_150139.jpg" "./" "2026-03-29T17:50:24,673025398+07:00.png" "2026-02-15T20:18:30,293444237+07:00.png" "IMG_20260207_134544.jpg" "2026-03-29T20:24:29,290328104+07:00.png")
+
+ ("/home/chung/Documents/" (27082 24594 935838 945000) "GT/" "C_CPP/" "VLDC/" "../" "Assembly/" "Head First C.pdf" "QLDA/" "Mastering Emacs.pdf" "My Games/" "winecrash.txt" "Slide thuyết trình Final.pptx" "TA/" "KTCT.txt" "./")
+
+ ("/home/chung/Downloads/" (27083 19592 151497 114000) "TL-WR840N(VN)_V6.2_250407.zip" "ZaloSetup-26.2.10.exe" "aocc-compiler-5.1.0-1.x86_64.rpm" "LỚP KT 38 (2,3 - 7)/" "../" "TL-WR840N(VN)_V6.2_250407/" "uad-ng-linux" "anime-girl.jpg" "terraria-linux-gog.zip" "TN 1.1.mp4" "nvim-linux-x86_64.appimage" "Mozilla-Recovery-Key_2026-03-07_banalover2ten@gmail.com.pdf" "./")
+
+ ("/home/chung/.config/sway/" (27079 62080 624459 491000) "../" "config" "config.d/" "./")
+
+ ("/home/chung/opt/" (27083 56617 936323 884000) "Betterfox/" "neuwld/" "swayimg/" "WhiteSur-gtk-theme/" "keyd/" "../" "woomer/" "raylib-template/" "config/" "coomer/" "st/" "vnkey/" "grub2-themes/" "neovim/" "Hardware-Sniffer/" "hevel/" "TLP/" "swc/" "sddm-astronaut-theme/" "OpCore-Simplify/" "MiniMax/" "wld/" "TinhLinh/" "neuswc/" "./" "arduino-ide/")
+
+ ("/usr/share/themes/" (27071 64675 794862 22000) "MurrinaVerdeOlivo/" "Emacs/" "MurrinaFancyCandy/" "../" "MurrinaEalm/" "Adwaita-dark/" "HighContrast/" "MurrinaLoveGray/" "MurrinaAquaIsh/" "Raleigh/" "MurrinaCandy/" "MurrinaGilouche/" "Adwaita/" "MurrinaNeoGraphite/" "MurrinaCappuccino/" "Default/" "./")
+
+ ("/home/chung/.config/environment.d/" (27078 21400 336785 375000) "../" "cursor.conf" "qt6ct.conf" "./")
+
+ ("/home/chung/.config/" (27078 2894 266119 124000) "rofi/" "kdeglobals" "qBittorrent/" "libreoffice/" "zathura/" "pulse/" "kdeconnect/" "dunst/" "fcitx/" "wallpaper/" "nvim/" "../" "mozilla/" "xfce4/" "sway/" "QtProject.conf" "pavucontrol.ini" "foot/" "qtvirtualkeyboard/" "codeblocks/" "user-dirs.dirs" "chromium/" "mimeapps.list" "Thunar/" "lxqt/" "swaynag/" "environment.d/" "dconf/" "gtk-3.0/" "xsettingsd/" "nwg-look/" "xarchiver/" "waybar/" "uad/" "fcitx5/" "flameshot/" "mpv/" "abrt/" "Arduino IDE/" "user-dirs.locale" "swaylock/" "qt6ct/" "alacritty/" "gtk-4.0/" "menus/" "./" "ibus/" "arduino-ide/")
+
+ ("/home/chung/Programing/head_C_first/simple_project/" (27060 13864 200455 629000) "msg_hider" "../" "msg_hider.c" "Makefile" "en_decrypt.h" "./")
+
+ ("/home/chung/Programing/KTLT/" (27073 19672 196462 253000) "../" "1.cpp" "recursive_gcc" "example" "example.s" "recursive.cpp" "README.md" "example.o" "a.out" "example.cpp" "tmp.cpp" "./")
+
+ ("/home/chung/Programing/" (27069 27063 459158 333000) "../" "SDL2/" "ass/" "head_C_first/" "arduino-learning/" "fun_with_c/" "KTLT/" "./")
+
+ ("/home/chung/dotfiles/" (27054 41930 772412 344000) ".emacs.snippets/" "rofi/" "zathura/" "deploy.sh" "dunst/" "wallpaper/" "tmux/" "zshrc" "../" "sway/" "foot/" ".gitignore" ".emacs.elc" ".emacs.rc/" "README.md" "swaynag/" ".emacs.custom.elc" ".emacs.d/" "fuzzel/" ".git/" "waybar/" ".emacs" "swaylock/" "MANIFEST" "alacritty/" ".emacs.local/" "hypr/" "./")
+
+ ("/home/chung/.emacs.d/" (27053 40729 129172 115000) "../" "eln-cache/" "ido.last" "amx-items" "elpa/" "auto-save-list/" "./")
+
+ ("/home/chung/.emacs.d/elpa/" (27053 40621 774157 610000) "company-20260220.156/" "gruber-darker-theme-20231026.2031/" "../" "crm-custom-20160117.6/" "ido-completing-read+-20240130.30/" "corfu-20260210.915/" "multiple-cursors-20260117.1733/" "archives/" "amx-20230413.1210/" "move-text-20231204.1514/" "gnupg/" "s-20220902.1511/" "paredit-20241103.2046/" "memoize-20200103.2036/" "./")
+
+ ("/home/chung/dotfiles/Programing/KTLT/" (27053 37687 145872 815000) "../" "1.cpp" "example" "example.s" "README.md" "example.o" "example.cpp" "./")
+
+ ("/usr/include/c++/15/bits/" (27053 25078 700750 692000) "regex_compiler.tcc" "concept_check.h" "basic_string.tcc" "monostate.h" "locale_facets.tcc" "streambuf.tcc" "stl_bvector.h" "std_thread.h" "ptr_traits.h" "stl_queue.h" "erase_if.h" "out_ptr.h" "forward_list.tcc" "stl_raw_storage_iter.h" "move.h" "unordered_map.h" "stl_heap.h" "ios_base.h" "ranges_uninitialized.h" "specfun.h" "ranges_algobase.h" "stl_list.h" "move_only_function.h" "predefined_ops.h" "enable_special_members.h" "this_thread_sleep.h" "streambuf_iterator.h" "functional_hash.h" "random.tcc" "hashtable_policy.h" "fs_path.h" "regex_automaton.h" "memory_resource.h" "stream_iterator.h" "fs_fwd.h" "regex_executor.h" "ostream.tcc" "shared_ptr_base.h" "ranges_util.h" "regex_compiler.h" "istream.tcc" "stl_numeric.h" "locale_conv.h" "c++0x_warning.h" "semaphore_base.h" "std_abs.h" "valarray_array.h" "shared_ptr_atomic.h" "stl_pair.h" "stl_construct.h" "regex_executor.tcc" "sat_arith.h" "unicode-data.h" "allocator.h" "exception_ptr.h" "stl_stack.h" "slice_array.h" "stl_relops.h" "atomic_wait.h" "invoke.h" "stl_algobase.h" "codecvt.h" "sstream.tcc" "stl_map.h" "range_access.h" "cow_string.h" "uses_allocator_args.h" "char_traits.h" "regex.h" "postypes.h" "formatfwd.h" "boost_concept_check.h" "algorithmfwd.h" "quoted_string.h" "locale_facets_nonio.h" "basic_ios.tcc" "alloc_traits.h" "basic_ios.h" "stl_algo.h" "unique_lock.h" "nested_exception.h" "allocated_ptr.h" "valarray_array.tcc" "cpp_type_traits.h" "cxxabi_forced.h" "exception.h" "uniform_int_dist.h" "parse_numbers.h" "elements_of.h" "uses_allocator.h" "ranges_cmp.h" "stringfwd.h" "locale_facets_nonio.tcc" "ranges_algo.h" "string_view.tcc" "stl_vector.h" "basic_string.h" "atomic_base.h" "cxxabi_init_exception.h" "stl_function.h" "regex_error.h" "localefwd.h" "gslice.h" "functexcept.h" "locale_facets.h" "gslice_array.h" "chrono.h" "std_function.h" "stl_iterator.h" "fstream.tcc" "std.compat.cc" "mofunc_impl.h" "hash_bytes.h" "unique_ptr.h" "regex_automaton.tcc" "random.h" "requires_hosted.h" "utility.h" "std_mutex.h" "atomic_lockfree_defines.h" "stl_deque.h" "mask_array.h" "unordered_set.h" "fs_dir.h" "atomic_timed_wait.h" "forward_list.h" "ostream.h" "indirect_array.h" "vector.tcc" "max_size_type.h" "locale_classes.h" "regex.tcc" "iterator_concepts.h" "ostream_insert.h" "stl_tree.h" "regex_scanner.tcc" "unicode.h" "atomic_futex.h" "exception_defines.h" "stl_tempbuf.h" "locale_classes.tcc" "node_handle.h" "stl_iterator_base_types.h" "charconv.h" "std.cc" "stl_set.h" "valarray_after.h" "memoryfwd.h" "stl_iterator_base_funcs.h" "version.h" "shared_ptr.h" "chrono_io.h" "stl_multimap.h" "regex_constants.h" "refwrap.h" "deque.tcc" "stl_uninitialized.h" "regex_scanner.h" "stl_multiset.h" "hashtable.h" "text_encoding-data.h" "list.tcc" "valarray_before.h" "fs_ops.h" "align.h" "ranges_base.h" "new_allocator.h" "../" "./")
+
+ ("/usr/include/c++/15/" (27053 25078 708750 855000) "cstdint" "stack" "atomic" "istream" "experimental/" "spanstream" "any" "ciso646" "cassert" "ios" "variant" "iterator" "forward_list" "math.h" "vector" "typeinfo" "algorithm" "queue" "cctype" "valarray" "source_location" "../" "exception" "csignal" "memory_resource" "span" "print" "format" "stdatomic.h" "bit" "memory" "chrono" "csetjmp" "cfenv" "semaphore" "random" "tuple" "latch" "cstdlib" "limits" "numbers" "concepts" "decimal/" "barrier" "array" "stdexcept" "tr1/" "ctgmath" "filesystem" "set" "list" "iostream" "string_view" "climits" "ccomplex" "fstream" "optional" "backward/" "compare" "ratio" "streambuf" "stdfloat" "deque" "ostream" "regex" "cstdio" "tgmath.h" "cerrno" "mutex" "cuchar" "flat_set" "utility" "iomanip" "locale" "debug/" "generator" "functional" "future" "cstdbool" "cwctype" "shared_mutex" "cwchar" "flat_map" "execution" "codecvt" "parallel/" "ctime" "iosfwd" "cxxabi.h" "syncstream" "cmath" "numeric" "system_error" "bitset" "cstdarg" "ranges" "expected" "new" "unordered_set" "sstream" "complex" "initializer_list" "unordered_map" "x86_64-redhat-linux/" "cinttypes" "cfloat" "string" "cstddef" "cstdalign" "stdlib.h" "text_encoding" "bits/" "tr2/" "map" "thread" "clocale" "condition_variable" "stdckdint.h" "stop_token" "fenv.h" "charconv" "version" "ext/" "stdbit.h" "coroutine" "scoped_allocator" "typeindex" "stacktrace" "cstring" "pstl/" "./" "type_traits" "complex.h")
+
+ ("/usr/include/c++/" (27053 25078 619029 780000) "../" "./" "15/")
+
+ ("/usr/include/" (27053 25248 141194 628000) "pciaccess.h" "stdc-predef.h" "sysprof-6/" "ulimit.h" "ieee754.h" "wayland-client-protocol.h" "fcntl.h" "semaphore.h" "mqueue.h" "grp.h" "signal.h" "libintl.h" "cpio.h" "alloca.h" "fts.h" "stab.h" "zconf.h" "zlib_name_mangling.h" "wayland-egl-core.h" "wchar.h" "linux/" "EGL/" "KF6/" "err.h" "netipx/" "xf86drmMode.h" "gnu/" "pcre2.h" "libmount/" "math.h" "string.h" "asm/" "gnu-versions.h" "selinux/" "netash/" "gshadow.h" "gbm_backend_abi.h" "GLFW/" "ffi-x86_64.h" "sepol/" "wait.h" "../" "net/" "c++/" "wayland-util.h" "netrose/" "lastlog.h" "regexp.h" "blkid/" "threads.h" "inttypes.h" "utmp.h" "syslog.h" "elf.h" "gbm.h" "ttyent.h" "gio-unix-2.0/" "sound/" "GL/" "stdio.h" "a.out.h" "ffitarget-x86_64.h" "wayland-egl.h" "GLES2/" "glob.h" "dirent.h" "netax25/" "sysexits.h" "zlib.h" "wayland-version.h" "misc/" "wayland-client.h" "fpu_control.h" "pty.h" "stdio_ext.h" "limits.h" "wctype.h" "qt6/" "gnumake.h" "regex.h" "neteconet/" "finclude/" "crypt.h" "mcheck.h" "iconv.h" "wayland-egl-backend.h" "regulator/" "GLES3/" "tgmath.h" "utime.h" "mtd/" "xcb/" "pthread.h" "paths.h" "features-time64.h" "netpacket/" "monetary.h" "kf6/" "xen/" "error.h" "sgtty.h" "rpc/" "cxl/" "wayland-client-core.h" "dlfcn.h" "libgen.h" "offload/" "byteswap.h" "thread_db.h" "memory.h" "protocols/" "locale.h" "video/" "strings.h" "termios.h" "X11/" "glib-2.0/" "nfs/" "setjmp.h" "langinfo.h" "endian.h" "spawn.h" "poll.h" "scsi/" "netrom/" "rdma/" "time.h" "sys/" "nl_types.h" "libsync.h" "xf86drm.h" "stdint.h" "utmpx.h" "fwctl/" "netdb.h" "argz.h" "getopt.h" "arpa/" "glvnd/" "resolv.h" "fstab.h" "unistd.h" "fmtmsg.h" "shadow.h" "wayland-server-protocol.h" "aio.h" "ucontext.h" "syscall.h" "ffitarget.h" "features.h" "libdrm/" "uchar.h" "python3.14/" "link.h" "stdlib.h" "gconv.h" "assert.h" "ar.h" "argp.h" "pwd.h" "mntent.h" "bits/" "wordexp.h" "re_comp.h" "obstack.h" "printf.h" "KHR/" "execinfo.h" "sched.h" "aliases.h" "nss.h" "pcre2posix.h" "fenv.h" "wayland-server.h" "wayland-cursor.h" "GLES/" "stdbit.h" "wayland-server-core.h" "ffi.h" "errno.h" "asm-generic/" "malloc.h" "fnmatch.h" "envz.h" "netatalk/" "search.h" "values.h" "proc_service.h" "tar.h" "ftw.h" "./" "drm/" "netiucv/" "complex.h" "ifaddrs.h" "ctype.h" "netinet/")
+
+ ("/usr/" (27052 11637 511693 625000) "tmp/" "local/" "lib/" "lib64/" "../" "sbin/" "bin/" "i686-w64-mingw32/" "games/" "libexec/" "src/" "include/" "share/" "x86_64-w64-mingw32/" "./")
+
+ ("/home/" (27052 11779 851422 195000) "../" "chung/" "./")
+
+ ("/home/chung/dotfiles/Programing/head_C_first/" (27053 13637 364537 171000) "simple_project/" "pointers.c" "string.c" "NOTE" "../" "in_out.c" "README.md" "a.c" "cmd_arg.c" "passingstring.c" "scanf.c" "cards.c" "./" "rocks.c")
+
+ ("/home/chung/dotfiles/Programing/" (27052 12810 824842 175000) "../" "ass/" "head_C_first/" "fun_with_c/" "KTLT/" "./")
+
+ ("/home/chung/.config/emacs/" (27052 55139 291285 83000) "init.el" "../" ".emacs.d/" "./")
+
+ ("/home/chung/Desktop/" (27052 12462 735698 326000) "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

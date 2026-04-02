@@ -1,2 +1,0 @@
-- x86 lihnux syscall table: https://gist.github.com/GabriOliv/a9411fa771a1e5d94105cb05cbaebd21
-- x86_64 linux syscall table https://www.chromium.org/chromium-os/developer-library/reference/linux-constants/syscalls/

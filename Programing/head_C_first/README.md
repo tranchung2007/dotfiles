@@ -1,1 +1,0 @@
-- All program is this folder are in the Head-C-First book
