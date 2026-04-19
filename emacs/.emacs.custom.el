@@ -8,9 +8,7 @@
  '(delete-selection-mode t)
  '(dired-kill-when-opening-new-dired-buffer t)
  '(global-auto-revert-mode t)
- '(package-selected-packages
-   '(amx company crm-custom gruber-darker-theme ido-completing-read+
-         move-text multiple-cursors paredit))
+ '(package-selected-packages nil)
  '(use-short-answers t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

@@ -175,7 +175,7 @@ output "*" bg ~/.config/wallpaper/anime_girl.jpg fill
     bindsym $mod+c focus child
 
     # Disable touchpad
-    bindsym $mod+alt+t input type:touchpad events toggle
+    bindsym $mod+alt+t input type:touchpad events toggle enabled disabled
 
 #
 # Scratchpad:

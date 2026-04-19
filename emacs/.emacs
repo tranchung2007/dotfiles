@@ -79,21 +79,11 @@ compilation-error-regexp-alist-alist
 (add-hook 'c-mode-hook        'rc/set-up-whitespace-handling)
 (add-hook 'simpc-mode-hook    'rc/set-up-whitespace-handling)
 (add-hook 'emacs-lisp-mode    'rc/set-up-whitespace-handling)
-(add-hook 'tuareg-mode-hook   'rc/set-up-whitespace-handling)
-(add-hook 'java-mode-hook     'rc/set-up-whitespace-handling)
-(add-hook 'lua-mode-hook      'rc/set-up-whitespace-handling)
 (add-hook 'rust-mode-hook     'rc/set-up-whitespace-handling)
-(add-hook 'scala-mode-hook    'rc/set-up-whitespace-handling)
 (add-hook 'markdown-mode-hook 'rc/set-up-whitespace-handling)
-(add-hook 'haskell-mode-hook  'rc/set-up-whitespace-handling)
 (add-hook 'python-mode-hook   'rc/set-up-whitespace-handling)
-(add-hook 'erlang-mode-hook   'rc/set-up-whitespace-handling)
 (add-hook 'asm-mode-hook      'rc/set-up-whitespace-handling)
 (add-hook 'fasm-mode-hook     'rc/set-up-whitespace-handling)
-(add-hook 'go-mode-hook       'rc/set-up-whitespace-handling)
-(add-hook 'nim-mode-hook      'rc/set-up-whitespace-handling)
-(add-hook 'yaml-mode-hook     'rc/set-up-whitespace-handling)
-(add-hook 'porth-mode-hook    'rc/set-up-whitespace-handling)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Package manager
@@ -142,7 +132,7 @@ compilation-error-regexp-alist-alist
   (paredit-mode 1))
 
 (use-package paredit
-  :init
+  :config
   (add-hook 'emacs-lisp-mode-hook  'rc/turn-on-paredit)
   (add-hook 'lisp-mode-hook        'rc/turn-on-paredit)
   (add-hook 'common-lisp-mode-hook 'rc/turn-on-paredit)
@@ -156,10 +146,15 @@ compilation-error-regexp-alist-alist
   (add-to-list 'auto-mode-alist '("\\.[b]\\'" . simpc-mode)))
 
 (use-package company
-  :init
+  :config
   (global-company-mode 1))
 
 (use-package rust-mode)
+
+(use-package yasnippet
+  :config
+  (yas-global-mode 1)
+  (setq yas-snippet-dirs '("~/.emacs.snippets/")))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -178,4 +173,3 @@ compilation-error-regexp-alist-alist
           (lambda ()
             (interactive)
             (setq-local fill-paragraph-function 'astyle-buffer)))
-
