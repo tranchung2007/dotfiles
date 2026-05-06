@@ -5,26 +5,29 @@
  ("/home/chung/Programming/OpenCV/" . "venv/")
  ("/etc/xdg/" . "waybar/")
  ("/etc/" . "xdg/")
- ("/home/chung/Programming/" . "Head-First-C/")
+ ("/home/chung/Programming/" . "raylib/")
  ("/usr/share/" . "themes/")
  ("/home/chung/.config/" . "waybar/")
  ("/home/chung/Programing/" . "head_C_first/")
  ("/usr/include/c++/" . "15/")
  ("/usr/include/" . "c++/")
- ("/usr/" . "share/")
- ("/" . "etc/")
+ ("/usr/" . "include/")
+ ("/" . "usr/")
  ("/home/chung/dotfiles/Programing/" . "KTLT/")
  ("/home/chung/dotfiles/" . "Programing/")
- ("/home/chung/" . ".config/")
+ ("/home/chung/" . "Programming/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/chung/"
+ "/usr/include/"
+ "/home/chung/Programming/raylib/"
+ "/home/chung/Programming/oop-cpp/"
  "/home/chung/.config/waybar/"
  "/home/chung/Programming/Head-First-C/internet_protocol/"
  "/home/chung/Programming/Head-First-C/"
  "/home/chung/Programming/OpenCV/"
- "/home/chung/"
  "/etc/xdg/waybar/"
  "/home/chung/Programming/"
  "/home/chung/opt/"
@@ -49,23 +52,38 @@
 
 ;; ----- ido-work-file-list -----
 (
+ ".emacs"
+ "tmp.cpp"
+ "main.cpp"
+ "main2.cpp"
  "config.jsonc"
  "main"
  "main.c"
  "args.c"
  "helloworld.cpp"
- "motion_detector.py"
- "selection_sort.c"
- "bubble_sort.c"
- "binary_search.c"
- "qsort.c"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/chung/.config/" (27106 9743 376854 581000) "nwg-look/" "systemd/" "./" "xfce4/" "menus/" "QtProject.conf" "sway/" "Antigravity/" "pavucontrol.ini" "fcitx5/" "obs-studio/" "rofi/" "kdeglobals" "../" "pulse/" "zathura/" "libreoffice/" "dconf/" "pcmanfm/" "swaylock/" "mozilla/" "dunst/" "waybar/" "ibus/" "gtk-3.0/" "mpv/" "gtk-4.0/" "fcitx/" "lxqt/" "xsettingsd/" "xarchiver/" "swaynag/" "fontconfig/" "nvim/" "foot/" "user-dirs.dirs" "alacritty/" "abrt/" "codeblocks/" "libfm/" "user-dirs.locale" "wallpaper/" "qt6ct/")
+ ("/home/chung/" (27130 65355 895777 839000) ".emacs.custom.el" ".viminfo" ".xsession-errors" ".xsession-errors.old" ".zhistory" ".wine/" ".ssh/" ".var/" ".zcompdump.zwc" ".zcompdump.dat" ".zcompdump" "Programming/" ".cargo/" "opt/" ".zcompcache/" ".gtkrc-2.0" ".zimrc" ".zim/" ".bash_history" ".emacs" ".emacs.local/" ".emacs.d/" ".zshrc" "dotfiles/" ".local/" ".config/" "Videos/" "Pictures/" "Music/" "Documents/" "Public/" "Templates/" "Downloads/" "Desktop/" ".cache/" ".bashrc" ".bash_profile" ".bash_logout" ".mozilla/" "../" "./")
 
- ("/home/chung/" (27106 19095 589568 610000) ".zcompdump.zwc" "./" ".zcompdump" ".zcompdump.dat" "opt/" ".bash_history" ".emacs.custom.el" ".bash_profile" ".zsh_history" "Desktop/" ".bashrc" ".cargo/" "Downloads/" ".wine/" "dotfiles/" ".emacs.d/" "Public/" "Music/" "../" ".zim/" ".mozilla/" ".emacs" "Templates/" ".local/" "Pictures/" "Programming/" "Videos/" ".cache/" ".zimrc" ".pki/" "Documents/" ".emacs.local/" ".zcompcache/" ".zhistory" ".zshrc" ".bash_logout" ".gtkrc-2.0" ".config/" ".zshenv")
+ ("/home/chung/Downloads/" (27130 38681 345784 511000) "rei2.png" "rei.png" "rei2.png~" "ZaloSetup-26.4.10.exe" "HunggMod-v1.0.2.zip" "Balatro.Mod.Manager_0.4.0_amd64.AppImage" "smods-1.0.0-beta-1620a.tar.gz" "Balatro/" "lovely-x86_64-unknown-linux-gnu.tar.gz" "DolbyVoice(1).irs" "58.152.29.42.ovpn" "vpngate_219.100.37.15_tcp_443.ovpn" "openproxylist.com-vn-1561151.ovpn" "terraria_v1_4_5_6_89299.sh" "codeblocks_25.03_amd64_debian12/" "codeblocks_25.03_amd64_debian12.tar.xz" "lightdm-webkit2-theme-glorious-2.0.5/" "lightdm-webkit2-theme-glorious-2.0.5.tar.gz" "684505267_1265579822410162_3057515689219645743_n.webp" "682081514_928267216860703_2618232760455356930_n.webp" "ultramarine-budgie-43-live-anaconda-x86_64.iso.sha256sum" "ultramarine-budgie-43-live-anaconda-x86_64.iso" "rpmfusion-free-release-43.noarch.rpm" "DolbyVoice.irs" "DolbyMusic.irs" "DolbyMovie.irs" "DolbyGame.irs" "TLP/" "../" "./")
+
+ ("/usr/include/" (27130 35357 282048 607000) "clang-c/" "clang/" "llvm-c/" "llvm/" "llvm-gtest/" "llvm-gmock/" "histedit.h" "editline/" "unctrl.h" "termcap.h" "term_entry.h" "term.h" "panel.h" "ncurses_dll.h" "ncurses.h" "menu.h" "form.h" "etip.h" "eti.h" "cursslk.h" "cursesw.h" "cursesp.h" "cursesm.h" "cursesf.h" "cursesapp.h" "curses.h" "ncursesw/" "ncurses/" "KF5/" "wordexp.h" "wctype.h" "wchar.h" "wait.h" "values.h" "utmpx.h" "utmp.h" "utime.h" "unistd.h" "ulimit.h" "ucontext.h" "uchar.h" "ttyent.h" "time.h" "threads.h" "thread_db.h" "tgmath.h" "termios.h" "tar.h" "syslog.h" "sysexits.h" "syscall.h" "strings.h" "string.h" "stdlib.h" "stdio_ext.h" "stdio.h" "stdint.h" "stdc-predef.h" "stdbit.h" "stab.h" "spawn.h" "signal.h" "shadow.h" "sgtty.h" "setjmp.h" "semaphore.h" "search.h" "sched.h" "resolv.h" "regexp.h" "regex.h" "re_comp.h" "pwd.h" "pty.h" "pthread.h" "proc_service.h" "printf.h" "poll.h" "paths.h" "obstack.h" "nss.h" "nl_types.h" "netdb.h" "mqueue.h" "monetary.h" "mntent.h" "memory.h" "mcheck.h" "math.h" "malloc.h" "locale.h" "link.h" "limits.h" "libintl.h" "libgen.h" "lastlog.h" "langinfo.h" "inttypes.h" "ifaddrs.h" "ieee754.h" "iconv.h" "gshadow.h" "grp.h" "gnu-versions.h" "glob.h" "getopt.h" "gconv.h" "ftw.h" "fts.h" "fstab.h" "fpu_control.h" "fnmatch.h" "fmtmsg.h" "fenv.h" "features.h" "features-time64.h" "fcntl.h" "execinfo.h" "error.h" "errno.h" "err.h" "envz.h" "endian.h" "elf.h" "dlfcn.h" "dirent.h" "ctype.h" "cpio.h" "complex.h" "byteswap.h" "assert.h" "argz.h" "argp.h" "ar.h" "alloca.h" "aliases.h" "aio.h" "a.out.h" "harfbuzz/" "cairo/" "fontconfig/" "freetype2/" "brotli/" "bzlib.h" "graphite2/" "unicode/" "glib-2.0/" "gio-unix-2.0/" "libmount/" "selinux/" "sepol/" "sysprof-6/" "lzo/" "pixman-1/" "blkid/" "pnglibconf.h" "pngconf.h" "png.h" "libpng16/" "pcre2posix.h" "pcre2.h" "ffmpeg/" "va/" "GLFW/" "gbm_backend_abi.h" "gbm.h" "offload/" "c++/" "rlgl.h" "raymath.h" "raylib.h" "KHR/" "GLES3/" "GLES2/" "GLES/" "EGL/" "glvnd/" "wayland-protocols/" "xf86drmMode.h" "xf86drm.h" "libsync.h" "libdrm/" "pciaccess.h" "wayland-version.h" "wayland-util.h" "wayland-server.h" "wayland-server-protocol.h" "wayland-server-core.h" "wayland-egl.h" "wayland-egl-core.h" "wayland-egl-backend.h" "wayland-cursor.h" "wayland-client.h" "wayland-client-protocol.h" "wayland-client-core.h" "ffitarget.h" "ffitarget-x86_64.h" "ffi.h" "ffi-x86_64.h" "xkbcommon/" "libxml2/" "lzma.h" "lzma/" "xcb/" "X11/" "GL/" "nlist.h" "libelf.h" "gelf.h" "zlib_name_mangling.h" "zlib.h" "zconf.h" "zstd_errors.h" "zstd.h" "zdict.h" "gnumake.h" "crypt.h" "FlexLexer.h" "xen/" "video/" "sys/" "sound/" "scsi/" "rpc/" "regulator/" "rdma/" "qt6/" "qt5/" "python3.14/" "protocols/" "openssl/" "nfs/" "netrose/" "netrom/" "netpacket/" "netiucv/" "netipx/" "netinet/" "neteconet/" "netax25/" "netatalk/" "netash/" "net/" "mtd/" "misc/" "linux/" "kf6/" "gnu/" "gdb/" "fwctl/" "finclude/" "ffnvcodec/" "drm/" "cxl/" "bits/" "asm/" "asm-generic/" "arpa/" "KF6/" "../" "./")
+
+ ("/home/chung/Programming/raylib/" (27130 64924 912352 187000) "main" "a.out" "main2.cpp" "main.cpp" "third_party/" "assets/" "Makefile" "../" "./")
+
+ ("/home/chung/Programming/raylib/third_party/" (27122 1648 850477 923000) "nob.h" "../" "./")
+
+ ("/usr/include/c++/15/" (27122 45400 499060 117000) "version" "vector" "variant" "valarray" "utility" "unordered_set" "unordered_map" "typeinfo" "typeindex" "type_traits" "tuple" "thread" "tgmath.h" "text_encoding" "system_error" "syncstream" "string_view" "string" "streambuf" "stop_token" "stdlib.h" "stdfloat" "stdexcept" "stdckdint.h" "stdbit.h" "stdatomic.h" "stacktrace" "stack" "sstream" "spanstream" "span" "source_location" "shared_mutex" "set" "semaphore" "scoped_allocator" "regex" "ratio" "ranges" "random" "queue" "print" "ostream" "optional" "numeric" "numbers" "new" "mutex" "memory_resource" "memory" "math.h" "map" "locale" "list" "limits" "latch" "iterator" "istream" "iostream" "iosfwd" "ios" "iomanip" "initializer_list" "generator" "future" "functional" "fstream" "forward_list" "format" "flat_set" "flat_map" "filesystem" "fenv.h" "expected" "execution" "exception" "deque" "cxxabi.h" "cwctype" "cwchar" "cuchar" "ctime" "ctgmath" "cstring" "cstdlib" "cstdio" "cstdint" "cstddef" "cstdbool" "cstdarg" "cstdalign" "csignal" "csetjmp" "coroutine" "condition_variable" "concepts" "complex.h" "complex" "compare" "codecvt" "cmath" "clocale" "climits" "ciso646" "cinttypes" "chrono" "charconv" "cfloat" "cfenv" "cerrno" "cctype" "ccomplex" "cassert" "bitset" "bit" "barrier" "atomic" "array" "any" "algorithm" "x86_64-redhat-linux/" "tr2/" "tr1/" "pstl/" "parallel/" "ext/" "experimental/" "decimal/" "debug/" "bits/" "backward/" "../" "./")
+
+ ("/usr/" (27122 44070 345329 815000) "x86_64-w64-mingw32/" "i686-w64-mingw32/" "src/" "share/" "local/" "libexec/" "lib64/" "lib/" "include/" "games/" "bin/" "tmp/" "sbin/" "../" "./")
+
+ ("/home/chung/Programming/oop-cpp/" (27130 37786 9649 319000) "a.out" "tmp.cpp" "NOTE" "main.cpp" "../" "./")
+
+ ("/home/chung/Programming/" (27127 27653 584061 769000) "oop-cpp/" "raylib/" "../" "./")
+
+ ("/home/chung/.config/" (27106 9743 376854 581000) "nwg-look/" "systemd/" "./" "xfce4/" "menus/" "QtProject.conf" "sway/" "Antigravity/" "pavucontrol.ini" "fcitx5/" "obs-studio/" "rofi/" "kdeglobals" "../" "pulse/" "zathura/" "libreoffice/" "dconf/" "pcmanfm/" "swaylock/" "mozilla/" "dunst/" "waybar/" "ibus/" "gtk-3.0/" "mpv/" "gtk-4.0/" "fcitx/" "lxqt/" "xsettingsd/" "xarchiver/" "swaynag/" "fontconfig/" "nvim/" "foot/" "user-dirs.dirs" "alacritty/" "abrt/" "codeblocks/" "libfm/" "user-dirs.locale" "wallpaper/" "qt6ct/")
 
  ("/home/chung/Programming/Head-First-C/internet_protocol/" (27104 62891 339187 755000) "./" "../" "main" "main.c")
 
@@ -77,13 +95,9 @@
 
  ("/home/chung/Documents/" (27102 18697 339663 408000) "TA/" "./" "fix_computer.docx" "pcasm-book.pdf" "../" ".~lock.fix_computer.docx#" "head-first-c.pdf")
 
- ("/home/chung/Downloads/" (27104 20705 367721 77000) "./" "TN 2.2.mp4" "Jasspa_MicroEmacs_20260401_abin_linux_intel_mesc.zip" "unikey46RC2-230919-win32.zip" "tux-manager-1.0.1-1.fc43.x86_64.rpm" "keymap.txt" "TN 1.1.mp4" "nu11 - FamiTracker Works.zip" "UniKeyNT.exe" "../" "Jasspa_MicroEmacs_20260401_abin_linux_intel_mesc/" "2025-Bài-tập-chủ-đạo_VLĐC-1.pdf" "ZaloSetup-26.3.20.exe" "sway-wlr-foreign-toplevel-minimize.txt" "uk_process_state.txt" "SC900-三模游戏鼠标-电子说明书22.pdf" "rpmfusion-nonfree-release-branched.noarch.rpm" "nu11 - FamiTracker Works/" "rpmfusion-free-release-branched.noarch.rpm" "Photo-Phú-Cường.pdf" "2025-Bài-tập-chủ-đạo_VLĐC.pdf" "unikey46RC2-230919-win64.zip")
-
  ("/home/chung/opt/" (27104 17521 854428 952000) "musializer/" "./" "jasspa/" "sway/" "woomer/" "../" "river/" "sddm-astronaut-theme/" "grub2-themes/" "mango/" "keyd/" "uwsm/" "fedora-best-mirror/")
 
  ("/usr/include/bits/" (27100 60090 330044 825000) "select2.h" "waitstatus.h" "iscanonical.h" "floatn.h" "pthreadtypes-arch.h" "atomic_wide_counter.h" "siginfo-consts.h" "stdio2.h" "stdint-intn.h" "siginfo-arch.h" "termios-cbaud.h" "confname.h" "stat.h" "utsname.h" "dirent_ext.h" "link_lavcurrent.h" "struct_stat_time64_helper.h" "monetary-ldbl.h" "dl_find_object.h" "signalfd.h" "socket_type.h" "shmlba.h" "termios-c_cflag.h" "statfs.h" "stdio.h" "string_fortified.h" "termios-baud.h" "fenv.h" "unistd.h" "setjmp.h" "posix1_lim.h" "stdio2-decl.h" "termios-misc.h" "sigaction.h" "struct_rwlock.h" "uio-ext.h" "platform/" "types.h" "struct_stat.h" "procfs-id.h" "wchar-ldbl.h" "procfs.h" "sem.h" "types/" "wctype-wchar.h" "indirect-return.h" "utmpx.h" "netdb.h" "timex.h" "signal_ext.h" "sysmacros.h" "pthread_stack_min.h" "stdint-uintn.h" "select-decl.h" "dlfcn.h" "mathdef.h" "mman-map-flags-generic.h" "syslog-decl.h" "socket-constants.h" "sigevent-consts.h" "sched.h" "uintn-identity.h" "strings_fortified.h" "mman.h" "sockaddr.h" "epoll.h" "time.h" "procfs-prregset.h" "termios-tcflow.h" "timesize.h" "syslog-ldbl.h" "flt-eval-method.h" "in.h" "termios.h" "termios-c_cc.h" "hwcap.h" "ipc.h" "struct_mutex.h" "mathcalls.h" "wchar2-decl.h" "poll2.h" "termios-c_oflag.h" "utmp.h" "eventfd.h" "getopt_posix.h" "termios-c_lflag.h" "ipc-perm.h" "posix2_lim.h" "unistd-decl.h" "err-ldbl.h" "getopt_ext.h" "initspin.h" "thread-shared-types.h" "pthread_stack_min-dynamic.h" "termios-c_iflag.h" "sigstksz.h" "socket2.h" "mathcalls-narrow.h" "sigstack.h" "local_lim.h" "mathcalls-helper-functions.h" "unistd_ext.h" "wchar.h" "select.h" "ioctl-types.h" "inet-fortified-decl.h" "locale.h" "termios-struct.h" "posix_opt.h" "cpu-set.h" "stdlib-ldbl.h" "statx.h" "endianness.h" "long-double.h" "link.h" "pthreadtypes.h" "printf-ldbl.h" "param.h" "syslog.h" "stdlib-float.h" "statx-generic.h" "mman_ext.h" "typesizes.h" "resource.h" "siginfo-consts-arch.h" "time64.h" "fp-fast.h" "statvfs.h" "msq.h" "libc-header-start.h" "uio_lim.h" "semaphore.h" "byteswap.h" "xopen_lim.h" "ss_flags.h" "inotify.h" "sigcontext.h" "syslog-path.h" "error-ldbl.h" "stdio_lim.h" "argp-ldbl.h" "fcntl-linux.h" "mqueue.h" "wordsize.h" "math-vector.h" "endian.h" "mman-shared.h" "dirent.h" "getopt_core.h" "fp-logb.h" "errno.h" "inet-fortified.h" "signum-generic.h" "libm-simd-decl-stubs.h" "rseq.h" "a.out.h" "procfs-extra.h" "stdio-ldbl.h" "setjmp2.h" "wchar2.h" "ioctls.h" "stdint-least.h" "shm.h" "stab.def" "spawn_ext.h" "mqueue2.h" "ipctypes.h" "stdlib.h" "fcntl.h" "cmathcalls.h" "stdlib-bsearch.h" "timerfd.h" "ptrace-shared.h" "poll.h" "error.h" "mman-linux.h" "environments.h" "syscall.h" "mathcalls-macros.h" "socket.h" "elfclass.h" "signum-arch.h" "sigthread.h" "floatn-common.h" "waitflags.h" "fcntl2.h" "../" "./")
-
- ("/usr/include/" (27103 42501 393490 560000) "pcre2posix.h" "vk_video/" "wctype.h" "X11/" "GLFW/" "xcb/" "systemd/" "mbedtls/" "sys/" "gnumake.h" "ieee754.h" "eglexternalplatformversion.h" "lzma/" "netash/" "c++/" "libxml2/" "wayland-version.h" "asm-generic/" "libintl.h" "nfs/" "KF6/" "ulimit.h" "png.h" "math.h" "fmtmsg.h" "netrose/" "libgen.h" "assert.h" "utime.h" "pnglibconf.h" "resolv.h" "pango-1.0/" "libsync.h" "stdio.h" "crypt.h" "fenv.h" "sysprof-6/" "unistd.h" "elf.h" "finclude/" "setjmp.h" "datrie/" "gnu-versions.h" "gdk-pixbuf-2.0/" "wayland-server-protocol.h" "stdio_ext.h" "wayland-util.h" "wayland-client-core.h" "cpio.h" "netipx/" "aio.h" "bzlib.h" "iconv.h" "malloc.h" "GLES2/" "sgtty.h" "utmpx.h" "mtd/" "seccomp-syscalls.h" "netdb.h" "pngconf.h" "fwctl/" "alloca.h" "libevdev-1.0/" "ffitarget-x86_64.h" "xen/" "ifaddrs.h" "eglexternalplatform.h" "dlfcn.h" "rdma/" "brotli/" "lastlog.h" "gshadow.h" "stdc-predef.h" "sepol/" "lcms2.h" "xf86drm.h" "gbm.h" "glob.h" "sched.h" "wlroots-0.19/" "ffi-x86_64.h" "wayland-client.h" "lzma.h" "tgmath.h" "time.h" "inttypes.h" "wayland-server-core.h" "mntent.h" "linux/" "python3.14/" "libpng16/" "wayland-egl.h" "string.h" "video/" "gio-unix-2.0/" "memory.h" "gbm_backend_abi.h" "termios.h" "pciaccess.h" "graphite2/" "printf.h" "utmp.h" "glvnd/" "pixman-1/" "wait.h" "wayland-cursor.h" "blkid/" "ucontext.h" "uchar.h" "pcre2.h" "features.h" "psa/" "kf6/" "ffi.h" "wayland-client-protocol.h" "obstack.h" "regexp.h" "threads.h" "glib-2.0/" "wchar.h" "zconf.h" "locale.h" "zlib_name_mangling.h" "ar.h" "fnmatch.h" "selinux/" "spawn.h" "qt5/" "regex.h" "link.h" "harfbuzz/" "pty.h" "syslog.h" "libseat.h" "monetary.h" "offload/" "cairo/" "rpc/" "thread_db.h" "GLES/" "err.h" "xf86drmMode.h" "fts.h" "features-time64.h" "libliftoff.h" "asm/" "zlib.h" "GLES3/" "semaphore.h" "byteswap.h" "pwd.h" "lcms2_plugin.h" "netrom/" "ftw.h" "mqueue.h" "bits/" "sysexits.h" "sound/" "endian.h" "search.h" "stab.h" "limits.h" "dirent.h" "wordexp.h" "cxl/" "shadow.h" "scsi/" "getopt.h" "stdbit.h" "fontconfig/" "errno.h" "drm/" "grp.h" "tar.h" "envz.h" "values.h" "seccomp.h" "libinput.h" "a.out.h" "libudev.h" "thai/" "re_comp.h" "libdrm/" "freetype2/" "protocols/" "netinet/" "xkbcommon/" "wayland-egl-core.h" "libdisplay-info/" "qt6/" "nl_types.h" "EGL/" "signal.h" "everest/" "fstab.h" "complex.h" "arpa/" "aliases.h" "KHR/" "lzo/" "stdlib.h" "fcntl.h" "langinfo.h" "ttyent.h" "net/" "wayland-server.h" "argz.h" "strings.h" "pthread.h" "execinfo.h" "fribidi/" "ffitarget.h" "gconv.h" "unicode/" "paths.h" "nss.h" "argp.h" "mcheck.h" "poll.h" "regulator/" "error.h" "netax25/" "stdint.h" "syscall.h" "glycin-2/" "neteconet/" "libmount/" "misc/" "netiucv/" "wayland-protocols/" "netatalk/" "wayland-egl-backend.h" "proc_service.h" "ctype.h" "netpacket/" "GL/" "gnu/" "json-c/" "vulkan/" "fpu_control.h" "../" "./")
 
  ("/home/chung/Programming/OpenCV/venv/" (27092 62160 74143 291000) "./" "bin/" "../" "lib64/" ".gitignore" "pyvenv.cfg" "include/" "lib/")
 
@@ -99,19 +113,13 @@
 
  ("/usr/share/" (27096 17510 949710 383000) "polkit-1/" "texlive/" "X11/" "obs/" "usb_modeswitch/" "nwg-look/" "systemd/" "i18n/" "sane/" "gdb/" "hwdata/" "gutenprint/" "gnome-shell/" "aclocal/" "pipewire/" "espeak-ng-data/" "libcamera/" "publicsuffix/" "spa-0.2/" "kconf_update/" "file/" "hplip/" "adobe/" "themes/" "snmp/" "xfce4/" "cups/" "jvm-common/" "wayland-sessions/" "augeas/" "sway/" "python-wheels/" "qlogging-categories6/" "tcl9.0/" "alsa/" "dnf5/" "xwayland/" "firewalld/" "wayland-eglstream/" "config.kcfg/" "antigravity/" "setroubleshoot/" "mime/" "icewm/" "system-config-language/" "avahi/" "swcatalog/" "gir-1.0/" "bookmarks/" "doc/" "fcitx5/" "GConf/" "rootfiles/" "kpackage/" "kxmlgui5/" "zsh/" "remoteview/" "konqueror/" "model/" "filesystem/" "redland/" "rofi/" "fish/" "blueman/" "tuned-switcher/" "qemu/" "mpage/" "wallpapers/" "emacs/" "solid/" "anaconda/" "systemtap/" "sssd-kcm/" "info/" "poppler/" "mythes/" "smartmontools/" "zxcvbn/" "passim/" "licenses/" "jvm/" "hyphen/" "libgpg-error/" "wireplumber/" "crypto-policies/" "iproute2/" "mobile-broadband-provider-info/" "fedora-logos/" "cracklib/" "grub/" "ppd/" "myspell/" "at/" "vim/" "empty/" "gettext/" "vala/" "libreoffice/" "audit-rules/" "bash-completion/" "gnome-vpn-properties/" "magic" "liblouis/" "xfsprogs/" "xdg-desktop-portal/" "keyutils/" "pcmanfm/" "glvnd/" "mozilla/" "colord/" "media-player-info/" "ipp-usb/" "libgphoto2/" "maven-metadata/" "mingw/" "paps/" "libexttextcat/" "luajit-2.1/" "java/" "maven-poms/" "xsessions/" "system-config-printer/" "metainfo/" "kf6/" "drirc.d/" "sddm/" "gvfs/" "makedumpfile/" "knsrcfiles/" "terminfo/" "desktop-directories/" "gnome/" "hunspell/" "glib-2.0/" "os-prober/" "nano/" "dnsmasq/" "locale/" "kio/" "selinux/" "qt5/" "icons/" "speech-dispatcher/" "node-22/" "ghostscript/" "awk/" "source-highlight/" "gtk-3.0/" "pkgconfig/" "factory/" "gawk/" "iso-codes/" "kio_filenamesearch/" "etc/" "kservices6/" "fcitx5-lotus/" "ImageMagick-7/" "gtk-4.0/" "zoneinfo/" "PackageKit/" "kservicetypes6/" "gstreamer-1.0/" "tabset/" "appstream/" "jpbinding/" "gdm/" "fonts/" "idl/" "git-core/" "gnupg/" "libthai/" "mfx/" "lxqt/" "backgrounds/" "lua/" "sounds/" "alsa-card-profile/" "plymouth/" "javazi-1.8/" "mdadm/" "tuned/" "enchant-2-2/" "openal/" "fontconfig/" "dbus-1/" "nvim/" "cmake/" "llvm-pgo.profdata" "sgml/" "groff/" "foot/" "ffmpeg/" "tesseract/" "eclipse/" "mime-info/" "sssd/" "templates/" "xml/" "soundfonts/" "libdrm/" "abrt/" "libreport/" "omf/" "applications/" "GeoIP/" "wayland/" "tree-sitter/" "p11-kit/" "modulefiles/" "qt6/" "autocorr/" "gcc-15/" "libinput/" "wine/" "dict/" "authselect/" "knotifications6/" "foomatic/" "xkeyboard-config-2/" "cargo/" "help/" "empty.sshd/" "dns-root-data/" "pki/" "gnome-abrt/" "appdata/" "libfm/" "liblouisutdml/" "opensc/" "tcl9/" "kde4/" "pam.d/" "sway-systemd/" "ModemManager/" "emoticons/" "ima/" "pixmaps/" "javadoc/" "perl5/" "glycin-loaders/" "games/" "antiword/" "man/" "misc/" "color/" "ivy-xmls/" "liblangtag/" "dosbox-staging/" "defaults/" "vulkan/" "egl/" "fwupd/" "qt6ct/" "libwacom/" "../" "./")
 
- ("/usr/" (27086 22936 978742 526000) "./" "bin/" "tmp/" "x86_64-w64-mingw32/" "../" "src/" "sbin/" "lib64/" "i686-w64-mingw32/" "libexec/" "share/" "include/" "games/" "local/" "lib/")
-
  ("/home/" (27086 23079 850411 487000) "./" "../" "chung/")
 
  ("/home/chung/.gemini/" (27092 60371 270971 564000) "./" "antigravity/" "../")
 
  ("/home/chung/.gemini/antigravity/" (27092 62100 254440 293000) "./" "mcp_config.json" "context_state/" "../" "installation_id" "knowledge/" "implicit/" "brain/" "conversations/" "html_artifacts/")
 
- ("/home/chung/Programming/" (27091 58035 814430 964000) "./" "../" "Head-First-C/" "OpenCV/")
-
  ("/home/chung/.config/sway/" (27088 39512 409831 23000) "./" "../" "config" "config.d/")
-
- ("/usr/include/c++/15/" (27087 49865 741523 84000) "any" "variant" "set" "expected" "./" "ctime" "cfloat" "iosfwd" "numeric" "algorithm" "valarray" "list" "stdatomic.h" "string_view" "random" "math.h" "memory_resource" "tr2/" "generator" "debug/" "thread" "backward/" "fenv.h" "cstdlib" "decimal/" "functional" "cuchar" "cmath" "x86_64-redhat-linux/" "fstream" "cstring" "experimental/" "csignal" "ratio" "ios" "cinttypes" "streambuf" "semaphore" "mutex" "print" "iostream" "csetjmp" "text_encoding" "filesystem" "stdckdint.h" "cstdbool" "deque" "format" "typeindex" "cfenv" "spanstream" "../" "stop_token" "istream" "atomic" "tgmath.h" "concepts" "condition_variable" "array" "ccomplex" "stacktrace" "coroutine" "iomanip" "flat_set" "ciso646" "cxxabi.h" "string" "bit" "system_error" "tuple" "initializer_list" "syncstream" "flat_map" "climits" "ranges" "numbers" "locale" "barrier" "limits" "tr1/" "typeinfo" "map" "forward_list" "stdfloat" "complex" "cstdarg" "charconv" "cassert" "utility" "memory" "compare" "optional" "unordered_set" "queue" "new" "bits/" "latch" "future" "ctgmath" "stdbit.h" "sstream" "unordered_map" "pstl/" "shared_mutex" "cstdalign" "bitset" "exception" "vector" "clocale" "cwctype" "cstdint" "span" "chrono" "ext/" "cwchar" "complex.h" "scoped_allocator" "stack" "stdlib.h" "version" "stdexcept" "codecvt" "parallel/" "execution" "source_location" "iterator" "cctype" "cstdio" "type_traits" "regex" "cerrno" "ostream" "cstddef")
 
  ("/home/chung/.config/canoe/" (27087 48657 511746 933000) "./" "canoe.toml" "../")
 

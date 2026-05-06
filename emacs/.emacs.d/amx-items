@@ -1,23 +1,23 @@
 
 ;; ----- amx-history -----
 (
- conf-mode
- autoconf-mode
- compile
- man
+ find-grep-dired
+ grep-find-toggle-abbreviation
+ grep-find
+ grep
+ eval-buffer
  customize
- cua-mode
- recover-this-file
+ compile
 )
 
 ;; ----- amx-data -----
 (
- (eval-buffer . 18)
+ (eval-buffer . 23)
  (move-text-down . 3)
  (paredit-C-j . 1)
  (paredit-mode . 1)
- (compile . 163)
- (customize . 12)
+ (compile . 212)
+ (customize . 17)
  (align-regexp . 4)
  (edit-server-start . 2)
  (package-delete . 3)
@@ -25,14 +25,14 @@
  (completion-at-point . 3)
  (corfu-mode . 2)
  (package-recompile . 1)
- (package-recompile-all . 1)
+ (package-recompile-all . 2)
  (package-autoremove . 2)
  (package-install-file . 1)
  (package-list-packages . 1)
- (astyle-buffer . 15)
+ (astyle-buffer . 16)
  (simpc-mode . 5)
  (amx . 1)
- (man . 47)
+ (man . 53)
  (global-auto-revert-mode . 2)
  (reveal-mode . 2)
  (auto-revert-mode . 1)
@@ -49,6 +49,22 @@
  (pixel-scroll-precision-mode . 2)
  (pixel-scroll-mode . 2)
  (cua-mode . 4)
- (conf-mode . 2)
+ (conf-mode . 3)
  (autoconf-mode . 1)
+ (package-upgrade-all . 2)
+ (calendar . 1)
+ (gdb . 2)
+ (fido-mode . 1)
+ (ido-mode . 2)
+ (eglot . 1)
+ (eglot-reconnect . 1)
+ (flymake-mode . 1)
+ (flymake-start . 2)
+ (flymake-show-diagnostic . 1)
+ (grep . 38)
+ (find-grep . 1)
+ (find-grep-dired . 3)
+ (fundamental-mode . 2)
+ (grep-find . 4)
+ (grep-find-toggle-abbreviation . 2)
 )

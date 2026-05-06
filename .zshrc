@@ -108,5 +108,24 @@ source ${ZIM_HOME}/init.zsh
 
 export PATH="$HOME/.local/bin:$PATH"
 
-# export PS1="%B%{$(tput setaf 11)%}[%n%{$(tput setaf 7)%}@%{$(tput setaf 1)%}%m] %{$(tput setaf 5)%}%~ %{$(tput sgr0)%}%% "
-export PS1="%B%{$(tput setaf 226)%}[%n%{$(tput setaf 214)%}@%{$(tput setaf 219)%}%m %{$(tput setaf 227)%}%~]%{$(tput sgr0)%}$%b "
+# export PS1="%B%{$(tput setaf 226)%}[%n%{$(tput setaf 214)%}@%{$(tput setaf 219)%}%m %{$(tput setaf 227)%}%~]%{$(tput sgr0)%}$%b "
+
+prompt_suse_setup () {
+  # Gruber Darker Hex Colors
+  local gd_yellow="#ffdd33"
+  local gd_blue="#96a6c8"
+  local gd_green="#73c936"
+  local gd_red="#cc3333"
+  
+  local user_color="%(#.%F{${gd_red}}.%F{${gd_yellow}})"
+
+  local host_color="%F{${gd_green}}"
+  local dir_color="%F{${gd_blue}}"
+  
+  PS1="%B${user_color}%n%f%b@%B${host_color}%m%f%b:%B${dir_color}%~%f%b/ > "
+  PS2="%B${user_color}>%f%b "
+
+  prompt_opts=( cr percent )
+}
+
+prompt_suse_setup "$@"

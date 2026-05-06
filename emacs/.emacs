@@ -18,7 +18,6 @@
   (global-display-line-numbers-mode)
   (windmove-default-keybindings)
   (setq display-line-numbers-type (quote relative))
-  (setq forward-sexp-function #'forward-sexp-default-function)
   )
 
 (setq-default c-basic-offset 4
@@ -173,3 +172,5 @@ compilation-error-regexp-alist-alist
           (lambda ()
             (interactive)
             (setq-local fill-paragraph-function 'astyle-buffer)))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
