@@ -4,16 +4,17 @@
 }
 
 window#waybar {
-    background-color: rgba(43, 48, 59, 0.5);
-    border-bottom: 3px solid rgba(100, 114, 125, 0.5);
+    /* background-color: rgba(0, 0, 0, 0.4); */
+    background-color: rgb(40, 85, 119); 
+    /* border-bottom: 3px solid rgba(0, 0, 0, 0.2); */
     color: #ffffff;
-    transition-property: background-color;
-    transition-duration: .5s;
+    /* transition-property: background-color; */
+    /* transition-duration: .5s; */
 }
 
-window#waybar.hidden {
-    opacity: 0.2;
-}
+/* window#waybar.hidden { */
+    /* opacity: 0.2; */
+/* } */
 
 /*
 window#waybar.empty {
@@ -24,14 +25,14 @@ window#waybar.solo {
 }
 */
 
-window#waybar.termite {
-    background-color: #3F3F3F;
-}
+/* window#waybar.termite { */
+/*     background-color: #3F3F3F; */
+/* } */
 
-window#waybar.chromium {
-    background-color: #000000;
-    border: none;
-}
+/* window#waybar.chromium { */
+/*     background-color: #000000; */
+/*     border: none; */
+/* } */
 
 button {
     /* Use box-shadow instead of border so the text isn't offset */
@@ -217,13 +218,13 @@ label:focus {
     min-width: 100px;
 }
 
-#custom-media.custom-spotify {
-    background-color: #66cc99;
-}
-
-#custom-media.custom-vlc {
-    background-color: #ffa000;
-}
+/* #custom-media.custom-spotify { */
+/*     background-color: #66cc99; */
+/* } */
+/**/
+/* #custom-media.custom-vlc { */
+/*     background-color: #ffa000; */
+/* } */
 
 #temperature {
     background-color: #f0932b;
@@ -255,22 +256,22 @@ label:focus {
     color: #2d3436;
 }
 
-#mpd {
-    background-color: #66cc99;
-    color: #2a5c45;
-}
-
-#mpd.disconnected {
-    background-color: #f53c3c;
-}
-
-#mpd.stopped {
-    background-color: #90b1b1;
-}
-
-#mpd.paused {
-    background-color: #51a37a;
-}
+/* #mpd { */
+/*     background-color: #66cc99; */
+/*     color: #2a5c45; */
+/* } */
+/**/
+/* #mpd.disconnected { */
+/*     background-color: #f53c3c; */
+/* } */
+/**/
+/* #mpd.stopped { */
+/*     background-color: #90b1b1; */
+/* } */
+/**/
+/* #mpd.paused { */
+/*     background-color: #51a37a; */
+/* } */
 
 #language {
     background: #00b093;
