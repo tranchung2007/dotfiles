@@ -9,8 +9,6 @@
 
 (add-to-list 'default-frame-alist `(font . ,(rc/get-default-font)))
 
-;; (set-face-attribute 'default nil :family "Px437 IBM VGA 8x16" :height 270)
-
 (use-package emacs
   :init
   (setq custom-file "~/.emacs.custom.el")
@@ -27,6 +25,7 @@
   (setq native-comp-driver-options '("-Wl,-z,pack-relative-relocs"
                                      "-Wl,-O2"
                                      "-Wl,--as-needed"))
+
   ;; Misc
   (tool-bar-mode 0)
   (menu-bar-mode 0)
@@ -34,7 +33,9 @@
   (column-number-mode 1)
   (show-paren-mode 1)
   (global-display-line-numbers-mode)
-  (windmove-default-keybindings)
+  (setq-default pgtk-wait-for-event-timeout 0)
+  (setq frame-inhibit-implied-resize t)
+  (setq disabled-command-function 'ignore)
   (setq yas-snippet-dirs '("~/.emacs.snippets/"))
   (setq-default inhibit-splash-screen t
                 make-backup-files nil
@@ -55,19 +56,6 @@
 
 (global-auto-revert-mode 1)
 (setq global-auto-revert-non-file-buffers t)
-;; (setq auto-revert-interval 2)
-
-;;; Stolen from https://lists.gnu.org/r/help-gnu-emacs/2010-01/msg00264.html
-;; (add-hook 'dired-after-readin-hook
-;;           (lambda ()
-;;             (rename-buffer (generate-new-buffer-name dired-directory))))
-
-(add-hook 'dired-after-readin-hook
-          (lambda ()
-            "Add a trailing slash to Dired buffer names."
-            (let ((name (buffer-name)))
-              (unless (string-suffix-p "/" name)
-                (rename-buffer (concat name "/") t)))))
 
 (global-set-key (kbd "C-,") #'duplicate-line)
 
@@ -110,22 +98,34 @@
 (require 'use-package)
 (setq use-package-always-ensure t)
 
+;; (use-package gruber-darker-theme
+;;   :config
+;;   (load-theme #'gruber-darker t))
+
 (use-package gruber-darker-theme
-  :config
-  (load-theme #'gruber-darker t))
+  :load-path "~/.emacs.local/"
+  :config (load-theme 'gruber-darker))
 
-(use-package ido-completing-read+
-  :config
-  (ido-mode 1)
-  (ido-ubiquitous-mode 1))
+;; (use-package ido-completing-read+
+;;   :config
+;;   (ido-mode 1)
+;;   (ido-ubiquitous-mode 1))
 
-(use-package amx
-  :config
-  (amx-mode 1))
+;; (use-package amx
+;;   :config
+;;   (amx-mode 1))
 
-(use-package crm-custom
+;; (use-package crm-custom
+;;   :config
+;;   (crm-custom-mode 1))
+
+(use-package icomplete
+  :custom
+  (setq icomplete-separator " | ")
+  (setq icomplete-prospects-prefix "{" )
+  (setq icomplete-prospects-suffix "}")
   :config
-  (crm-custom-mode 1))
+  (fido-mode 1))
 
 (use-package move-text
   :bind (
@@ -156,21 +156,11 @@
   (add-hook 'scheme-mode-hook      #'rc/turn-on-paredit)
   (add-hook 'racket-mode-hook      #'rc/turn-on-paredit))
 
-;; (use-package company
-;;   :config
-;;   (global-company-mode 1))
-
 (use-package corfu
   :init
   (global-corfu-mode)
-  ;; for pgtk
-  (setq-default pgtk-wait-for-event-timeout 0)
-  (setq frame-inhibit-implied-resize t)
   :config
-  (setq corfu-auto t
-      corfu-auto-delay 0.2
-      corfu-auto-trigger "." ;; Custom trigger characters
-      corfu-quit-no-match 'separator))
+  (setq corfu-auto t))
 
 (use-package cape
   :bind ("C-c p" . cape-prefix-map)
@@ -190,7 +180,6 @@
   (yas-global-mode 1))
 
 (use-package transient)
-
 (use-package magit
   :after transient)
 
@@ -201,8 +190,10 @@
 
 (use-package d-mode)
 
+(use-package my-misc
+  :load-path "~/.emacs.local/")
+
 (use-package dumb-jump
-  :ensure t
   :custom
   (dumb-jump-prefer-searcher 'rg)
   (setq xref-show-definitions-function #'xref-show-definitions-completing-read)
@@ -217,17 +208,6 @@
           (delq nil
                 (mapcar (lambda (dir) (when (file-directory-p dir) dir))
                         '("/usr/include" "/usr/local/include"))))
-
-         ;; ((string= lang "rust")
-         ;;  (let* ((cargo-registry (expand-file-name "~/.cargo/registry/src"))
-         ;;         (sysroot (string-trim
-         ;;                   (shell-command-to-string
-         ;;                    "rustc --print sysroot 2>/dev/null || echo")))
-         ;;         (rust-src (expand-file-name
-         ;;                    "lib/rustlib/src/rust/library" sysroot)))
-         ;;    (delq nil
-         ;;          (mapcar (lambda (dir) (when (file-directory-p dir) dir))
-         ;;                  (list cargo-registry rust-src)))))
 
          ((string= lang "dlang")
           (let ((dub-packages (expand-file-name "~/.dub/packages/")))

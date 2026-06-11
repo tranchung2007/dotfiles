@@ -4,7 +4,9 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+        indent-for-tab-command
         mark-sexp
+        paredit-delete-char
         ))
 
 (setq mc/cmds-to-run-once
