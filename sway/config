@@ -17,8 +17,8 @@ set $up k
 set $right l
 # Your preferred terminal emulator
 # Recommends: foot
-# set $term foot
-set $term 'alacritty msg create-window'
+set $term footclient
+# set $term 'alacritty msg create-window'
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
@@ -36,7 +36,8 @@ font pango:Iosevka 18
 hide_edge_borders both
 seat seat0 xcursor_theme Adwaita 35
 
-exec --no-startup-id alacritty --daemon
+# exec --no-startup-id alacritty --daemon
+exec --no-startup-id foot --server
  
 ### Output configuration
 #

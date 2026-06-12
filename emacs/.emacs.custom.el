@@ -6,7 +6,6 @@
  ;; If there is more than one, they won't work right.
  '(auto-revert-verbose nil)
  '(compilation-always-kill t)
- '(completion-styles '(flex basic partial-completion emacs22))
  '(confirm-kill-emacs 'y-or-n-p)
  '(corfu-auto-prefix 4)
  '(corfu-auto-trigger ".")
@@ -45,13 +44,12 @@
  '(dired-kill-when-opening-new-dired-buffer t)
  '(display-line-numbers-type 'relative)
  '(duplicate-line-final-position -1)
- '(gc-cons-percentage 0.3)
  '(gc-cons-threshold 3200000)
  '(global-auto-revert-mode t)
  '(grep-command "rg -ns --no-heading ")
  '(grep-use-null-device nil)
  '(package-selected-packages
-   '(cape corfu d-mode dumb-jump magit markdown-mode move-text
+   '(cape corfu d-mode dumb-jump magit markdown-mode meson-mode move-text
           multiple-cursors paredit rust-mode yasnippet))
  '(project-list-file "/tmp/project.eld")
  '(project-vc-extra-root-markers '("."))

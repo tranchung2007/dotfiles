@@ -51,7 +51,7 @@
 (setq dired-omit-files
       (concat dired-omit-files "\\|^\\..+$"))
 (setq-default dired-dwim-target t)
-(setq dired-listing-switches "-alhv")
+(setq dired-listing-switches "-ahv")
 (setq dired-mouse-drag-files t)
 
 (global-auto-revert-mode 1)
@@ -75,7 +75,7 @@
 (defun rc/set-up-whitespace-handling ()
   (interactive)
   (whitespace-mode 1)
-  (add-to-list 'write-file-functions 'delete-trailing-whitespace))
+  (add-to-list 'write-file-functions #'delete-trailing-whitespace))
 
 (add-hook 'c++-mode-hook        #'rc/set-up-whitespace-handling)
 (add-hook 'c-mode-hook          #'rc/set-up-whitespace-handling)
@@ -171,9 +171,7 @@
   (add-hook 'completion-at-point-functions #'cape-elisp-block))
 
 (use-package rust-mode)
-
-;; (use-package flycheck
-;;   :init (global-flycheck-mode))
+(use-package meson-mode)
 
 (use-package yasnippet
   :config
@@ -195,7 +193,7 @@
 
 (use-package dumb-jump
   :custom
-  (dumb-jump-prefer-searcher 'rg)
+  (dumb-jump-force-searcher 'rg)
   (setq xref-show-definitions-function #'xref-show-definitions-completing-read)
   :config
   (add-hook 'xref-backend-functions #'dumb-jump-xref-activate)
@@ -208,6 +206,17 @@
           (delq nil
                 (mapcar (lambda (dir) (when (file-directory-p dir) dir))
                         '("/usr/include" "/usr/local/include"))))
+
+         ;; ((string= lang "rust")
+         ;;  (let* ((cargo-registry (expand-file-name "~/.cargo/registry/src"))
+         ;;         (sysroot (string-trim
+         ;;                   (shell-command-to-string
+         ;;                    "rustc --print sysroot 2>/dev/null || echo")))
+         ;;         (rust-src (expand-file-name
+         ;;                    "lib/rustlib/src/rust/library" sysroot)))
+         ;;    (delq nil
+         ;;          (mapcar (lambda (dir) (when (file-directory-p dir) dir))
+         ;;                  (list cargo-registry rust-src)))))
 
          ((string= lang "dlang")
           (let ((dub-packages (expand-file-name "~/.dub/packages/")))
