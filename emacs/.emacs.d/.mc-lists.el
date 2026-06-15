@@ -7,6 +7,7 @@
         indent-for-tab-command
         mark-sexp
         paredit-delete-char
+        wdired-finish-edit
         ))
 
 (setq mc/cmds-to-run-once

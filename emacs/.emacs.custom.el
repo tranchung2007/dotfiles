@@ -51,8 +51,6 @@
  '(package-selected-packages
    '(cape corfu d-mode dumb-jump magit markdown-mode meson-mode move-text
           multiple-cursors paredit rust-mode yasnippet))
- '(project-list-file "/tmp/project.eld")
- '(project-vc-extra-root-markers '("."))
  '(use-short-answers t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

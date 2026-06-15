@@ -2,17 +2,26 @@
 
 ;; Highlight fido directory
 (defun my-fido-highlight-directories (orig-fun &rest args)
-  "Highlight directory candidates with the `dired-directory` face."
-  (let ((res (apply orig-fun args)))
-    (when (and res
-               (eq 'file (completion-metadata-get
-                          (completion-metadata (nth 0 args) (nth 1 args) (nth 2 args))
-                          'category)))
+  "Highlight directory file candidates and Dired buffers with the `dired-directory` face."
+  (let* ((res (apply orig-fun args))
+         (category (completion-metadata-get
+                    (completion-metadata (nth 0 args) (nth 1 args) (nth 2 args))
+                    'category)))
+    (when (and res (memq category '(file buffer)))
       (let ((lst res))
         (while (consp lst)
           (let ((candidate (car lst)))
-            (when (and (stringp candidate) (string-suffix-p "/" candidate))
-              (setcar lst (propertize (copy-sequence candidate) 'face 'dired-directory))))
+            (when (stringp candidate)
+              (let ((is-dir (and (eq category 'file)
+                                 (string-suffix-p "/" candidate)))
+                    (is-dired-buf (and (eq category 'buffer)
+                                       (let ((buf (get-buffer candidate)))
+                                         (and buf
+                                              (provided-mode-derived-p
+                                               (buffer-local-value 'major-mode buf)
+                                               'dired-mode))))))
+                (when (or is-dir is-dired-buf)
+                  (setcar lst (propertize (copy-sequence candidate) 'face 'dired-directory))))))
           (setq lst (cdr lst)))))
     res))
 
@@ -71,6 +80,39 @@
             (let ((name (buffer-name)))
               (unless (string-suffix-p "/" name)
                 (rename-buffer (concat name "/") t)))))
+
+(require 'project)
+(add-hook 'kill-emacs-hook
+          (lambda ()
+            "Clear project.el history upon exiting Emacs."
+            (setq project--list nil)
+            (project--write-project-list)))
+
+(defvar my/manual-projects '()
+  "List of manually added project directories.")
+
+(require 'savehist)
+(add-to-list 'savehist-additional-variables 'my/manual-projects)
+(savehist-mode 1)
+
+(defun my/project-try-manual (dir)
+  (when-let* ((root (seq-find (lambda (p)
+                                (string-prefix-p p (expand-file-name dir)))
+                              my/manual-projects)))
+    (cons 'manual root)))
+
+(cl-defmethod project-root ((project (head manual)))
+  (cdr project))
+
+(add-hook 'project-find-functions #'my/project-try-manual)
+
+(defun my/project-add (dir)
+  (interactive "DAdd project directory: ")
+  (let ((dir (file-name-as-directory (expand-file-name dir))))
+    (add-to-list 'my/manual-projects dir)
+    (project-remember-project (cons 'manual dir))))
+
+(keymap-global-set "C-x p A" #'my/project-add)
 
 ;; For use-package
 (provide 'my-misc)

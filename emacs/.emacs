@@ -14,10 +14,10 @@
   (setq custom-file "~/.emacs.custom.el")
   (load custom-file)
   ;; Stolen from https://www.jamescherti.com/compiling-emacs
-  (setq my-cpu-architecture "znver4")
+  (setq cpu-architecture "znver4")
   (setq native-comp-compiler-options `("-O2"
-                                       ,(format "-mtune=%s" my-cpu-architecture)
-                                       ,(format "-march=%s" my-cpu-architecture)
+                                       ,(format "-mtune=%s" cpu-architecture)
+                                       ,(format "-march=%s" cpu-architecture)
                                        "-g0"
                                        "-fno-omit-frame-pointer"
                                        "-fno-finite-math-only"))
@@ -60,8 +60,12 @@
 (global-set-key (kbd "C-,") #'duplicate-line)
 
 (require 'compile)
+;; (add-to-list 'compilation-error-regexp-alist
+;;              '("\\([a-zA-Z0-9\\.]+\\)(\\([0-9]+\\)\\(,\\([0-9]+\\)\\)?) \\(Warning:\\)?"
+;;                1 2 (4) (5)))
+
 (add-to-list 'compilation-error-regexp-alist
-             '("\\([a-zA-Z0-9\\.]+\\)(\\([0-9]+\\)\\(,\\([0-9]+\\)\\)?) \\(Warning:\\)?"
+             '("\\([^()\n]+\\)(\\([0-9]+\\)\\(,\\([0-9]+\\)\\)?) \\(Warning:\\)?"
                1 2 (4) (5)))
 
 (add-hook 'compilation-filter-hook 'ansi-color-compilation-filter)
@@ -98,6 +102,8 @@
 (require 'use-package)
 (setq use-package-always-ensure t)
 
+(setq package-install-upgrade-built-in t)
+
 ;; (use-package gruber-darker-theme
 ;;   :config
 ;;   (load-theme #'gruber-darker t))
@@ -105,19 +111,6 @@
 (use-package gruber-darker-theme
   :load-path "~/.emacs.local/"
   :config (load-theme 'gruber-darker))
-
-;; (use-package ido-completing-read+
-;;   :config
-;;   (ido-mode 1)
-;;   (ido-ubiquitous-mode 1))
-
-;; (use-package amx
-;;   :config
-;;   (amx-mode 1))
-
-;; (use-package crm-custom
-;;   :config
-;;   (crm-custom-mode 1))
 
 (use-package icomplete
   :custom
