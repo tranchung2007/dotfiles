@@ -47,6 +47,10 @@ NATIVE_COMP="--with-native-compilation=aot"
     `# --- Speed & size: link-time optimization ---` \
     --enable-link-time-optimization \
     --disable-gc-mark-trace \
+    --disable-build-details \
+    --disable-acl \
+    --disable-ns-self-contained \
+    --disable-xattr \
     \
     `# --- Core: keep wide integers for performance, threads for async ---` \
     --with-wide-int \
@@ -82,8 +86,8 @@ NATIVE_COMP="--with-native-compilation=aot"
     --with-imagemagick \
     --without-native-image-api \
     \
-    `# --- Strip audio ---` \
-    --without-sound \
+    `# --- audio ---` \
+    --with-sound \
     \
     `# --- Strip network / auth extras ---` \
     --without-pop \
@@ -95,7 +99,7 @@ NATIVE_COMP="--with-native-compilation=aot"
     --without-mail-unlink \
     \
     `# --- Strip desktop integration ---` \
-    --with-gsettings \
+    --without-gsettings \
     --without-dbus \
     --without-gconf \
     --without-libsystemd \
@@ -115,12 +119,8 @@ NATIVE_COMP="--with-native-compilation=aot"
     --without-tree-sitter \
     --without-lcms2 \
     --without-selinux \
-    --without-libsmack \
     --without-gameuser \
-    --without-acl \
-    --without-xattr \
     --without-included-regex \
-    \
     `# --- Use pdumper (fastest startup method) ---` \
     --with-dumping=pdumper \
     \
