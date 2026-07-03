@@ -8,35 +8,8 @@ set -euo pipefail
 PREFIX="${PREFIX:-/home/chung/.local}"
 JOBS="${JOBS:-$(nproc 2>/dev/null || sysctl -n hw.ncpu 2>/dev/null || echo 4)}"
 
-# Compiler flags — aggressive optimization, tuned for the host CPU
-CFLAGS="\
-  -O2 \
-  -pipe \
-  -march=native \
-  -mtune=native \
-  -fomit-frame-pointer \
-  -fno-semantic-interposition \
-  -ffunction-sections \
-  -fdata-sections \
-  -fno-plt \
-  -fno-stack-protector \
-  -U_FORTIFY_SOURCE \
-"
-
-# Linker flags — dead-code stripping, faster dynamic linking, LTO-friendly
-LDFLAGS="\
-  -Wl,-O2 \
-  -Wl,--gc-sections \
-  -Wl,--as-needed \
-  -Wl,-z,now \
-  -Wl,--sort-common \
-  -Wl,-z,relro \
-  -Wl,-z,pack-relative-relocs \
-  -flto=auto -O2 \
-"
-
-# CFLAGS="-O2 -pipe -march=native -mtune=native -fno-omit-frame-pointer -fno-plt -flto=auto"
-# LDFLAGS="-Wl,-O2 -Wl,-z,now -Wl,-z,relro -Wl,--sort-common -Wl,--as-needed -Wl,-z,pack-relative-relocs -flto=auto -O2"
+CFLAGS="-O2 -pipe -march=native -mtune=native -fno-omit-frame-pointer -fno-plt -flto=auto"
+LDFLAGS="-Wl,-O2 -Wl,-z,now -Wl,-z,relro -Wl,--sort-common -Wl,--as-needed -Wl,-z,pack-relative-relocs -flto=auto -O2"
 
 # Detect if native-comp deps are present (libgccjit)
 NATIVE_COMP="--with-native-compilation=aot"
