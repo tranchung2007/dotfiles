@@ -1,0 +1,439 @@
+# Default config for sway
+#
+# Copy this to ~/.config/sway/config and edit it to your liking.
+#
+# Read `man 5 sway` for a complete reference.
+
+# xwayland disable
+# client.focused #000000 #00000066 #ffffff
+### Variables
+#
+# Logo key. Use Mod1 for Alt.
+set $mod Mod4
+# Home row direction keys, like vim
+set $left h
+set $down j
+set $up k
+set $right l
+# Your preferred terminal emulator
+# Recommends: foot
+set $term footclient
+# Your preferred application launcher
+set $menu fuzzel
+
+font pango:Iosevka 18
+focus_follows_mouse no
+hide_edge_borders both
+seat seat0 xcursor_theme Adwaita 35
+
+exec --no-startup-id foot --server
+
+### Output configuration
+output "*" bg ~/.config/wallpaper/joline2.png fill subpixel rgb adaptive_sync on
+
+### Key bindings
+#
+# Basics:
+#
+    # Start a terminal
+    bindsym $mod+Return exec $term
+    bindsym $mod+Shift+Return exec $term
+
+    # Kill focused window
+    bindsym $mod+Shift+q kill
+
+    # Start your launcher
+    bindsym $mod+d exec $menu
+
+    # Drag floating windows by holding down $mod and left mouse button.
+    floating_modifier $mod normal
+
+    # Reload the configuration file
+    bindsym $mod+Shift+c reload
+
+    # Exit sway (logs you out of your Wayland session)
+    bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+#
+# Moving around:
+#
+    bindsym $mod+$left focus left
+    bindsym $mod+$down focus down
+    bindsym $mod+$up focus up
+    bindsym $mod+$right focus right
+    bindsym $mod+Left focus left
+    bindsym $mod+Down focus down
+    bindsym $mod+Up focus up
+    bindsym $mod+Right focus right
+
+    bindsym $mod+Shift+$left move left
+    bindsym $mod+Shift+$down move down
+    bindsym $mod+Shift+$up move up
+    bindsym $mod+Shift+$right move right
+    bindsym $mod+Shift+Left move left
+    bindsym $mod+Shift+Down move down
+    bindsym $mod+Shift+Up move up
+    bindsym $mod+Shift+Right move right
+#
+# Workspaces:
+#
+    workspace 1:First output eDP-1
+    workspace 2:Second output HEADLESS-1
+
+    bindsym $mod+1 workspace number 1:First
+    bindsym $mod+2 workspace number 2:Second
+    bindsym $mod+3 workspace number 3:Third
+    bindsym $mod+4 workspace number 4:Fourth
+    bindsym $mod+5 workspace number 5
+    bindsym $mod+6 workspace number 6
+    bindsym $mod+7 workspace number 7
+    bindsym $mod+8 workspace number 8
+    bindsym $mod+9 workspace number 9
+    bindsym $mod+0 workspace number 10
+
+    bindsym $mod+Shift+1 move container to workspace number 1:First
+    bindsym $mod+Shift+2 move container to workspace number 2:Second
+    bindsym $mod+Shift+3 move container to workspace number 3:Third
+    bindsym $mod+Shift+4 move container to workspace number 4:Fourth
+    bindsym $mod+Shift+5 move container to workspace number 5
+    bindsym $mod+Shift+6 move container to workspace number 6
+    bindsym $mod+Shift+7 move container to workspace number 7
+    bindsym $mod+Shift+8 move container to workspace number 8
+    bindsym $mod+Shift+9 move container to workspace number 9
+    bindsym $mod+Shift+0 move container to workspace number 10
+#
+# Layout stuff:
+#
+    bindsym $mod+b splith
+    bindsym $mod+v splitv
+
+    bindsym $mod+w layout tabbed
+    bindsym $mod+e layout toggle split
+
+    bindsym $mod+f fullscreen
+    bindsym $mod+Shift+space floating toggle
+    bindsym $mod+space focus mode_toggle
+
+    bindsym $mod+a focus parent
+    bindsym $mod+c focus child
+
+    bindsym $mod+alt+t input type:touchpad events toggle enabled disabled
+
+#
+# Scratchpad:
+#
+    bindsym $mod+Shift+minus move scratchpad
+    bindsym $mod+minus scratchpad show
+#
+# Resizing containers:
+#
+mode "resize" {
+    bindsym $left resize shrink width 25px
+    bindsym $down resize grow height 25px
+    bindsym $up resize shrink height 25px
+    bindsym $right resize grow width 25px
+
+    bindsym Left resize shrink width 25px
+    bindsym Down resize grow height 25px
+    bindsym Up resize shrink height 25px
+    bindsym Right resize grow width 25px
+
+    bindsym Escape mode "default"
+    bindsym $mod+r mode "default"
+}
+bindsym $mod+r mode "resize"
+
+
+################################################################
+# 10-dex-autostart.conf
+# exec dex --autostart --environment sway
+
+################################################################
+# 10-systemd-cgroups.conf
+# exec ~/.config/sway/assign-cgroups.py
+exec ~/.config/sway/assign-cgroups-rs/target/release/assign-cgroups
+
+################################################################
+# 10-systemd-session.conf
+exec ~/.config/sway/session.sh
+
+################################################################
+# 26-wlr-mirror-mode.conf
+# Screen mirroring setup for sway using wlr-mirror
+# Dependency: https://github.com/Ferdi265/wl-mirror
+
+# mode "present" {
+#     # command starts mirroring
+#     bindsym m mode "default"; exec ~/opt/wl-present mirror
+#     # these commands modify an already running mirroring window
+#     bindsym o mode "default"; exec ~/opt/wl-present set-output
+#     bindsym r mode "default"; exec ~/opt/wl-present set-region
+#     bindsym Shift+r mode "default"; exec ~/opt/wl-present unset-region
+#     bindsym s mode "default"; exec ~/opt/wl-present set-scaling
+#     bindsym f mode "default"; exec ~/opt/wl-present toggle-freeze
+#     bindsym c mode "default"; exec ~/opt/wl-present custom
+
+#     # return to default mode
+#     bindsym Return mode "default"
+#     bindsym Escape mode "default"
+# }
+# bindsym $mod+p mode "present"
+
+################################################################
+# 50-rules-browser.conf
+for_window [class="Chromium-browser"] mark Browser
+for_window [class="Brave-browser"] mark Browser
+for_window [class="firefox"]  mark Browser
+for_window [app_id="Chromium-browser"] mark Browser
+for_window [app_id="brave-browser"] mark Browser
+for_window [app_id="firefox"] mark Browser
+
+for_window [con_mark="Browser"] {
+    inhibit_idle fullscreen
+}
+
+for_window [app_id="firefox" title="Firefox — Sharing Indicator"] {
+    floating enable
+}
+
+################################################################
+# 50-rules-pavucontrol.conf
+for_window [app_id="pavucontrol"] {
+    floating enable
+    move position center
+}
+
+for_window [app_id="pavucontrol-qt"] {
+    floating enable
+    move position center
+}
+
+################################################################
+# 50-rules-policykit-agent.conf
+for_window [app_id="lxqt-policykit-agent"] {
+    floating enable
+    move position center
+}
+
+################################################################
+# 50-systemd-user.conf
+# exec systemctl --user set-environment XDG_CURRENT_DESKTOP=sway
+# exec systemctl --user import-environment DISPLAY \
+#                                          SWAYSOCK \
+#                                          WAYLAND_DISPLAY \
+#                                          XDG_CURRENT_DESKTOP
+
+# exec hash dbus-update-activation-environment 2>/dev/null && \
+#      dbus-update-activation-environment --systemd DISPLAY \
+#                                                   SWAYSOCK \
+#                                                   XDG_CURRENT_DESKTOP=sway \
+#                                                   WAYLAND_DISPLAY
+
+################################################################
+# 60-bindings-brightness.conf
+set $brightness_notification_cmd  command -v notify-send >/dev/null && \
+        VALUE=$(brightnessctl --percentage get) && \
+        notify-send -e -h string:x-canonical-private-synchronous:brightness \
+            -h "int:value:$VALUE" -t 800 "Brightness: ${VALUE}%"
+
+bindsym XF86MonBrightnessDown exec \
+        'STEP="$brightness_step" && brightnessctl -q set ${STEP:-5}%- && $brightness_notification_cmd'
+bindsym XF86MonBrightnessUp exec \
+        'STEP="$brightness_step" && brightnessctl -q set +${STEP:-5}% && $brightness_notification_cmd'
+
+################################################################
+# 60-bindings-media.conf
+bindsym --locked {
+    XF86AudioPlay       exec playerctl play-pause
+    XF86AudioStop       exec playerctl stop
+}
+
+bindsym {
+    XF86AudioForward    exec playerctl position +10
+    XF86AudioNext       exec playerctl next
+    XF86AudioPause      exec playerctl pause
+    XF86AudioPrev       exec playerctl previous
+    XF86AudioRewind     exec playerctl position -10
+}
+
+################################################################
+# 60-bindings-screenshot.conf
+bindsym {
+    Print       exec grimshot save output
+    Alt+Print   exec grimshot save active
+    Ctrl+Print  exec grimshot save area
+}
+
+################################################################
+# 60-bindings-volume.conf
+# Key bindings to control pipewire or pulseaudio volume with pactl.
+# Displays a notification with the current state if /usr/bin/notify-send is available
+#
+# Volume increase/decrease step can be customized by setting the `$volume_step`
+# variable to a numeric value before including the file.
+# Maximum volume boost level can be set with the `$volume_limit` variable.
+#
+# Requires:     pulseaudio-utils
+# Recommends:   libnotify
+
+set $volume_helper_cmd ~/.config/sway/volume-helper
+set $volume_step 2
+set $volume_limit 200
+
+# Allow volume controls even if the screen is locked
+bindsym --locked {
+    XF86AudioRaiseVolume exec \
+        $volume_helper_cmd --limit "$volume_limit" --increase "$volume_step"
+    XF86AudioLowerVolume exec \
+        $volume_helper_cmd --limit "$volume_limit" --decrease "$volume_step"
+    XF86AudioMute    exec pactl set-sink-mute @DEFAULT_SINK@ toggle && $volume_helper_cmd
+    XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
+}
+
+################################################################
+# 65-mode-passthrough.conf
+mode "passthrough" {
+    bindsym $mod+Pause mode default
+}
+bindsym $mod+Pause mode "passthrough"
+
+################################################################
+# 69-input-settings.conf
+### Input configuration
+#
+input type:touchpad {
+    dwt enabled
+    tap enabled
+    natural_scroll enabled
+    middle_emulation enabled
+    pointer_accel 0.5
+}
+
+input type:keyboard {
+    xkb_layout us
+    repeat_rate 100
+    repeat_delay 300
+}
+
+input type:pointer {
+    accel_profile adaptive
+    scroll_factor 1.5
+    # pointer_accel 0
+}
+
+################################################################
+# 81-float-this-window.conf
+### tOTALLY ai sLops
+
+# ==========================================
+# 1. GLOBAL ROLES (X11/XWayland & Compliant Apps)
+# ==========================================
+for_window [window_role="^(pop-up|task_dialog|dialog|utility|Preferences|About|Open|Save|Properties|Confirmation|Print|Page Setup)$"] floating enable, move position center
+for_window [window_role="(?i).*(picker|chooser|selector).*"] floating enable, move position center
+for_window [window_role="^(plugin-window|toolbox|color_chooser|file_chooser)$"] floating enable
+
+# ==========================================
+# 2. APPLICATION-SPECIFIC ROLES
+# ==========================================
+# Browsers
+for_window [window_role="^(pop-up|Preferences|About)$" app_id="^(firefox|chrome-.*|chromium|brave-browser)$"] floating enable
+for_window [window_role="^devtools$" app_id="^(firefox|chrome-.*|chromium|brave-browser)$"] floating enable
+
+# IDEs & Development
+for_window [window_role="^(pop-up|Preferences|Welcome|dialog)$" class="^(jetbrains-.*|dev-android-studio)$"] floating enable, move position center
+for_window [window_role="^Emulator$"] floating enable
+
+# Office & Documents
+for_window [window_role="^(dialog|pop-up|Print|Properties)$" class="^(LibreOffice|SOffice)$"] floating enable, move position center
+for_window [window_role="^(dialog|pop-up|Print|Properties)$" app_id="^(org.pwmt.zathura|evince)$"] floating enable
+
+# Chat & Communication
+for_window [window_role="^(conversation|messages|contacts|pop-up|Preferences|Settings)$" app_id="^(discord|Slack|Element|signal|zoom)$"] floating enable
+
+# Audio/Video Production
+for_window [window_role="^(Preferences|Render|pop-up)$" class="^(Blender|Resolve|audacity)$"] floating enable
+for_window [window_role="^(Advanced Audio Properties|Interact.*)$" app_id="com\.obsproject\.Studio"] floating enable
+
+# Gaming & Launchers
+for_window [window_role="^(pop-up|Settings|Friends List|Chat)$" class="^(Steam|Lutris|Wine|winecfg\.exe|wine-extensions)$"] floating enable
+for_window [window_role="^Login.*$" app_id="heroic"] floating enable
+
+# ==========================================
+# 3. WAYLAND-NATIVE FALLBACKS & OVERRIDES
+# ==========================================
+for_window [app_id="^(nm-connection-editor|wireshark|zenmap|burpsuite|owasp-zap|pavucontrol|gnome-calculator|docker-desktop|podman-desktop|virt-manager|virt-viewer|dbeaver|MongoDB Compass|gpartedbin|gnome-disks|timeshift-gtk|baobab|pamac-manager|synaptic|lxappearance|kvantummanager|org\.kde\.polkit-kde-authentication-agent-1|keepassxc|org\.keepassxc\.KeePassXC|system-config-printer|org.gnome.FileRoller|ark|xarchiver|gopenrgb|piper|corectrl|blueman-manager)$"] floating enable
+
+# Specific popups or extensions missing roles
+for_window [title="^Unlock Keyring$"] floating enable
+for_window [title="\.(jpg|jpeg|png|gif|mp4|pdf)$"] floating enable, move position center
+
+# System Overlays, Custom Widgets & Launchers
+for_window [app_id="^(wofi|rofi)$"] floating enable, border none
+for_window [app_id="^(fr\.romainvigier\.Mako|avizo|wob|twmn)$"] floating enable, border none
+for_window [app_id="sysmon_mini"] floating enable
+for_window [app_id="btop-overlay"] floating enable, border none
+for_window [title="^StreamPreview$"] floating enable
+for_window [app_id="bg_graph"] floating enable
+for_window [app_id="^(scratchpad|dropdown-.*|quake-terminal)$"] floating enable, move position center
+
+################################################################
+# 90-bar.conf
+bar {
+    swaybar_command waybar
+}
+
+################################################################
+# 90-swayidle.conf
+exec LT="$lock_timeout" ST="$screen_timeout" LT=${LT:-300} ST=${ST:-60} && \
+    swayidle -w \
+        timeout $LT 'swaylock -f' \
+        timeout $((LT + ST)) 'swaymsg "output * power off"' \
+                      resume 'swaymsg "output * power on"'  \
+        timeout $ST 'pgrep -xu "$USER" swaylock >/dev/null && swaymsg "output * power off"' \
+             resume 'pgrep -xu "$USER" swaylock >/dev/null && swaymsg "output * power on"'  \
+        before-sleep 'swaylock -f' \
+        lock 'swaylock -f' \
+        unlock 'pkill -xu "$USER" -SIGUSR1 swaylock'
+
+################################################################
+# 90-winehq.conf
+# Auto move wine window to scratchpad
+# for_window [app_id="^wine"] move scratchpad
+# for_window [title="^Wine.*"] move scratchpad
+
+################################################################
+# 95-autostart-policykit-agent.conf
+exec /usr/libexec/lxqt-policykit-agent
+
+################################################################
+# 95-pic-in-picture.conf
+# Picture in picture setting for swaywm
+for_window [title="Picture-in-Picture"] floating enable, sticky enable, move position center
+for_window [window_role="PictureInPicture"] floating enable, sticky enable
+
+################################################################
+# 95-xdg-desktop-autostart.conf
+exec ~/.config/sway/wait-sni-ready && \
+    systemctl --user start sway-xdg-autostart.target
+
+################################################################
+# 95-xdg-user-dirs.conf
+exec /usr/bin/xdg-user-dirs-update
+
+################################################################
+# 99-screenshot-mode.conf
+# Dependency: https://github.com/coffeeispower/woomer
+#
+bindsym $mod+x exec woomer
+
+mode "screenshot" {
+    bindsym s exec grimshot --notify savecopy area; mode "default"
+    bindsym Shift+s exec grimshot --notify save area; mode "default"
+    bindsym Control+s exec grimshot --notify save active; mode "default"
+    bindsym w exec grimshot --notify save window; mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+s mode "screenshot"
+
+################################################################
+exec xhost si:localuser:root
+# exec ~/.config/sway/locale1-xkb-config

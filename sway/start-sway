@@ -65,7 +65,6 @@ if [ -f "${XDG_CONFIG_HOME:-$HOME/.config}/enviroment" ]; then
     set +o allexport
 fi
 
-
 ## Load Sway-specific user environment customizations
 if [ -f "${XDG_CONFIG_HOME:-$HOME/.config}/sway/environment" ]; then
     set -o allexport
