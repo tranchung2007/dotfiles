@@ -116,12 +116,12 @@ prompt_suse_setup () {
   local gd_blue="#96a6c8"
   local gd_green="#73c936"
   local gd_red="#cc3333"
-  
+
   local user_color="%(#.%F{${gd_red}}.%F{${gd_yellow}})"
 
   local host_color="%F{${gd_green}}"
   local dir_color="%F{${gd_blue}}"
-  
+
   PS1="%B${user_color}%n%f%b@%B${host_color}%m%f%b:%B${dir_color}%~%f%b/ > "
   PS2="%B${user_color}>%f%b "
 
