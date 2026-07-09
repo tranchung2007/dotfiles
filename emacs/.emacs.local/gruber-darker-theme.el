@@ -80,8 +80,8 @@
    ;; Completion
    `(completions-annotations  ((t (:foreground ,gruber-darker-niagara :weight bold))))
    `(completions-common-part  ((t (:foreground ,gruber-darker-yellow))))
-   ;; `(completions-common-part  ((t nil)))
-   ;; `(completions-first-difference ((t (:foreground ,gruber-darker-yellow :weight bold))))
+   `(completions-first-difference ((t (:foreground unspecified))))
+   `(completions-highlight ((t (:foreground ,gruber-darker-niagara :weight bold))))
 
    ;; Custom
    `(custom-state ((t (:foreground ,gruber-darker-green))))
@@ -297,7 +297,8 @@
    `(whitespace-newline        ((t (:background ,gruber-darker-bg :foreground ,gruber-darker-bg+2))))
    `(whitespace-trailing       ((t (:background ,gruber-darker-red :foreground ,gruber-darker-red))))
    `(whitespace-empty          ((t (:background ,gruber-darker-yellow :foreground ,gruber-darker-yellow))))
-   `(whitespace-indentation    ((t (:background ,gruber-darker-yellow :foreground ,gruber-darker-red))))
+   ;; `(whitespace-indentation    ((t (:background ,gruber-darker-yellow :foreground ,gruber-darker-red))))
+   `(whitespace-indentation    ((t (:background unspecified :foreground ,gruber-darker-bg+1))))
    `(whitespace-space-after-tab  ((t (:background ,gruber-darker-yellow :foreground ,gruber-darker-yellow))))
    `(whitespace-space-before-tab ((t (:background ,gruber-darker-brown :foreground ,gruber-darker-brown))))
 
@@ -442,7 +443,7 @@
    `(corfu-echo   ((t (:foreground ,gruber-darker-yellow))))
 
    ;; Fido / Icomplete
-   `(icomplete-first-match  ((t (:foreground ,gruber-darker-yellow))))
+   `(icomplete-first-match  ((t (:foreground ,gruber-darker-yellow :weight bold))))
    `(icomplete-selected-match ((t (:foreground ,gruber-darker-brown))))
    ))
 

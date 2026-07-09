@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 # Minimal Emacs build — optimized for speed
-# Strips GUI, imaging, network, and optional language features
 # Keeps: core Lisp, text editing, native compilation (AOT speed), threads
 
 set -euo pipefail
