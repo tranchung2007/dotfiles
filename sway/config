@@ -230,9 +230,18 @@ for_window [app_id="lxqt-policykit-agent"] {
 
 ################################################################
 # 60-bindings-brightness.conf
-set $brightness_notification_cmd  command -v notify-send >/dev/null && \
-        VALUE=$(brightnessctl --percentage get) && \
-        notify-send -e -h string:x-canonical-private-synchronous:brightness \
+# Key bindings for brightness control using `brightnessctl`.
+# Displays a notification with the current value if /usr/bin/notify-send is available
+#
+# Brightness increase/decrease step can be customized by setting the `$brightness_step`
+# variable to a numeric value before including the file.
+#
+# Requires:     brightnessctl >= 0.5.1-11
+# Recommends:   libnotify
+
+set $brightness_notification_cmd command -v notify-send >/dev/null && \
+        VALUE=$(brightnessctl -m | cut -d, -f4) && \
+        Notify-send -e -h string:x-canonical-private-synchronous:brightness \
             -h "int:value:$VALUE" -t 800 "Brightness: ${VALUE}%"
 
 bindsym XF86MonBrightnessDown exec \
@@ -327,53 +336,22 @@ input type:pointer {
 # ==========================================
 # 1. GLOBAL ROLES (X11/XWayland & Compliant Apps)
 # ==========================================
-for_window [window_role="^(pop-up|task_dialog|dialog|utility|Preferences|About|Open|Save|Properties|Confirmation|Print|Page Setup)$"] floating enable, move position center
-for_window [window_role="(?i).*(picker|chooser|selector).*"] floating enable, move position center
+for_window [window_role="^(pop-up|task_dialog|dialog|utility|Preferences|About|Open|Save|Properties|Confirmation|Print|Page Setup|File Operation Progress)$"] { floating enable move position center }
+for_window [window_role="(?i).*(picker|chooser|selector).*"] { floating enable, move position center }
+
+# Target all auxiliary Thunar windows while keeping the main window tiled
+for_window [app_id="thunar" title=".*Progress.*"] floating enable
+for_window [app_id="thunar" title=".*Confirm.*"] floating enable
+for_window [app_id="thunar" title=".*Error.*"] floating enable
+for_window [app_id="thunar" title="^Properties$"] floating enable
+for_window [app_id="thunar" window_role="thunar-preferences"] floating enable
+
 for_window [window_role="^(plugin-window|toolbox|color_chooser|file_chooser)$"] floating enable
 
 # ==========================================
 # 2. APPLICATION-SPECIFIC ROLES
 # ==========================================
-# Browsers
-for_window [window_role="^(pop-up|Preferences|About)$" app_id="^(firefox|chrome-.*|chromium|brave-browser)$"] floating enable
-for_window [window_role="^devtools$" app_id="^(firefox|chrome-.*|chromium|brave-browser)$"] floating enable
 
-# IDEs & Development
-for_window [window_role="^(pop-up|Preferences|Welcome|dialog)$" class="^(jetbrains-.*|dev-android-studio)$"] floating enable, move position center
-for_window [window_role="^Emulator$"] floating enable
-
-# Office & Documents
-for_window [window_role="^(dialog|pop-up|Print|Properties)$" class="^(LibreOffice|SOffice)$"] floating enable, move position center
-for_window [window_role="^(dialog|pop-up|Print|Properties)$" app_id="^(org.pwmt.zathura|evince)$"] floating enable
-
-# Chat & Communication
-for_window [window_role="^(conversation|messages|contacts|pop-up|Preferences|Settings)$" app_id="^(discord|Slack|Element|signal|zoom)$"] floating enable
-
-# Audio/Video Production
-for_window [window_role="^(Preferences|Render|pop-up)$" class="^(Blender|Resolve|audacity)$"] floating enable
-for_window [window_role="^(Advanced Audio Properties|Interact.*)$" app_id="com\.obsproject\.Studio"] floating enable
-
-# Gaming & Launchers
-for_window [window_role="^(pop-up|Settings|Friends List|Chat)$" class="^(Steam|Lutris|Wine|winecfg\.exe|wine-extensions)$"] floating enable
-for_window [window_role="^Login.*$" app_id="heroic"] floating enable
-
-# ==========================================
-# 3. WAYLAND-NATIVE FALLBACKS & OVERRIDES
-# ==========================================
-for_window [app_id="^(nm-connection-editor|wireshark|zenmap|burpsuite|owasp-zap|pavucontrol|gnome-calculator|docker-desktop|podman-desktop|virt-manager|virt-viewer|dbeaver|MongoDB Compass|gpartedbin|gnome-disks|timeshift-gtk|baobab|pamac-manager|synaptic|lxappearance|kvantummanager|org\.kde\.polkit-kde-authentication-agent-1|keepassxc|org\.keepassxc\.KeePassXC|system-config-printer|org.gnome.FileRoller|ark|xarchiver|gopenrgb|piper|corectrl|blueman-manager)$"] floating enable
-
-# Specific popups or extensions missing roles
-for_window [title="^Unlock Keyring$"] floating enable
-for_window [title="\.(jpg|jpeg|png|gif|mp4|pdf)$"] floating enable, move position center
-
-# System Overlays, Custom Widgets & Launchers
-for_window [app_id="^(wofi|rofi)$"] floating enable, border none
-for_window [app_id="^(fr\.romainvigier\.Mako|avizo|wob|twmn)$"] floating enable, border none
-for_window [app_id="sysmon_mini"] floating enable
-for_window [app_id="btop-overlay"] floating enable, border none
-for_window [title="^StreamPreview$"] floating enable
-for_window [app_id="bg_graph"] floating enable
-for_window [app_id="^(scratchpad|dropdown-.*|quake-terminal)$"] floating enable, move position center
 
 ################################################################
 # 90-bar.conf
@@ -422,14 +400,16 @@ exec /usr/bin/xdg-user-dirs-update
 ################################################################
 # 99-screenshot-mode.conf
 # Dependency: https://github.com/coffeeispower/woomer
-#
 bindsym $mod+x exec woomer
 
+set $screenshot_name $(date +%Y-%m-%d-%H-%M-%S)
 mode "screenshot" {
-    bindsym s exec grimshot --notify savecopy area; mode "default"
-    bindsym Shift+s exec grimshot --notify save area; mode "default"
-    bindsym Control+s exec grimshot --notify save active; mode "default"
-    bindsym w exec grimshot --notify save window; mode "default"
+    bindsym s exec         GRIMSHOT_FILENAME_FORMAT=$screenshot_name grimshot --notify savecopy area; mode "default"
+    bindsym Shift+s exec   GRIMSHOT_FILENAME_FORMAT=$screenshot_name grimshot --notify save area; mode "default"
+    bindsym Control+s exec GRIMSHOT_FILENAME_FORMAT=$screenshot_name grimshot --notify save active; mode "default"
+    bindsym a exec         GRIMSHOT_FILENAME_FORMAT=$screenshot_name grimshot --notify save output; mode "default"
+    bindsym Shift+a exec  GRIMSHOT_FILENAME_FORMAT=$screenshot_name grimshot --notify save; mode "default"
+    bindsym w exec         GRIMSHOT_FILENAME_FORMAT=$screenshot_name grimshot --notify save window; mode "default"
     bindsym Escape mode "default"
 }
 bindsym $mod+s mode "screenshot"
