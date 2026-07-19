@@ -2,20 +2,90 @@
 
 (keymap-global-unset "C-x p") ;; Fck project.el
 (keymap-global-unset "C-x C-z")
-(keymap-global-unset "C-x C-d") ;; We have C-x C-f, you know
+(keymap-global-unset "C-x C-d") ;; We have C-x d, you know
 (keymap-global-unset "C-z")
-(keymap-global-set "C-x p g" #'grep)
+;; (keymap-global-set "C-x p g" #'grep)
+(keymap-global-set "C-x p g" #'grep-find)
 (keymap-global-set "C-x p f" #'my/fd-find-file)
 (keymap-global-set "M-u" #'upcase-dwim)
 (keymap-global-set "M-l" #'downcase-dwim)
 (keymap-global-set "M-c" #'capitalize-dwim)
 
-;; This is totally Ai slops, idk wtf is going here
-(defun my/fido-highlight-directories (orig string table pred &rest rest) (let ((res (apply orig string table pred rest))) (if (not (minibufferp)) res (when (eq (completion-metadata-get (completion-metadata string table pred) 'category) 'file) (let ((tail res)) (while (consp tail) (let ((item (car tail))) (when (and (stringp item) (string-suffix-p "/" item)) (let ((c (copy-sequence item))) (add-face-text-property 0 (length c) 'dired-directory t c) (setcar tail c)))) (setq tail (cdr tail))))) res)))
-(advice-add #'completion-all-completions :around #'my/fido-highlight-directories)
-(defun my/minibuffer-update-path-overlay (ov) (let ((beg (minibuffer-prompt-end))) (save-excursion (goto-char (point-max)) (if (search-backward "/" beg t) (move-overlay ov beg (1+ (point))) (move-overlay ov beg beg)))))
-(defun my/minibuffer-setup-path-highlight () (when (eq (completion-metadata-get (completion-metadata (minibuffer-contents) minibuffer-completion-table minibuffer-completion-predicate) 'category) 'file) (let* ((ov (make-overlay 1 1 nil t t)) (update (lambda (&rest _) (my/minibuffer-update-path-overlay ov)))) (overlay-put ov 'face 'dired-directory) (overlay-put ov 'priority 100) (add-hook 'after-change-functions update nil t) (add-hook 'minibuffer-exit-hook (lambda () (remove-hook 'after-change-functions update t) (delete-overlay ov)) nil t) (funcall update))))
-(add-hook 'minibuffer-setup-hook #'my/minibuffer-setup-path-highlight)
+;;; Highlight current dir in fido buffer
+(defun my/mb-setup ()
+  (when (memq (completion-metadata-get
+               (completion-metadata (minibuffer-contents)
+                                    minibuffer-completion-table
+                                    minibuffer-completion-predicate)
+               'category)
+              '(file buffer))
+    (let* ((ov (make-overlay 1 1 nil t t))
+           (up (lambda (&rest _)
+                 (let ((beg (minibuffer-prompt-end)))
+                   (move-overlay ov beg
+                                 (save-excursion
+                                   (goto-char (point-max))
+                                   (if (search-backward "/" beg t) (1+ (point)) beg)))))))
+      (overlay-put ov 'face 'icomplete-dir)
+      (overlay-put ov 'priority 100)
+      (add-hook 'after-change-functions up nil t)
+      (add-hook 'minibuffer-exit-hook
+                (lambda () (remove-hook 'after-change-functions up t) (delete-overlay ov))
+                nil t)
+      (funcall up))))
+
+(add-hook 'minibuffer-setup-hook #'my/mb-setup)
+
+;;; Custom face for fido-mode
+(defface icomplete-dir
+  '((t :inherit font-lock-keyword-face))
+  "Face for directory entries in icomplete.")
+
+(defface icomplete-determined
+  '((t :inherit shadow))
+  "Face for the determined (sole/bracketed) match in icomplete.")
+
+(advice-add 'icomplete-completions :filter-return
+            (lambda (s)
+              (let* ((comps (completion-all-sorted-completions))
+                     (cat (completion-metadata-get
+                           (completion-metadata (minibuffer-contents)
+                                                minibuffer-completion-table
+                                                minibuffer-completion-predicate)
+                           'category))
+                     (is-buf (eq cat 'buffer)))
+                (when (memq cat '(file buffer))
+                  (let ((pos 0)
+                        (lst comps))
+                    (while (and (consp lst) (stringp (car lst)))
+                      (let* ((cand (car lst))
+                             (m (string-search cand s pos)))
+                        (when m
+                          (let* ((len (length cand))
+                                 (tag-start (and is-buf
+                                                 (> len 2)
+                                                 (eq (aref cand (1- len)) ?>)
+                                                 (string-match "<[^>]+>\\'" cand)
+                                                 (match-beginning 0)))
+                                 (dir (file-name-directory
+                                       (if tag-start (substring cand 0 tag-start) cand)))
+                                 (dir-len (if dir (length dir) 0)))
+
+                            (when (> dir-len 0)
+                              (add-face-text-property m (+ m dir-len) 'icomplete-dir t s))
+                            (when tag-start
+                              (add-face-text-property (+ m tag-start) (+ m len) 'icomplete-dir t s))
+                            (setq pos (+ m len)))))
+                      (setq lst (cdr lst)))))
+                (let ((s-len (length s)))
+                  (when (> s-len 0)
+                    (let ((first-char (aref s 0)))
+                      (when (or (eq first-char ?\[) (eq first-char ?\())
+                        (let* ((close-str (if (eq first-char ?\[) "]" ")"))
+                               (end-pos (string-search close-str s 1)))
+                          (when end-pos
+                            (add-face-text-property 1 end-pos 'icomplete-determined nil s)))))))
+                s)))
 
 ;; Add / to dired buffer name
 (add-hook 'dired-mode-hook

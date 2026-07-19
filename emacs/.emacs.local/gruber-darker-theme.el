@@ -34,54 +34,54 @@
    'gruber-darker
 
    ;; Agda2
-   `(agda2-highlight-datatype-face        ((t (:foreground ,gruber-darker-quartz))))
-   `(agda2-highlight-primitive-type-face  ((t (:foreground ,gruber-darker-quartz))))
-   `(agda2-highlight-function-face        ((t (:foreground ,gruber-darker-niagara))))
-   `(agda2-highlight-keyword-face         ((t (:foreground ,gruber-darker-yellow :bold t))))
+   `(agda2-highlight-datatype-face              ((t (:foreground ,gruber-darker-quartz))))
+   `(agda2-highlight-primitive-type-face        ((t (:foreground ,gruber-darker-quartz))))
+   `(agda2-highlight-function-face              ((t (:foreground ,gruber-darker-niagara))))
+   `(agda2-highlight-keyword-face               ((t (:foreground ,gruber-darker-yellow :bold t))))
    `(agda2-highlight-inductive-constructor-face ((t (:foreground ,gruber-darker-green))))
-   `(agda2-highlight-number-face          ((t (:foreground ,gruber-darker-wisteria))))
+   `(agda2-highlight-number-face                ((t (:foreground ,gruber-darker-wisteria))))
 
    ;; AUCTeX
-   `(font-latex-bold-face        ((t (:foreground ,gruber-darker-quartz :bold t))))
-   `(font-latex-italic-face      ((t (:foreground ,gruber-darker-quartz :italic t))))
-   `(font-latex-math-face        ((t (:foreground ,gruber-darker-green))))
+   `(font-latex-bold-face         ((t (:foreground ,gruber-darker-quartz :bold t))))
+   `(font-latex-italic-face       ((t (:foreground ,gruber-darker-quartz :italic t))))
+   `(font-latex-math-face         ((t (:foreground ,gruber-darker-green))))
    `(font-latex-sectioning-5-face ((t (:foreground ,gruber-darker-niagara :bold t))))
-   `(font-latex-slide-title-face ((t (:foreground ,gruber-darker-niagara))))
-   `(font-latex-string-face      ((t (:foreground ,gruber-darker-green))))
-   `(font-latex-warning-face     ((t (:foreground ,gruber-darker-red))))
+   `(font-latex-slide-title-face  ((t (:foreground ,gruber-darker-niagara))))
+   `(font-latex-string-face       ((t (:foreground ,gruber-darker-green))))
+   `(font-latex-warning-face      ((t (:foreground ,gruber-darker-red))))
 
    ;; Basic
-   `(border             ((t (:background ,gruber-darker-bg-1 :foreground ,gruber-darker-bg+2))))
-   `(cursor             ((t (:background ,gruber-darker-yellow))))
-   `(default            ((t (:foreground ,gruber-darker-fg :background ,gruber-darker-bg))))
-   `(fringe             ((t (:foreground ,gruber-darker-bg+2))))
-   `(vertical-border    ((t (:foreground ,gruber-darker-bg+2))))
-   `(link               ((t (:foreground ,gruber-darker-niagara :underline t))))
-   `(link-visited       ((t (:foreground ,gruber-darker-wisteria :underline t))))
-   `(match              ((t (:background ,gruber-darker-bg+4))))
-   `(shadow             ((t (:foreground ,gruber-darker-bg+4))))
-   `(minibuffer-prompt  ((t (:foreground ,gruber-darker-niagara))))
-   `(region             ((t (:background ,gruber-darker-bg+3))))
+   `(border              ((t (:background ,gruber-darker-bg-1 :foreground ,gruber-darker-bg+2))))
+   `(cursor              ((t (:background ,gruber-darker-yellow))))
+   `(default             ((t (:foreground ,gruber-darker-fg :background ,gruber-darker-bg))))
+   `(fringe              ((t (:foreground ,gruber-darker-bg+2))))
+   `(vertical-border     ((t (:foreground ,gruber-darker-bg+2))))
+   `(link                ((t (:foreground ,gruber-darker-niagara :underline t))))
+   `(link-visited        ((t (:foreground ,gruber-darker-wisteria :underline t))))
+   `(match               ((t (:background ,gruber-darker-bg+4))))
+   `(shadow              ((t (:foreground ,gruber-darker-bg+4))))
+   `(minibuffer-prompt   ((t (:foreground ,gruber-darker-niagara))))
+   `(region              ((t (:background ,gruber-darker-bg+3))))
    `(secondary-selection ((t (:background ,gruber-darker-bg+3))))
    `(trailing-whitespace ((t (:foreground ,gruber-darker-black :background ,gruber-darker-red))))
-   `(tooltip            ((t (:background ,gruber-darker-bg+4 :foreground ,gruber-darker-white))))
-   `(error              ((t (:foreground ,gruber-darker-red+1))))
+   `(tooltip             ((t (:background ,gruber-darker-bg+4 :foreground ,gruber-darker-white))))
+   `(error               ((t (:foreground ,gruber-darker-red+1))))
 
    ;; Calendar
    `(holiday-face ((t (:foreground ,gruber-darker-red))))
 
    ;; Compilation
-   `(compilation-info          ((t (:foreground ,gruber-darker-green))))
-   `(compilation-warning       ((t (:foreground ,gruber-darker-brown :bold t))))
-   `(compilation-error         ((t (:foreground ,gruber-darker-red+1))))
+   `(compilation-info           ((t (:foreground ,gruber-darker-green))))
+   `(compilation-warning        ((t (:foreground ,gruber-darker-brown :bold t))))
+   `(compilation-error          ((t (:foreground ,gruber-darker-red+1))))
    `(compilation-mode-line-fail ((t (:foreground ,gruber-darker-red :weight bold))))
    `(compilation-mode-line-exit ((t (:foreground ,gruber-darker-green :weight bold))))
 
    ;; Completion
-   `(completions-annotations  ((t (:foreground ,gruber-darker-niagara :weight bold))))
-   `(completions-common-part  ((t (:foreground ,gruber-darker-yellow))))
+   `(completions-annotations      ((t (:foreground ,gruber-darker-niagara :weight bold))))
+   `(completions-common-part      ((t (:foreground ,gruber-darker-yellow))))
    `(completions-first-difference ((t (:foreground unspecified))))
-   `(completions-highlight ((t (:foreground ,gruber-darker-niagara :weight bold))))
+   `(completions-highlight        ((t (:foreground ,gruber-darker-niagara :weight bold))))
 
    ;; Custom
    `(custom-state ((t (:foreground ,gruber-darker-green))))
@@ -119,10 +119,10 @@
    `(erc-my-nick-face   ((t (:foreground ,gruber-darker-red+1))))
 
    ;; EShell
-   `(eshell-ls-backup    ((t (:foreground ,gruber-darker-quartz))))
-   `(eshell-ls-directory ((t (:foreground ,gruber-darker-niagara))))
+   `(eshell-ls-backup     ((t (:foreground ,gruber-darker-quartz))))
+   `(eshell-ls-directory  ((t (:foreground ,gruber-darker-niagara))))
    `(eshell-ls-executable ((t (:foreground ,gruber-darker-green))))
-   `(eshell-ls-symlink   ((t (:foreground ,gruber-darker-yellow))))
+   `(eshell-ls-symlink    ((t (:foreground ,gruber-darker-yellow))))
 
    ;; Font Lock
    `(font-lock-builtin-face           ((t (:foreground ,gruber-darker-yellow))))
@@ -174,7 +174,7 @@
    `(helm-selection-line     ((t (:background ,gruber-darker-bg+1))))
    `(helm-selection          ((t (:background ,gruber-darker-bg+1 :underline nil))))
    `(helm-source-header      ((t (:foreground ,gruber-darker-yellow :background ,gruber-darker-bg
-                                  :box (:line-width -1 :style released-button)))))
+                                              :box (:line-width -1 :style released-button)))))
 
    ;; Ido
    `(ido-first-match ((t (:foreground ,gruber-darker-yellow))))
@@ -194,12 +194,12 @@
    `(info-title-4     ((t (:weight bold :foreground ,gruber-darker-wisteria))))
 
    ;; Jabber
-   `(jabber-chat-prompt-foreign  ((t (:foreground ,gruber-darker-quartz))))
-   `(jabber-chat-prompt-local    ((t (:foreground ,gruber-darker-yellow))))
-   `(jabber-chat-prompt-system   ((t (:foreground ,gruber-darker-green))))
-   `(jabber-rare-time-face       ((t (:foreground ,gruber-darker-green))))
-   `(jabber-roster-user-online   ((t (:foreground ,gruber-darker-green))))
-   `(jabber-activity-face        ((t (:foreground ,gruber-darker-red))))
+   `(jabber-chat-prompt-foreign    ((t (:foreground ,gruber-darker-quartz))))
+   `(jabber-chat-prompt-local      ((t (:foreground ,gruber-darker-yellow))))
+   `(jabber-chat-prompt-system     ((t (:foreground ,gruber-darker-green))))
+   `(jabber-rare-time-face         ((t (:foreground ,gruber-darker-green))))
+   `(jabber-roster-user-online     ((t (:foreground ,gruber-darker-green))))
+   `(jabber-activity-face          ((t (:foreground ,gruber-darker-red))))
    `(jabber-activity-personal-face ((t (:foreground ,gruber-darker-yellow :bold t))))
 
    ;; Line Highlighting
@@ -237,29 +237,29 @@
    `(message-separator      ((t (:foreground ,gruber-darker-wisteria))))
 
    ;; Mode Line
-   `(mode-line          ((t (:background ,gruber-darker-bg+1 :foreground ,gruber-darker-white))))
+   `(mode-line           ((t (:background ,gruber-darker-bg+1 :foreground ,gruber-darker-white))))
    `(mode-line-buffer-id ((t (:background ,gruber-darker-bg+1 :foreground ,gruber-darker-white))))
-   `(mode-line-inactive ((t (:background ,gruber-darker-bg+1 :foreground ,gruber-darker-quartz))))
-   `(header-line        ((t (:inherit mode-line))))
+   `(mode-line-inactive  ((t (:background ,gruber-darker-bg+1 :foreground ,gruber-darker-quartz))))
+   `(header-line         ((t (:inherit mode-line))))
 
    ;; Neo Dir
    `(neo-dir-link-face ((t (:foreground ,gruber-darker-niagara))))
 
    ;; Org Mode
-   `(org-agenda-done      ((t (:foreground ,gruber-darker-green))))
-   `(org-agenda-structure ((t (:foreground ,gruber-darker-niagara :height 1.1))))
-   `(org-block            ((t (:background ,gruber-darker-bg))))
-   `(org-code             ((t (:inherit font-lock-constant-face))))
-   `(org-column           ((t (:background ,gruber-darker-bg-1))))
-   `(org-column-title     ((t (:background ,gruber-darker-bg-1 :underline t :weight bold))))
-   `(org-document-title   ((t (:foreground ,gruber-darker-wisteria :weight bold :height 1.4))))
-   `(org-document-info    ((t (:foreground ,gruber-darker-green))))
-   `(org-done             ((t (:foreground ,gruber-darker-green))))
-   `(org-todo             ((t (:foreground ,gruber-darker-red-1))))
+   `(org-agenda-done          ((t (:foreground ,gruber-darker-green))))
+   `(org-agenda-structure     ((t (:foreground ,gruber-darker-niagara :height 1.1))))
+   `(org-block                ((t (:background ,gruber-darker-bg))))
+   `(org-code                 ((t (:inherit font-lock-constant-face))))
+   `(org-column               ((t (:background ,gruber-darker-bg-1))))
+   `(org-column-title         ((t (:background ,gruber-darker-bg-1 :underline t :weight bold))))
+   `(org-document-title       ((t (:foreground ,gruber-darker-wisteria :weight bold :height 1.4))))
+   `(org-document-info        ((t (:foreground ,gruber-darker-green))))
+   `(org-done                 ((t (:foreground ,gruber-darker-green))))
+   `(org-todo                 ((t (:foreground ,gruber-darker-red-1))))
    `(org-upcoming-deadline    ((t (:foreground ,gruber-darker-yellow))))
    `(org-scheduled-previously ((t (:foreground ,gruber-darker-orange))))
-   `(org-table            ((t (:foreground ,gruber-darker-wisteria))))
-   `(org-verbatim         ((t (:foreground ,gruber-darker-quartz))))
+   `(org-table                ((t (:foreground ,gruber-darker-wisteria))))
+   `(org-verbatim             ((t (:foreground ,gruber-darker-quartz))))
 
    ;; Search
    `(isearch        ((t (:foreground ,gruber-darker-black :background ,gruber-darker-fg+2))))
@@ -290,21 +290,21 @@
    `(which-func ((t (:foreground ,gruber-darker-wisteria))))
 
    ;; Whitespace
-   `(whitespace-space          ((t (:background ,gruber-darker-bg :foreground ,gruber-darker-bg+1))))
-   `(whitespace-tab            ((t (:background ,gruber-darker-bg :foreground ,gruber-darker-bg+1))))
-   `(whitespace-hspace         ((t (:background ,gruber-darker-bg :foreground ,gruber-darker-bg+2))))
-   `(whitespace-line           ((t (:background ,gruber-darker-bg+2 :foreground ,gruber-darker-red+1))))
-   `(whitespace-newline        ((t (:background ,gruber-darker-bg :foreground ,gruber-darker-bg+2))))
-   `(whitespace-trailing       ((t (:background ,gruber-darker-red :foreground ,gruber-darker-red))))
-   `(whitespace-empty          ((t (:background ,gruber-darker-yellow :foreground ,gruber-darker-yellow))))
-   ;; `(whitespace-indentation    ((t (:background ,gruber-darker-yellow :foreground ,gruber-darker-red))))
-   `(whitespace-indentation    ((t (:background unspecified :foreground ,gruber-darker-bg+1))))
+   `(whitespace-space            ((t (:background ,gruber-darker-bg :foreground ,gruber-darker-bg+1))))
+   `(whitespace-tab              ((t (:background ,gruber-darker-bg :foreground ,gruber-darker-bg+1))))
+   `(whitespace-hspace           ((t (:background ,gruber-darker-bg :foreground ,gruber-darker-bg+2))))
+   `(whitespace-line             ((t (:background ,gruber-darker-bg+2 :foreground ,gruber-darker-red+1))))
+   `(whitespace-newline          ((t (:background ,gruber-darker-bg :foreground ,gruber-darker-bg+2))))
+   `(whitespace-trailing         ((t (:background ,gruber-darker-red :foreground ,gruber-darker-red))))
+   `(whitespace-empty            ((t (:background ,gruber-darker-yellow :foreground ,gruber-darker-yellow))))
+   ;; `(whitespace-indentation   ((t (:background ,gruber-darker-yellow :foreground ,gruber-darker-red))))
+   `(whitespace-indentation      ((t (:background unspecified :foreground ,gruber-darker-bg+1))))
    `(whitespace-space-after-tab  ((t (:background ,gruber-darker-yellow :foreground ,gruber-darker-yellow))))
    `(whitespace-space-before-tab ((t (:background ,gruber-darker-brown :foreground ,gruber-darker-brown))))
 
    ;; Tab bar
-   `(tab-bar          ((t (:background ,gruber-darker-bg+1 :foreground ,gruber-darker-bg+4))))
-   `(tab-bar-tab      ((t (:foreground ,gruber-darker-yellow :weight bold))))
+   `(tab-bar              ((t (:background ,gruber-darker-bg+1 :foreground ,gruber-darker-bg+4))))
+   `(tab-bar-tab          ((t (:foreground ,gruber-darker-yellow :weight bold))))
    `(tab-bar-tab-inactive ((t (:background unspecified))))
 
    ;; vterm / ansi-term
@@ -336,17 +336,17 @@
    `(ansi-color-bright-white   ((t (:inherit ansi-color-white :weight bold))))
 
    ;; Company
-   `(company-tooltip                    ((t (:foreground ,gruber-darker-fg :background ,gruber-darker-bg+1))))
-   `(company-tooltip-annotation         ((t (:foreground ,gruber-darker-brown :background ,gruber-darker-bg+1))))
+   `(company-tooltip                      ((t (:foreground ,gruber-darker-fg :background ,gruber-darker-bg+1))))
+   `(company-tooltip-annotation           ((t (:foreground ,gruber-darker-brown :background ,gruber-darker-bg+1))))
    `(company-tooltip-annotation-selection ((t (:foreground ,gruber-darker-brown :background ,gruber-darker-bg-1))))
-   `(company-tooltip-selection          ((t (:foreground ,gruber-darker-fg :background ,gruber-darker-bg-1))))
-   `(company-tooltip-mouse              ((t (:background ,gruber-darker-bg-1))))
-   `(company-tooltip-common             ((t (:foreground ,gruber-darker-green))))
-   `(company-tooltip-common-selection   ((t (:foreground ,gruber-darker-green))))
-   `(company-scrollbar-fg               ((t (:background ,gruber-darker-bg-1))))
-   `(company-scrollbar-bg               ((t (:background ,gruber-darker-bg+2))))
-   `(company-preview                    ((t (:background ,gruber-darker-green))))
-   `(company-preview-common             ((t (:foreground ,gruber-darker-green :background ,gruber-darker-bg-1))))
+   `(company-tooltip-selection            ((t (:foreground ,gruber-darker-fg :background ,gruber-darker-bg-1))))
+   `(company-tooltip-mouse                ((t (:background ,gruber-darker-bg-1))))
+   `(company-tooltip-common               ((t (:foreground ,gruber-darker-green))))
+   `(company-tooltip-common-selection     ((t (:foreground ,gruber-darker-green))))
+   `(company-scrollbar-fg                 ((t (:background ,gruber-darker-bg-1))))
+   `(company-scrollbar-bg                 ((t (:background ,gruber-darker-bg+2))))
+   `(company-preview                      ((t (:background ,gruber-darker-green))))
+   `(company-preview-common               ((t (:foreground ,gruber-darker-green :background ,gruber-darker-bg-1))))
 
    ;; Proof General
    `(proof-locked-face ((t (:background ,gruber-darker-niagara-2))))
@@ -365,36 +365,36 @@
    `(diff-hl-dired-unknown ((t (:inherit diff-hl-dired-ignored))))
 
    ;; Breadcrumb
-   `(breadcrumb-face           ((t (:background ,gruber-darker-bg+1 :foreground ,gruber-darker-fg))))
+   `(breadcrumb-face              ((t (:background ,gruber-darker-bg+1 :foreground ,gruber-darker-fg))))
    `(breadcrumb-project-leaf-face ((t (:inherit mode-line-buffer-id :bold t))))
 
    ;; Symbol overlay
    `(symbol-overlay-default-face ((t (:inherit highlight :underline t))))
 
    ;; Diredfl
-   `(diredfl-dir-heading           ((t (:inherit font-lock-string-face))))
-   `(diredfl-dir-name              ((t (:inherit dired-directory))))
-   `(diredfl-file-name             ((t (:foreground ,gruber-darker-yellow))))
-   `(diredfl-file-suffix           ((t (:foreground ,gruber-darker-green))))
-   `(diredfl-flag-mark             ((t (:inherit dired-mark))))
-   `(diredfl-flag-mark-line        ((t (:inherit highlight))))
-   `(diredfl-deletion              ((t (:inherit error :inverse-video t))))
-   `(diredfl-deletion-file-name    ((t (:inherit error))))
+   `(diredfl-dir-heading            ((t (:inherit font-lock-string-face))))
+   `(diredfl-dir-name               ((t (:inherit dired-directory))))
+   `(diredfl-file-name              ((t (:foreground ,gruber-darker-yellow))))
+   `(diredfl-file-suffix            ((t (:foreground ,gruber-darker-green))))
+   `(diredfl-flag-mark              ((t (:inherit dired-mark))))
+   `(diredfl-flag-mark-line         ((t (:inherit highlight))))
+   `(diredfl-deletion               ((t (:inherit error :inverse-video t))))
+   `(diredfl-deletion-file-name     ((t (:inherit error))))
    `(diredfl-compressed-file-suffix ((t (:foreground ,gruber-darker-red))))
-   `(diredfl-compressed-file-name  ((t (:foreground ,gruber-darker-red))))
-   `(diredfl-ignored-file-name     ((t (:inherit dired-ignored))))
-   `(diredfl-symlink               ((t (:foreground ,gruber-darker-wisteria))))
-   `(diredfl-number                ((t (:foreground ,gruber-darker-brown))))
-   `(diredfl-date-time             ((t (:foreground ,gruber-darker-wisteria))))
-   `(diredfl-no-priv               ((t (:background unspecified))))
-   `(diredfl-dir-priv              ((t (:inherit dired-directory))))
-   `(diredfl-read-priv             ((t (:foreground ,gruber-darker-green))))
-   `(diredfl-write-priv            ((t (:foreground ,gruber-darker-brown))))
-   `(diredfl-exec-priv             ((t (:foreground ,gruber-darker-yellow))))
-   `(diredfl-executable-tag        ((t (:foreground ,gruber-darker-brown))))
-   `(diredfl-link-priv             ((t (:foreground ,gruber-darker-wisteria))))
-   `(diredfl-other-priv            ((t (:foreground ,gruber-darker-quartz))))
-   `(diredfl-rare-priv             ((t (:foreground ,gruber-darker-red))))
+   `(diredfl-compressed-file-name   ((t (:foreground ,gruber-darker-red))))
+   `(diredfl-ignored-file-name      ((t (:inherit dired-ignored))))
+   `(diredfl-symlink                ((t (:foreground ,gruber-darker-wisteria))))
+   `(diredfl-number                 ((t (:foreground ,gruber-darker-brown))))
+   `(diredfl-date-time              ((t (:foreground ,gruber-darker-wisteria))))
+   `(diredfl-no-priv                ((t (:background unspecified))))
+   `(diredfl-dir-priv               ((t (:inherit dired-directory))))
+   `(diredfl-read-priv              ((t (:foreground ,gruber-darker-green))))
+   `(diredfl-write-priv             ((t (:foreground ,gruber-darker-brown))))
+   `(diredfl-exec-priv              ((t (:foreground ,gruber-darker-yellow))))
+   `(diredfl-executable-tag         ((t (:foreground ,gruber-darker-brown))))
+   `(diredfl-link-priv              ((t (:foreground ,gruber-darker-wisteria))))
+   `(diredfl-other-priv             ((t (:foreground ,gruber-darker-quartz))))
+   `(diredfl-rare-priv              ((t (:foreground ,gruber-darker-red))))
 
    ;; Outline
    `(outline-1 ((t (:foreground ,gruber-darker-niagara))))
@@ -407,7 +407,7 @@
    `(outline-8 ((t (:foreground ,gruber-darker-green))))
 
    ;; Window divider
-   `(window-divider            ((t (:foreground ,gruber-darker-bg+4))))
+   `(window-divider             ((t (:foreground ,gruber-darker-bg+4))))
    `(window-divider-first-pixel ((t (:foreground ,gruber-darker-bg+4))))
    `(window-divider-last-pixel  ((t (:foreground ,gruber-darker-bg+4))))
 
@@ -433,18 +433,20 @@
    `(shr-h6   ((t (:inherit outline-6))))
 
    ;; Corfu
-   `(corfu-default    ((t (:foreground ,gruber-darker-fg :background ,gruber-darker-bg+1))))
-   `(corfu-current    ((t (:foreground ,gruber-darker-fg :background ,gruber-darker-bg-1))))
-   `(corfu-bar        ((t (:background ,gruber-darker-bg-1))))
-   `(corfu-border     ((t (:background ,gruber-darker-bg+2))))
+   `(corfu-default     ((t (:foreground ,gruber-darker-fg :background ,gruber-darker-bg+1))))
+   `(corfu-current     ((t (:foreground ,gruber-darker-fg :background ,gruber-darker-bg-1))))
+   `(corfu-bar         ((t (:background ,gruber-darker-bg-1))))
+   `(corfu-border      ((t (:background ,gruber-darker-bg+2))))
    `(corfu-annotations ((t (:foreground ,gruber-darker-yellow))))
-   `(corfu-deprecated ((t (:strike-through t :foreground ,gruber-darker-bg+4))))
-   `(corfu-margin ((t (:foreground ,gruber-darker-fg))))
-   `(corfu-echo   ((t (:foreground ,gruber-darker-yellow))))
+   `(corfu-deprecated  ((t (:strike-through t :foreground ,gruber-darker-bg+4))))
+   `(corfu-margin      ((t (:foreground ,gruber-darker-fg))))
+   `(corfu-echo        ((t (:foreground ,gruber-darker-yellow))))
 
    ;; Fido / Icomplete
-   `(icomplete-first-match  ((t (:foreground ,gruber-darker-yellow :weight bold))))
-   `(icomplete-selected-match ((t (:foreground ,gruber-darker-brown))))
+   `(icomplete-first-match ((t (:foreground ,gruber-darker-yellow :weight bold))))
+   ;; `(icomplete-dir      ((t (:foreground ,gruber-darker-niagara :weight bold))))
+   `(icomplete-determined  ((t (:foreground ,gruber-darker-brown :weight bold))))
+   `(icomplete-dir         ((t (:foreground ,gruber-darker-niagara :weight bold))))
    ))
 
 ;;;###autoload

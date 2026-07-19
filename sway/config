@@ -336,8 +336,8 @@ input type:pointer {
 # ==========================================
 # 1. GLOBAL ROLES (X11/XWayland & Compliant Apps)
 # ==========================================
-for_window [window_role="^(pop-up|task_dialog|dialog|utility|Preferences|About|Open|Save|Properties|Confirmation|Print|Page Setup|File Operation Progress)$"] { floating enable move position center }
-for_window [window_role="(?i).*(picker|chooser|selector).*"] { floating enable, move position center }
+for_window [window_role="^(pop-up|task_dialog|dialog|utility|Preferences|About|Open|Save|Properties|Confirmation|Print|Page Setup|File Operation Progress)$"] floating enable move position center
+for_window [window_role="(?i).*(picker|chooser|selector).*"] floating enable, move position center
 
 # Target all auxiliary Thunar windows while keeping the main window tiled
 for_window [app_id="thunar" title=".*Progress.*"] floating enable
@@ -380,7 +380,7 @@ exec LT="$lock_timeout" ST="$screen_timeout" LT=${LT:-300} ST=${ST:-60} && \
 
 ################################################################
 # 95-autostart-policykit-agent.conf
-exec /usr/libexec/lxqt-policykit-agent
+# exec /usr/bin/lxqt-policykit-agent
 
 ################################################################
 # 95-pic-in-picture.conf
@@ -408,12 +408,14 @@ mode "screenshot" {
     bindsym Shift+s exec   GRIMSHOT_FILENAME_FORMAT=$screenshot_name grimshot --notify save area; mode "default"
     bindsym Control+s exec GRIMSHOT_FILENAME_FORMAT=$screenshot_name grimshot --notify save active; mode "default"
     bindsym a exec         GRIMSHOT_FILENAME_FORMAT=$screenshot_name grimshot --notify save output; mode "default"
-    bindsym Shift+a exec  GRIMSHOT_FILENAME_FORMAT=$screenshot_name grimshot --notify save; mode "default"
+    bindsym Shift+a exec   GRIMSHOT_FILENAME_FORMAT=$screenshot_name grimshot --notify save; mode "default"
     bindsym w exec         GRIMSHOT_FILENAME_FORMAT=$screenshot_name grimshot --notify save window; mode "default"
     bindsym Escape mode "default"
 }
 bindsym $mod+s mode "screenshot"
 
 ################################################################
-exec xhost si:localuser:root
+exec xhost +SI:localuser:root
 # exec ~/.config/sway/locale1-xkb-config
+
+bindsym $mod+semicolon exec ~/.config/sway/window-switcher
