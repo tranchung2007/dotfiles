@@ -11,7 +11,8 @@
 (keymap-global-set "M-l" #'downcase-dwim)
 (keymap-global-set "M-c" #'capitalize-dwim)
 
-;;; Highlight current dir in fido buffer
+;;; Highlight current working dir in fido buffer
+(require 'cl-lib)
 (defun my/mb-setup ()
   (when (memq (completion-metadata-get
                (completion-metadata (minibuffer-contents)
@@ -21,30 +22,28 @@
               '(file buffer))
     (let* ((ov (make-overlay 1 1 nil t t))
            (up (lambda (&rest _)
-                 (let ((beg (minibuffer-prompt-end)))
-                   (move-overlay ov beg
-                                 (save-excursion
-                                   (goto-char (point-max))
-                                   (if (search-backward "/" beg t) (1+ (point)) beg)))))))
+                 (let* ((beg (minibuffer-prompt-end))
+                        (s (minibuffer-contents))
+                        (slash (cl-position ?/ s :from-end t)))
+                   (if slash
+                       (move-overlay ov beg (+ beg slash 1))
+                     (move-overlay ov beg beg))))))
       (overlay-put ov 'face 'icomplete-dir)
       (overlay-put ov 'priority 100)
       (add-hook 'after-change-functions up nil t)
       (add-hook 'minibuffer-exit-hook
-                (lambda () (remove-hook 'after-change-functions up t) (delete-overlay ov))
+                (lambda () (delete-overlay ov))
                 nil t)
       (funcall up))))
-
 (add-hook 'minibuffer-setup-hook #'my/mb-setup)
 
 ;;; Custom face for fido-mode
 (defface icomplete-dir
   '((t :inherit font-lock-keyword-face))
   "Face for directory entries in icomplete.")
-
 (defface icomplete-determined
   '((t :inherit shadow))
   "Face for the determined (sole/bracketed) match in icomplete.")
-
 (advice-add 'icomplete-completions :filter-return
             (lambda (s)
               (let* ((comps (completion-all-sorted-completions))
@@ -57,10 +56,12 @@
                 (when (memq cat '(file buffer))
                   (let ((pos 0)
                         (lst comps))
-                    (while (and (consp lst) (stringp (car lst)))
+                    (while (and (consp lst) (stringp (car lst))
+                                (< pos (length s)))
                       (let* ((cand (car lst))
                              (m (string-search cand s pos)))
-                        (when m
+                        (if (not m)
+                            (setq lst nil)          ; past what's displayed; stop
                           (let* ((len (length cand))
                                  (tag-start (and is-buf
                                                  (> len 2)
@@ -70,13 +71,12 @@
                                  (dir (file-name-directory
                                        (if tag-start (substring cand 0 tag-start) cand)))
                                  (dir-len (if dir (length dir) 0)))
-
                             (when (> dir-len 0)
                               (add-face-text-property m (+ m dir-len) 'icomplete-dir t s))
                             (when tag-start
                               (add-face-text-property (+ m tag-start) (+ m len) 'icomplete-dir t s))
-                            (setq pos (+ m len)))))
-                      (setq lst (cdr lst)))))
+                            (setq pos (+ m len))
+                            (setq lst (cdr lst))))))))
                 (let ((s-len (length s)))
                   (when (> s-len 0)
                     (let ((first-char (aref s 0)))

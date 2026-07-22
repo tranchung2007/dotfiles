@@ -9,7 +9,7 @@
 (add-hook 'emacs-startup-hook
           (lambda ()
             (setq gc-cons-threshold (* 64 1024 1024)
-                  gc-cons-percentage 0.1
+                  gc-cons-percentage 0.2
                   file-name-handler-alist default-file-name-handler-alist)))
 
 (setq load-prefer-newer t)
@@ -80,15 +80,6 @@
   :ensure nil
   :hook (after-init . savehist-mode)
   :custom (savehist-additional-variables '(kill-ring search-ring regexp-search-ring)))
-
-(use-package recentf
-  :ensure nil
-  :hook (after-init . recentf-mode)
-  :custom (recentf-max-saved-items 200))
-
-(use-package saveplace
-  :ensure nil
-  :hook (after-init . save-place-mode))
 
 (use-package so-long
   :ensure nil
@@ -175,13 +166,14 @@
   :custom (dtrt-indent-lighter "")
   :hook (prog-mode . dtrt-indent-global-mode))
 
-(use-package d-mode :defer t)
-(use-package lua-mode :defer t)
-(use-package rust-mode :defer t)
-(use-package cmake-mode :defer t)
-(use-package meson-mode :defer t)
+(use-package d-mode        :defer t)
+(use-package lua-mode      :defer t)
+(use-package rust-mode     :defer t)
+(use-package cmake-mode    :defer t)
+(use-package meson-mode    :defer t)
 (use-package markdown-mode :defer t)
-(use-package yaml-mode :defer t)
+(use-package yaml-mode     :defer t)
+(use-package qml-mode      :defer t)
 
 (when (file-directory-p "~/.emacs.local/")
   (use-package my-misc
